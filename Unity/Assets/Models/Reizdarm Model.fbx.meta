@@ -1,0 +1,211 @@
+fileFormatVersion: 2
+guid: e47abce0d65332a4687ce97afdb036bf
+timeCreated: 1510359067
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Lotte
+    100002: Lotte_1
+    100004: Lotte_2
+    100006: Lotte_3
+    100008: Lottn
+    100010: Plan
+    100012: //RootNode
+    100014: Schote_B
+    100016: Schote_B_1
+    100018: Schote_B_2
+    100020: Schotte_A
+    100022: Schotte_A_1
+    100024: Schotte_A_2
+    100026: Schotte_A_3
+    100028: Schotte_C
+    100030: Schotte_C_1
+    100032: Schotte_C_2
+    100034: Schottn
+    100036: "W\xFCrfel"
+    100038: Zotte_1
+    100040: Zotte_2
+    100042: Zotte_3
+    100044: Zotte_4
+    100046: Zotte_5
+    100048: Zotte_6
+    100050: Zotte_7
+    100052: Zotte_8
+    100054: Zottn
+    400000: Lotte
+    400002: Lotte_1
+    400004: Lotte_2
+    400006: Lotte_3
+    400008: Lottn
+    400010: Plan
+    400012: //RootNode
+    400014: Schote_B
+    400016: Schote_B_1
+    400018: Schote_B_2
+    400020: Schotte_A
+    400022: Schotte_A_1
+    400024: Schotte_A_2
+    400026: Schotte_A_3
+    400028: Schotte_C
+    400030: Schotte_C_1
+    400032: Schotte_C_2
+    400034: Schottn
+    400036: "W\xFCrfel"
+    400038: Zotte_1
+    400040: Zotte_2
+    400042: Zotte_3
+    400044: Zotte_4
+    400046: Zotte_5
+    400048: Zotte_6
+    400050: Zotte_7
+    400052: Zotte_8
+    400054: Zottn
+    2300000: Lotte
+    2300002: Lotte_1
+    2300004: Lotte_2
+    2300006: Lotte_3
+    2300008: Plan
+    2300010: Schote_B
+    2300012: Schote_B_1
+    2300014: Schote_B_2
+    2300016: Schotte_A
+    2300018: Schotte_A_1
+    2300020: Schotte_A_2
+    2300022: Schotte_A_3
+    2300024: Schotte_C
+    2300026: Schotte_C_1
+    2300028: Schotte_C_2
+    2300030: "W\xFCrfel"
+    2300032: Zotte_1
+    2300034: Zotte_2
+    2300036: Zotte_3
+    2300038: Zotte_4
+    2300040: Zotte_5
+    2300042: Zotte_6
+    2300044: Zotte_7
+    2300046: Zotte_8
+    3300000: Lotte
+    3300002: Lotte_1
+    3300004: Lotte_2
+    3300006: Lotte_3
+    3300008: Plan
+    3300010: Schote_B
+    3300012: Schote_B_1
+    3300014: Schote_B_2
+    3300016: Schotte_A
+    3300018: Schotte_A_1
+    3300020: Schotte_A_2
+    3300022: Schotte_A_3
+    3300024: Schotte_C
+    3300026: Schotte_C_1
+    3300028: Schotte_C_2
+    3300030: "W\xFCrfel"
+    3300032: Zotte_1
+    3300034: Zotte_2
+    3300036: Zotte_3
+    3300038: Zotte_4
+    3300040: Zotte_5
+    3300042: Zotte_6
+    3300044: Zotte_7
+    3300046: Zotte_8
+    4300000: Lotte_3
+    4300002: Lotte_2
+    4300004: Lotte_1
+    4300006: Lotte
+    4300008: Zotte_8
+    4300010: Zotte_7
+    4300012: Zotte_6
+    4300014: Zotte_5
+    4300016: Zotte_4
+    4300018: Zotte_3
+    4300020: Zotte_2
+    4300022: Zotte_1
+    4300024: Schotte_A_3
+    4300026: Schotte_C_2
+    4300028: Schote_B_2
+    4300030: Schotte_A_2
+    4300032: Schotte_C_1
+    4300034: Schote_B_1
+    4300036: Schotte_A_1
+    4300038: Schotte_C
+    4300040: Schote_B
+    4300042: Schotte_A
+    4300044: "W\xFCrfel"
+    4300046: Plan
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
