@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_colors.v4p" systemname="helper_colors" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_colors.v4p" scrollx="0" scrolly="2592">
-   <BOUNDS type="Window" left="5328" top="488" width="12384" height="7912">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_colors.v4p" systemname="helper_colors" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_colors.v4p" scrollx="0" scrolly="3200">
+   <BOUNDS type="Window" left="5936" top="1000" width="10024" height="8752">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
    </PACK>
@@ -9,7 +9,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5000" top="3672" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.87027,0.80191,0.02426,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.53712,0.67749,0.01895,1.00000|">
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
    </PIN>
@@ -25,13 +25,15 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Alpha" slicecount="1" values="0.88">
+   </PIN>
    </NODE>
    <NODE id="23" systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="3032" top="7910" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1" pintype="Output">
    </PIN>
-   <PIN pinname="Bin Size" visible="1" pintype="Input" slicecount="1" values="10">
+   <PIN pinname="Bin Size" visible="1" pintype="Input" slicecount="1" values="12">
    </PIN>
    <PIN pinname="Input Node" visible="1" pintype="Input" slicecount="1" values="||">
    </PIN>
@@ -53,7 +55,7 @@
    </BOUNDS>
    <PIN pinname="Input" slicecount="12" visible="1" values="|0.87578,0.87578,0.87578,1.00000|,|0.87578,0.87578,0.87578,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87578,0.87578,0.87578,1.00000|,|0.87578,0.87578,0.87578,1.00000|">
    </PIN>
-   <BOUNDS type="Window" left="4888" top="3176" width="10024" height="8752">
+   <BOUNDS type="Window" left="5936" top="1000" width="10024" height="8752">
    </BOUNDS>
    <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
    </PIN>
@@ -81,11 +83,13 @@
    </PIN>
    </NODE>
    <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="28">
-   <BOUNDS type="Node" left="432" top="5336" width="100" height="100">
+   <BOUNDS type="Node" left="1040" top="6000" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   <PIN pinname="Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="7">
    </PIN>
    </NODE>
    <NODE systemname="Cons (EX9.Texture)" nodename="Cons (EX9.Texture)" componentmode="Hidden" id="29">
@@ -107,8 +111,6 @@
    <LINK srcnodeid="29" srcpinname="Texture Out" dstnodeid="23" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="28" srcpinname="Texture Out" dstnodeid="29" dstpinname="Texture In 1">
-   </LINK>
-   <LINK srcnodeid="23" srcpinname="Output Node" dstnodeid="24" dstpinname="Input Node">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="33" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="5352" top="4112" width="696" height="208">
@@ -143,9 +145,9 @@
    <LINK srcnodeid="19" srcpinname="Output" dstnodeid="22" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="35" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="2728" top="6032" width="696" height="208">
+   <BOUNDS type="Box" left="2816" top="6008" width="696" height="208">
    </BOUNDS>
-   <BOUNDS type="Node" left="2728" top="6032" width="0" height="0">
+   <BOUNDS type="Node" left="2816" top="6008" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -153,5 +155,31 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="35" srcpinname="Output Node" dstnodeid="29" dstpinname="Texture In 2">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="36" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="2096" top="4464" width="1960" height="416">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2096" top="4464" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.37722,0.37722,0.37722,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="SetAlpha (Color)" nodename="SetAlpha (Color)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="2112" top="5120" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Alpha" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="36" srcpinname="Color Output" dstnodeid="37" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Output" dstnodeid="28" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Texture Out" dstnodeid="24" dstpinname="Input Node">
    </LINK>
    </PATCH>

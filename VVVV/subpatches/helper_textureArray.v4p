@@ -41,9 +41,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Cons (EX9.Texture)" nodename="Cons (EX9.Texture)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="1492" top="14724" width="6704" height="256">
+   <BOUNDS type="Node" left="1524" top="14676" width="6704" height="256">
    </BOUNDS>
-   <PIN pinname="Texture In Count" slicecount="1" values="10">
+   <PIN pinname="Texture In Count" slicecount="1" values="8">
    </PIN>
    <PIN pinname="Texture In 1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -354,7 +354,7 @@
    </NODE>
    <LINK srcnodeid="5" srcpinname="Texture Out" dstnodeid="26" dstpinname="Input Node">
    </LINK>
-   <BOUNDS type="Window" left="5080" top="992" width="10024" height="8752">
+   <BOUNDS type="Window" left="4952" top="1016" width="10024" height="8752">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
    </PACK>
