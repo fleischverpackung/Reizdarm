@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="1328" scrolly="0">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="0" scrolly="704">
    <BOUNDS height="8752" left="5936" top="1000" type="Window" width="10024">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="%VVVV%\lib\nodes\plugins\ColladaLoader.dll" id="23" nodename="ColladaFile (EX9.Geometry)" systemname="ColladaFile (EX9.Geometry)">
@@ -76,38 +76,16 @@
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="46">
-   <BOUNDS type="Node" left="8408" top="136" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="8408" top="136" width="696" height="3928">
-   </BOUNDS>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="12">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="12" values="0,0,1,1,1,1,1,1,1,1,1,1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="12" values="0,0,1,1,1,1,1,1,1,1,1,1">
-   </PIN>
-   </NODE>
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="48">
-   <BOUNDS type="Node" left="8008" top="4296" width="100" height="100">
+   <BOUNDS type="Node" left="4240" top="3000" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Select" visible="1">
+   <PIN pinname="Select" visible="1" slicecount="30" values="0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1">
    </PIN>
    <PIN pinname="Input" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Former Slice" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="48" dstpinname="Select">
-   </LINK>
    <NODE systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" id="53">
    <BOUNDS type="Node" left="1136" top="3824" width="100" height="100">
    </BOUNDS>
@@ -151,12 +129,12 @@
    </PIN>
    <PIN pinname="TextureFileName" visible="1">
    </PIN>
+   <PIN pinname="MeshPath" visible="1">
+   </PIN>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
    </NODE>
    <LINK dstnodeid="55" dstpinname="COLLADA Model" srcnodeid="23" srcpinname="COLLADA Model">
-   </LINK>
-   <LINK srcnodeid="55" srcpinname="Mesh" dstnodeid="53" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="55" srcpinname="Transforms" dstnodeid="54" dstpinname="Input Node">
    </LINK>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="57">
    <BOUNDS type="Node" left="1568" top="7216" width="100" height="100">
@@ -170,8 +148,6 @@
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="57" srcpinname="Layer" dstnodeid="39" dstpinname="Layers">
-   </LINK>
    <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="59">
    <BOUNDS type="Node" left="4136" top="9424" width="100" height="100">
    </BOUNDS>
@@ -183,9 +159,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="124">
-   <BOUNDS type="Node" left="6888" top="5136" width="100" height="100">
+   <BOUNDS type="Node" left="10264" top="4304" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6888" top="5136" width="2832" height="2904">
+   <BOUNDS type="Box" left="10264" top="4304" width="2832" height="2904">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="15">
    </PIN>
@@ -285,7 +261,7 @@
    </PIN>
    <PIN pinname="Technique" slicecount="1" pintype="Input" visible="1" values="| TConstantFF|">
    </PIN>
-   <BOUNDS type="Node" height="0" left="3540" top="6846" width="0">
+   <BOUNDS type="Node" height="0" left="10708" top="8238" width="0">
    </BOUNDS>
    <PIN pinname="Mesh" visible="1" slicecount="1" pintype="Input" values="||">
    </PIN>
@@ -327,17 +303,15 @@
    </PIN>
    </NODE>
    <NODE systemname="Sphere (EX9.Geometry)" nodename="Sphere (EX9.Geometry)" componentmode="Hidden" id="138">
-   <BOUNDS type="Node" left="3968" top="6168" width="100" height="100">
+   <BOUNDS type="Node" left="11136" top="7560" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Mesh" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="138" srcpinname="Mesh" dstnodeid="137" dstpinname="Mesh">
    </LINK>
-   <LINK srcnodeid="137" srcpinname="Layer" dstnodeid="57" dstpinname="Layer 2">
-   </LINK>
    <NODE systemname="Transform (Transform 3d Vector)" nodename="Transform (Transform 3d Vector)" componentmode="Hidden" id="139">
-   <BOUNDS type="Node" left="6656" top="8296" width="100" height="100">
+   <BOUNDS type="Node" left="10032" top="7464" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Translate XYZ" visible="1">
    </PIN>
@@ -362,40 +336,6 @@
    </NODE>
    <LINK srcnodeid="141" srcpinname="Texture Out" dstnodeid="130" dstpinname="Texture In 2">
    </LINK>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="147">
-   <BOUNDS type="Node" left="4656" top="2056" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4656" top="2056" width="2832" height="2904">
-   </BOUNDS>
-   <PIN pinname="Rows" slicecount="1" values="15">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="45" values="0,0,0,1,1,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="|0, 0, 0, 1|">
-   </PIN>
-   <PIN pinname="Columns" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Show SliceIndex" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="45" values="0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0">
-   </PIN>
-   </NODE>
-   <NODE systemname="Transform (Transform 3d Vector)" nodename="Transform (Transform 3d Vector)" componentmode="Hidden" id="146">
-   <BOUNDS type="Node" left="4424" top="5216" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Translate XYZ" visible="1">
-   </PIN>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="147" srcpinname="Y Output Value" dstnodeid="146" dstpinname="Translate XYZ">
-   </LINK>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="150" systemname="IOBox (Color)">
    <BOUNDS type="Box" left="1512" top="9680" width="1960" height="416">
    </BOUNDS>
@@ -409,17 +349,99 @@
    <NODE id="152" componentmode="Hidden" filename="%VVVV%\lib\nodes\effects\Constant.fx" nodename="Constant (EX9.Effect)" systemname="Constant (EX9.Effect)" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" height="0" left="1148" top="6510" width="0">
    </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Texture Transform" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mesh" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="152" srcpinname="Layer" dstnodeid="57" dstpinname="Layer 1">
    </LINK>
-   <LINK srcnodeid="53" srcpinname="Output Node" dstnodeid="152" dstpinname="Mesh">
+   <LINK srcnodeid="36" srcpinname="Render State Out" dstnodeid="152" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="130" srcpinname="Output Node" dstnodeid="152" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="Count (String)" nodename="Count (String)" componentmode="Hidden" id="157">
+   <BOUNDS type="Node" left="2392" top="2624" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="55" srcpinname="MeshPath" dstnodeid="157" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="158" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2440" top="3048" width="696" height="208">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2440" top="3048" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="157" srcpinname="Count" dstnodeid="158" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="152" srcpinname="Layer" dstnodeid="39" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="159">
+   <BOUNDS type="Node" left="5480" top="1888" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" slicecount="1" values="25">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="160">
+   <BOUNDS type="Node" left="4712" top="2496" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="162">
+   <BOUNDS type="Node" left="4640" top="1592" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4640" top="1592" width="552" height="688">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" values="0,1,0,0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" values="0,1,0,0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="162" srcpinname="Y Output Value" dstnodeid="160" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="159" srcpinname="Output" dstnodeid="160" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="160" srcpinname="Output" dstnodeid="48" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="55" srcpinname="Transforms" dstnodeid="54" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="55" srcpinname="Mesh" dstnodeid="53" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="54" srcpinname="Output Node" dstnodeid="152" dstpinname="Transform">
    </LINK>
-   <LINK srcnodeid="36" srcpinname="Render State Out" dstnodeid="152" dstpinname="Render State">
-   </LINK>
-   <LINK srcnodeid="146" srcpinname="Transform Out" dstnodeid="152" dstpinname="Texture Transform">
-   </LINK>
-   <LINK srcnodeid="130" srcpinname="Output Node" dstnodeid="152" dstpinname="Texture">
+   <LINK srcnodeid="53" srcpinname="Output Node" dstnodeid="152" dstpinname="Mesh">
    </LINK>
    </PATCH>
