@@ -1,0 +1,157 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_colors.v4p" systemname="helper_colors" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_colors.v4p" scrollx="0" scrolly="2592">
+   <BOUNDS type="Window" left="5328" top="488" width="12384" height="7912">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="12" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="5000" top="3672" width="1184" height="368">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5000" top="3672" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.87027,0.80191,0.02426,1.00000|">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="SetAlpha (Color)" nodename="SetAlpha (Color)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="5056" top="4968" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="|0.87027,0.80191,0.02426,1.00000|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="23" systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="3032" top="7910" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output Node" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Bin Size" visible="1" pintype="Input" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Index" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output Bins" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="22" componentmode="InAWindow" systemname="helper_textureArray" filename="subpatches\helper_textureArray.v4p" nodename="subpatches\helper_textureArray.v4p" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <BOUNDS type="Node" left="5052" top="5600" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2864" top="1320" width="10028" height="16584">
+   </BOUNDS>
+   <PIN pinname="Input" slicecount="12" visible="1" values="|0.87578,0.87578,0.87578,1.00000|,|0.87578,0.87578,0.87578,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87578,0.87578,0.87578,1.00000|,|0.87578,0.87578,0.87578,1.00000|">
+   </PIN>
+   <BOUNDS type="Window" left="4888" top="3176" width="10024" height="8752">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Patch" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Texture In 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture In 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="24" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="2792" top="8672" width="696" height="208">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2792" top="8672" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Output Node|">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="432" top="5336" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   </NODE>
+   <NODE systemname="Cons (EX9.Texture)" nodename="Cons (EX9.Texture)" componentmode="Hidden" id="29">
+   <BOUNDS type="Node" left="2680" top="6968" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Texture In 3" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Texture In 1" visible="1">
+   </PIN>
+   <PIN pinname="Texture In 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Texture Out" dstnodeid="29" dstpinname="Texture In 3">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Texture Out" dstnodeid="23" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Texture Out" dstnodeid="29" dstpinname="Texture In 1">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Output Node" dstnodeid="24" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="33" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5352" top="4112" width="696" height="208">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5352" top="4112" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="8">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (Color)" nodename="GetSlice (Color)" componentmode="Hidden" id="32">
+   <BOUNDS type="Node" left="5032" top="4584" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Bin Size">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Color Output" dstnodeid="32" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Output" dstnodeid="19" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Output" dstnodeid="22" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="35" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="2728" top="6032" width="696" height="208">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2728" top="6032" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture In 2|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="35" srcpinname="Output Node" dstnodeid="29" dstpinname="Texture In 2">
+   </LINK>
+   </PATCH>

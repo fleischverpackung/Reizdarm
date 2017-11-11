@@ -1,0 +1,113 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_searchAndColorTexture.v4p" systemname="helper_searchAndColorTexture" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_searchAndColorTexture.v4p" scrollx="1024" scrolly="352">
+   <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2372" top="1500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Inverse Output" visible="1">
+   </PIN>
+   <PIN pinname="Case Sensitive" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1956" top="1988" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" visible="1" slicecount="25" values="1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1">
+   </PIN>
+   <PIN pinname="Former Slice" visible="1">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="2380" top="2364" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="SetSlice (Color)" nodename="SetSlice (Color)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1500" top="3748" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Spread" visible="1">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="4" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="1724" top="2876" width="560" height="344">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1724" top="2876" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   </NODE>
+   <NODE id="5" systemname="IOBox (Color)" componentmode="InABox" nodename="IOBox (Color)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Spread">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Color Output" dstnodeid="3" dstpinname="Spread">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Color Output" dstnodeid="3" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="3" dstpinname="Index">
+   </LINK>
+   <NODE id="6" systemname="IOBox (Color)" componentmode="InABox" nodename="IOBox (Color)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="4348" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="4348" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="6" dstpinname="Color Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="1" dstpinname="Select">
+   </LINK>
+   <NODE id="7" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 1|">
+   </PIN>
+   <BOUNDS type="Box" left="2400" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2400" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="0" dstpinname="Input 1">
+   </LINK>
+   <NODE id="8" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 2|">
+   </PIN>
+   <BOUNDS type="Box" left="3300" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3300" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Output String" dstnodeid="0" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Former Slice" dstnodeid="2" dstpinname="Input">
+   </LINK>
+   <BOUNDS type="Window" left="8656" top="3592" width="3976" height="5344">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   </PATCH>

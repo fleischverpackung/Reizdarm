@@ -1,0 +1,501 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_textureArray.v4p" systemname="helper_textureArray" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_textureArray.v4p" scrollx="1664" scrolly="-360">
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1612" top="4460" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="24" values="|0.43559,0.43559,0.43559,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1764" top="4900" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="24" values="|0.43002,0.43002,0.43002,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="2116" top="5284" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="24" values="|0.08526,0.08526,0.08526,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="2300" top="5692" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="24" values="|0.20945,0.20945,0.20945,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Cons (EX9.Texture)" nodename="Cons (EX9.Texture)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="1492" top="14724" width="6704" height="256">
+   </BOUNDS>
+   <PIN pinname="Texture In Count" slicecount="1" values="12">
+   </PIN>
+   <PIN pinname="Texture In 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture In 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture In 3" visible="1">
+   </PIN>
+   <PIN pinname="Texture In 4" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Texture In 5" visible="1">
+   </PIN>
+   <PIN pinname="Texture In 6" visible="1">
+   </PIN>
+   <PIN pinname="Texture In 7" visible="1">
+   </PIN>
+   <PIN pinname="Texture In 8" visible="1">
+   </PIN>
+   <PIN pinname="Texture In 9" visible="1">
+   </PIN>
+   <PIN pinname="Texture In 10" visible="1">
+   </PIN>
+   <PIN pinname="Texture In 11" visible="1">
+   </PIN>
+   <PIN pinname="Texture In 12" visible="1">
+   </PIN>
+   <PIN pinname="Texture In 13" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture In 14" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture In 15" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture In 16" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture In 17" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture In 18" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture In 19" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture In 20" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture In 21" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture In 22" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture In 23" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture In 24" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="2636" top="6076" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="24" values="|0.20945,0.20945,0.20945,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="2972" top="6460" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="24" values="|0.20945,0.20945,0.20945,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="3308" top="6844" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="24" values="|0.20945,0.20945,0.20945,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="3636" top="7188" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="24" values="|0.43559,0.43559,0.43559,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="3788" top="7628" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="24" values="|0.43002,0.43002,0.43002,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="4140" top="8012" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="24" values="|0.08526,0.08526,0.08526,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="4324" top="8420" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="24" values="|0.20945,0.20945,0.20945,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="4660" top="8804" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="24" values="|0.20945,0.20945,0.20945,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.12375,0.45319,0.07824,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|,|0.98888,0.98888,0.98888,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="4996" top="9188" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|0.72012,0.72012,0.72012,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="5332" top="9572" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,0.26000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="5580" top="9996" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,0.68431,0.02790,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="5932" top="10380" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,0.68431,0.02790,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="6116" top="10788" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,0.68431,0.02790,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="6452" top="11172" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,0.68431,0.02790,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="6788" top="11556" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,0.68431,0.02790,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="7036" top="11996" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,0.68431,0.02790,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="22">
+   <BOUNDS type="Node" left="7436" top="12452" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,0.68431,0.02790,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="23">
+   <BOUNDS type="Node" left="7772" top="12836" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,0.68431,0.02790,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="24">
+   <BOUNDS type="Node" left="8108" top="13220" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|0.70713,0.70713,0.70713,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="8356" top="13660" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|0.70713,0.70713,0.70713,1.00000|">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 3">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 4">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 5">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 6">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 7">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 8">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 9">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 10">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 11">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 12">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 13">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 14">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 15">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 16">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 17">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 18">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 19">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 20">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 21">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 22">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 23">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 24">
+   </LINK>
+   <NODE id="26" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="15584" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="15584" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Texture Out" dstnodeid="26" dstpinname="Input Node">
+   </LINK>
+   <BOUNDS type="Window" left="5080" top="992" width="10024" height="8752">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   <NODE systemname="Unzip (Color)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (Color)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="2792" top="3520" width="8032" height="256">
+   </BOUNDS>
+   <PIN pinname="Output Count" slicecount="1" values="12">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   <PIN pinname="Output 3" visible="1">
+   </PIN>
+   <PIN pinname="Output 4" visible="1">
+   </PIN>
+   <PIN pinname="Output 5" visible="1">
+   </PIN>
+   <PIN pinname="Output 6" visible="1">
+   </PIN>
+   <PIN pinname="Output 7" visible="1">
+   </PIN>
+   <PIN pinname="Output 8" visible="1">
+   </PIN>
+   <PIN pinname="Output 9" visible="1">
+   </PIN>
+   <PIN pinname="Output 10" visible="1">
+   </PIN>
+   <PIN pinname="Output 11" visible="1">
+   </PIN>
+   <PIN pinname="Output 12" visible="1">
+   </PIN>
+   <PIN pinname="Output 13" visible="1">
+   </PIN>
+   <PIN pinname="Output 14" visible="1">
+   </PIN>
+   <PIN pinname="Output 15" visible="1">
+   </PIN>
+   <PIN pinname="Output 16" visible="1">
+   </PIN>
+   <PIN pinname="Output 17" visible="1">
+   </PIN>
+   <PIN pinname="Output 18" visible="1">
+   </PIN>
+   <PIN pinname="Output 19" visible="1">
+   </PIN>
+   <PIN pinname="Output 20" visible="1">
+   </PIN>
+   <PIN pinname="Output 21" visible="1">
+   </PIN>
+   <PIN pinname="Output 22" visible="1">
+   </PIN>
+   <PIN pinname="Output 23" visible="1">
+   </PIN>
+   <PIN pinname="Output 24" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Output 3" dstnodeid="3" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 4" dstnodeid="4" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 5" dstnodeid="6" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 6" dstnodeid="7" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 7" dstnodeid="8" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 8" dstnodeid="9" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 9" dstnodeid="10" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 10" dstnodeid="11" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 11" dstnodeid="12" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 12" dstnodeid="13" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 13" dstnodeid="14" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 14" dstnodeid="15" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 15" dstnodeid="16" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 16" dstnodeid="17" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 17" dstnodeid="18" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 18" dstnodeid="19" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 19" dstnodeid="20" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 20" dstnodeid="21" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 21" dstnodeid="22" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 22" dstnodeid="23" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 23" dstnodeid="24" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 24" dstnodeid="25" dstpinname="Color">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="29" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="2704" top="2488" width="1960" height="416">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2704" top="2488" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="12" visible="1" values="|0.72012,0.72012,0.72012,1.00000|,|1.00000,1.00000,1.00000,0.26000|,|1.00000,0.68431,0.02790,1.00000|,|1.00000,0.68431,0.02790,1.00000|,|1.00000,0.68431,0.02790,1.00000|,|1.00000,0.68431,0.02790,1.00000|,|1.00000,0.68431,0.02790,1.00000|,|1.00000,0.68431,0.02790,1.00000|,|1.00000,0.68431,0.02790,1.00000|,|1.00000,0.68431,0.02790,1.00000|,|0.70713,0.70713,0.70713,1.00000|,|0.70713,0.70713,0.70713,1.00000|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Color Output" dstnodeid="28" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 2" dstnodeid="2" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output 1" dstnodeid="0" dstpinname="Color">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="33" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="656" top="13656" width="696" height="208">
+   </BOUNDS>
+   <BOUNDS type="Node" left="656" top="13656" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture In 1|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Output Node" dstnodeid="5" dstpinname="Texture In 1">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="34" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="2032" top="13704" width="696" height="208">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2032" top="13704" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture In 2|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Output Node" dstnodeid="5" dstpinname="Texture In 2">
+   </LINK>
+   </PATCH>
