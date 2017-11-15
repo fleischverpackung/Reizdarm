@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="0" scrolly="416">
-   <BOUNDS height="8752" left="3208" top="160" type="Window" width="10024">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="0" scrolly="3128">
+   <BOUNDS height="8752" left="4616" top="248" type="Window" width="10024">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="%VVVV%\lib\nodes\plugins\ColladaLoader.dll" id="23" nodename="ColladaFile (EX9.Geometry)" systemname="ColladaFile (EX9.Geometry)">
    <BOUNDS height="0" left="1802" top="1727" type="Node" width="0">
@@ -125,13 +125,13 @@
    <NODE systemname="video_particles" filename="subpatches\video_particles.v4p" nodename="subpatches\video_particles.v4p" componentmode="InAWindow" id="141">
    <BOUNDS type="Node" left="4544" top="6008" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="3208" top="160" width="10024" height="8752">
+   <BOUNDS type="Window" left="4616" top="248" width="10024" height="8752">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Emit Count" slicecount="1" values="12.66">
+   <PIN pinname="Emit Count" slicecount="1" values="1" visible="1">
    </PIN>
-   <PIN pinname="Particles Count" slicecount="1" values="210">
+   <PIN pinname="Particles Count" slicecount="1" values="10000">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="150" systemname="IOBox (Color)">
@@ -165,7 +165,7 @@
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="3208" top="160" width="10024" height="8752">
+   <BOUNDS type="Window" left="4616" top="248" width="10024" height="8752">
    </BOUNDS>
    <PIN pinname="colors" visible="1">
    </PIN>
@@ -233,13 +233,17 @@
    </PIN>
    </NODE>
    <NODE systemname="control_lights" filename="subpatches\control_lights.v4p" nodename="subpatches\control_lights.v4p" componentmode="InAWindow" id="211">
-   <BOUNDS type="Node" left="6080" top="6054" width="0" height="0">
+   <BOUNDS type="Node" left="5408" top="4982" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="2910" top="3380" width="6340" height="5348">
+   <BOUNDS type="Box" left="2238" top="2308" width="6340" height="5348">
    </BOUNDS>
-   <BOUNDS type="Window" left="3208" top="160" width="10024" height="8752">
+   <BOUNDS type="Window" left="4616" top="248" width="10024" height="8752">
    </BOUNDS>
    <PIN pinname="Alpha" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="isMoving" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="211" srcpinname="Output" dstnodeid="185" dstpinname="zottenColor">
@@ -364,14 +368,12 @@
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="141" srcpinname="Texture Out" dstnodeid="185" dstpinname="Texture In 2">
-   </LINK>
-   <NODE systemname="helper_compositing" filename="subpatches\helper_compositing.v4p" nodename="subpatches\helper_compositing.v4p" componentmode="Hidden" id="234">
+   <NODE systemname="helper_compositing" filename="subpatches\helper_compositing.v4p" nodename="subpatches\helper_compositing.v4p" componentmode="InAWindow" id="234">
    <BOUNDS type="Node" left="1993" top="7415" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="4684" width="10564" height="5462">
    </BOUNDS>
-   <BOUNDS type="Window" left="1816" top="6976" width="10560" height="5456">
+   <BOUNDS type="Window" left="4616" top="248" width="10024" height="8752">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -489,7 +491,7 @@
    <NODE componentmode="InAWindow" hiddenwhenlocked="0" id="245" nodename="Renderer (EX9)" systemname="Renderer (EX9)" stayontop="1">
    <BOUNDS height="0" left="6092" top="11796" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="3600" left="232" top="440" type="Window" width="4264">
+   <BOUNDS height="6472" left="-2504" top="1848" type="Window" width="6768">
    </BOUNDS>
    <BOUNDS height="1800" left="6092" top="11796" type="Box" width="2400">
    </BOUNDS>
@@ -571,5 +573,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="249" srcpinname="Y Output Value" dstnodeid="248" dstpinname="FilterTime">
+   </LINK>
+   <LINK srcnodeid="141" srcpinname="Texture Out" dstnodeid="185" dstpinname="Texture In 2">
+   </LINK>
+   <LINK srcnodeid="211" srcpinname="isMoving" dstnodeid="141" dstpinname="Emit Count">
    </LINK>
    </PATCH>

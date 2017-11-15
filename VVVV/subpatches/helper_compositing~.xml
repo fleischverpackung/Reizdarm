@@ -21,7 +21,7 @@
    </PIN>
    <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Alpha" slicecount="1" values="1.53">
+   <PIN pinname="Alpha" slicecount="1" values="0.5">
    </PIN>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
@@ -78,7 +78,7 @@
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="-832" top="6312" width="10560" height="5456">
+   <BOUNDS type="Window" left="3096" top="4152" width="10560" height="5456">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
    </PACK>
