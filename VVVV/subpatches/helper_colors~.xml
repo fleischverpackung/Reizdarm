@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_colors.v4p" systemname="helper_colors" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_colors.v4p" scrollx="2448" scrolly="0">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_colors.v4p" systemname="helper_colors" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_colors.v4p" scrollx="0" scrolly="0">
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="0" systemname="IOBox (Color)">
-   <BOUNDS type="Box" left="5820" top="1500" width="1184" height="368">
+   <BOUNDS type="Box" left="5740" top="2180" width="1184" height="368">
    </BOUNDS>
-   <BOUNDS type="Node" left="5820" top="1500" width="0" height="0">
+   <BOUNDS type="Node" left="5740" top="2180" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.53712,0.67749,0.01895,1.00000|">
    </PIN>
@@ -13,15 +13,7 @@
    </PIN>
    <PIN pinname="Color Output" visible="1">
    </PIN>
-   </NODE>
-   <NODE systemname="SetAlpha (Color)" nodename="SetAlpha (Color)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="5876" top="2796" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="8" values="|0.53712,0.67749,0.01895,1.00000|,|0.53712,0.67749,0.01895,1.00000|,|0.53712,0.67749,0.01895,1.00000|,|0.53712,0.67749,0.01895,1.00000|,|0.53712,0.67749,0.01895,1.00000|,|0.53712,0.67749,0.01895,1.00000|,|0.53712,0.67749,0.01895,1.00000|,|0.53712,0.67749,0.01895,1.00000|">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Alpha" slicecount="1" values="0.88">
+   <PIN pinname="Descriptive Name" slicecount="1" values="zottenColor">
    </PIN>
    </NODE>
    <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="2">
@@ -101,9 +93,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="10" systemname="IOBox (Color)">
-   <BOUNDS type="Box" left="7420" top="1540" width="1184" height="368">
+   <BOUNDS type="Box" left="7340" top="2220" width="1184" height="368">
    </BOUNDS>
-   <BOUNDS type="Node" left="7420" top="1540" width="0" height="0">
+   <BOUNDS type="Node" left="7340" top="2220" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.98703,0.93928,0.02735,1.00000|">
    </PIN>
@@ -113,18 +105,10 @@
    </PIN>
    <PIN pinname="Color Output" visible="1">
    </PIN>
-   </NODE>
-   <NODE systemname="SetAlpha (Color)" nodename="SetAlpha (Color)" componentmode="Hidden" id="11">
-   <BOUNDS type="Node" left="7476" top="2836" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="14" values="|0.98703,0.93928,0.02735,1.00000|,|0.98703,0.93928,0.02735,1.00000|,|0.98703,0.93928,0.02735,1.00000|,|0.98703,0.93928,0.02735,1.00000|,|0.98703,0.93928,0.02735,1.00000|,|0.98703,0.93928,0.02735,1.00000|,|0.98703,0.93928,0.02735,1.00000|,|0.98703,0.93928,0.02735,1.00000|,|0.98703,0.93928,0.02735,1.00000|,|0.98703,0.93928,0.02735,1.00000|,|0.98703,0.93928,0.02735,1.00000|,|0.98703,0.93928,0.02735,1.00000|,|0.98703,0.93928,0.02735,1.00000|,|0.98703,0.93928,0.02735,1.00000|">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Alpha" slicecount="1" values="0.88">
+   <PIN pinname="Descriptive Name" slicecount="1" values="lightcolor">
    </PIN>
    </NODE>
-   <NODE id="14" componentmode="InAWindow" systemname="helper_textureArray" filename="helper_textureArray.v4p" nodename="subpatches\helper_textureArray.v4p" hiddenwhenlocked="0" managers="">
+   <NODE id="14" componentmode="Hidden" systemname="helper_textureArray" filename="helper_textureArray.v4p" nodename="subpatches\helper_textureArray.v4p" hiddenwhenlocked="0" managers="">
    <PIN pinname="Texture Out" visible="1" pintype="Output">
    </PIN>
    <BOUNDS type="Node" left="5784" top="3332" width="0" height="0">
@@ -133,7 +117,7 @@
    </BOUNDS>
    <PIN pinname="Input" slicecount="12" visible="1" values="|0.87578,0.87578,0.87578,1.00000|,|0.87578,0.87578,0.87578,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87027,0.80191,0.02426,1.00000|,|0.87578,0.87578,0.87578,1.00000|,|0.87578,0.87578,0.87578,1.00000|">
    </PIN>
-   <BOUNDS type="Window" left="6152" top="736" width="10024" height="8752">
+   <BOUNDS type="Window" left="5208" top="112" width="10024" height="8752">
    </BOUNDS>
    <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
    </PIN>
@@ -149,9 +133,9 @@
    </PIN>
    <PIN pinname="Texture In 1" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="lights" visible="1" pintype="Input">
+   <PIN pinname="lights" visible="1" pintype="Input" slicecount="14" values="|0.44206,0.15914,0.00000,0.15000|,|0.44206,0.15914,0.00000,0.15000|,|0.79996,0.28798,0.00000,0.15000|,|0.79996,0.28798,0.00000,0.15000|,|0.83778,0.30160,0.00000,0.15000|,|0.83778,0.30160,0.00000,0.15000|,|0.46219,0.16639,0.00000,0.15000|,|0.46219,0.16639,0.00000,0.15000|,|0.07762,0.02794,0.00000,0.15000|,|0.07762,0.02794,0.00000,0.15000|,|0.00000,0.00000,0.00000,0.15000|,|0.00000,0.00000,0.00000,0.15000|,|0.00000,0.00000,0.00000,0.15000|,|0.00000,0.00000,0.00000,0.15000|">
    </PIN>
-   <PIN pinname="zotten" pintype="Input" visible="1">
+   <PIN pinname="zotten" pintype="Input" visible="1" slicecount="8" values="|0.00000,0.00000,0.00000,1.00000|,|0.00000,0.00000,0.00000,1.00000|,|0.00000,0.88000,1.00000,1.00000|,|0.00000,0.88000,1.00000,1.00000|,|0.00000,0.88000,1.00000,1.00000|,|0.00000,0.88000,1.00000,1.00000|,|0.00000,0.00000,0.00000,1.00000|,|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
    </NODE>
    <LINK srcnodeid="8" srcpinname="Output" dstnodeid="2" dstpinname="Color">
@@ -180,13 +164,9 @@
    </NODE>
    <LINK srcnodeid="3" srcpinname="Texture Out" dstnodeid="16" dstpinname="Input Node">
    </LINK>
-   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="14" dstpinname="zotten">
-   </LINK>
-   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="14" dstpinname="lights">
-   </LINK>
    <PACK Name="addonpack" Version="34.1.0">
    </PACK>
-   <BOUNDS type="Window" left="6152" top="736" width="10024" height="8752">
+   <BOUNDS type="Window" left="5856" top="88" width="10024" height="8752">
    </BOUNDS>
    <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="19">
    <BOUNDS type="Node" left="1900" top="2772" width="100" height="100">
@@ -224,8 +204,8 @@
    </LINK>
    <LINK srcnodeid="19" srcpinname="Texture Out" dstnodeid="9" dstpinname="Texture In 2">
    </LINK>
-   <LINK srcnodeid="10" srcpinname="Color Output" dstnodeid="11" dstpinname="Input">
+   <LINK srcnodeid="0" srcpinname="Color Output" dstnodeid="14" dstpinname="zotten">
    </LINK>
-   <LINK srcnodeid="0" srcpinname="Color Output" dstnodeid="1" dstpinname="Input">
+   <LINK srcnodeid="10" srcpinname="Color Output" dstnodeid="14" dstpinname="lights">
    </LINK>
    </PATCH>

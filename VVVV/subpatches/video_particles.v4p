@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\video_particles.v4p" scrollx="1192" scrolly="5280" systemname="video_particles" filename="C:\GIT\Reizdarm\VVVV\subpatches\video_particles.v4p">
-   <BOUNDS height="8752" left="5936" top="1000" type="Window" width="10024">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\video_particles.v4p" scrollx="0" scrolly="1936" systemname="video_particles" filename="C:\GIT\Reizdarm\VVVV\subpatches\video_particles.v4p">
+   <BOUNDS height="8752" left="3208" top="160" type="Window" width="10024">
    </BOUNDS>
    <NODE componentmode="InABox" id="55" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="255" left="255" top="525" type="Node" width="570">
@@ -47,7 +47,7 @@
    </PIN>
    <PIN pinname="Velocity FieldXY" visible="1">
    </PIN>
-   <PIN pinname="Age" slicecount="1" visible="1" values="1">
+   <PIN pinname="Age" slicecount="1" visible="1" values="2.67">
    </PIN>
    <PIN pinname="Age Deviation" slicecount="1" values="0.002">
    </PIN>
@@ -109,7 +109,9 @@
    </PIN>
    <PIN pinname="Pause" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Period" slicecount="1" values="0.24">
+   <PIN pinname="Period" slicecount="1" values="0.24" visible="1">
+   </PIN>
+   <PIN pinname="Change" visible="1">
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="45" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
@@ -150,12 +152,6 @@
    </NODE>
    <LINK dstnodeid="44" dstpinname="Input" srcnodeid="46" srcpinname="Cycles">
    </LINK>
-   <LINK dstnodeid="51" dstpinname="Emit" linkstyle="VHV" srcnodeid="44" srcpinname="OnChange">
-   <LINKPOINT x="6495" y="5340">
-   </LINKPOINT>
-   <LINKPOINT x="4545" y="5340">
-   </LINKPOINT>
-   </LINK>
    <NODE componentmode="InABox" id="43" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="4215" top="975" type="Node" width="0">
    </BOUNDS>
@@ -179,7 +175,7 @@
    </PIN>
    <PIN pinname="Spread Count" visible="1">
    </PIN>
-   <PIN pinname="Mode" slicecount="1" values="Repeat">
+   <PIN pinname="Mode" slicecount="1" values="Cosine">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="41" nodename="LinearSpread (Spreads)" systemname="LinearSpread (Spreads)">
@@ -187,13 +183,13 @@
    </BOUNDS>
    <PIN pinname="Spread Count" visible="1">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="-0.03">
+   <PIN pinname="Width" slicecount="1" values="-0.01">
    </PIN>
    <PIN pinname="Alignment" slicecount="1" values="Block">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input" slicecount="1" values="0.02">
+   <PIN pinname="Input" slicecount="1" values="0.01">
    </PIN>
    <PIN pinname="Phase" slicecount="1" values="0">
    </PIN>
@@ -225,7 +221,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="40">
+   <PIN pinname="Y Input Value" slicecount="1" values="12.66">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Emit Count|">
    </PIN>
@@ -319,15 +315,13 @@
    <LINK dstnodeid="51" dstpinname="Reset" srcnodeid="34" srcpinname="Y Output Value">
    </LINK>
    <NODE componentmode="Hidden" id="33" nodename="Vector (2d Join)" systemname="Vector (2d Join)">
-   <BOUNDS height="0" left="3135" top="5220" type="Node" width="0">
+   <BOUNDS height="0" left="3311" top="4804" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="XY" visible="1">
    </PIN>
    <PIN pinname="Y" slicecount="1" values="0.04">
    </PIN>
    </NODE>
-   <LINK dstnodeid="51" dstpinname="Velocity DeviationXY" srcnodeid="33" srcpinname="XY">
-   </LINK>
    <NODE componentmode="InABox" debug="0" id="32" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="5655" top="3015" type="Node" width="0">
    </BOUNDS>
@@ -443,7 +437,7 @@
    </BOUNDS>
    <BOUNDS height="160" left="6060" top="5685" type="Window" width="215">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="93">
+   <PIN pinname="Y Input Value" slicecount="1" values="210">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -574,7 +568,7 @@
    </LINK>
    <LINK dstnodeid="51" dstpinname="Count" srcnodeid="10" srcpinname="Y Output Value">
    </LINK>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <LINK srcnodeid="3" srcpinname="Cycles" dstnodeid="31" dstpinname="Input">
    </LINK>
@@ -635,7 +629,7 @@
    </PIN>
    <PIN pinname="Windowed Backbuffer Format" slicecount="1" values="X8R8G8B8">
    </PIN>
-   <PIN pinname="Background Color" slicecount="1" values="|0.10751,0.10751,0.10751,1.00000|" visible="1">
+   <PIN pinname="Background Color" slicecount="1" visible="1" values="|0.10751,0.10751,0.10751,1.00000|">
    </PIN>
    <PIN pinname="Clear Depth Buffer" slicecount="1" values="1">
    </PIN>
@@ -719,9 +713,9 @@
    <LINK srcnodeid="58" srcpinname="Texture Out" dstnodeid="59" dstpinname="Input Node">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="60" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4440" top="9216" width="696" height="208">
+   <BOUNDS type="Box" left="4624" top="9208" width="696" height="208">
    </BOUNDS>
-   <BOUNDS type="Node" left="4440" top="9216" width="0" height="0">
+   <BOUNDS type="Node" left="4624" top="9208" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1024">
    </PIN>
@@ -732,6 +726,8 @@
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Backbuffer Height - Backbuffer Width|">
    </PIN>
    </NODE>
    <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Backbuffer Width">
@@ -748,4 +744,24 @@
    </NODE>
    <LINK srcnodeid="61" srcpinname="Output" dstnodeid="50" dstpinname="Background Color">
    </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="62">
+   <BOUNDS type="Box" left="5048" top="3608" width="696" height="208">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5048" top="3608" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.33">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="s">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Period">
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="XY" dstnodeid="51" dstpinname="Velocity DeviationXY">
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Change" dstnodeid="51" dstpinname="Emit">
+   </LINK>
+   <PACK Name="dx11" Version="1.0.2">
+   </PACK>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_textureArray.v4p" systemname="helper_textureArray" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_textureArray.v4p" scrollx="496" scrolly="2528">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_textureArray.v4p" systemname="helper_textureArray" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_textureArray.v4p" scrollx="2920" scrolly="7600">
    <NODE systemname="Cons (EX9.Texture)" nodename="Cons (EX9.Texture)" componentmode="Hidden" id="5">
    <BOUNDS type="Node" left="1540" top="7740" width="2144" height="256">
    </BOUNDS>
@@ -107,6 +107,10 @@
    </PIN>
    <PIN pinname="Depth" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="11">
    <BOUNDS type="Node" left="5980" top="7900" width="100" height="100">
@@ -116,6 +120,10 @@
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="12">
@@ -127,6 +135,10 @@
    </PIN>
    <PIN pinname="Depth" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="13">
    <BOUNDS type="Node" left="6500" top="8692" width="100" height="100">
@@ -136,6 +148,10 @@
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="14">
@@ -147,6 +163,10 @@
    </PIN>
    <PIN pinname="Depth" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="15">
    <BOUNDS type="Node" left="7172" top="9460" width="100" height="100">
@@ -156,6 +176,10 @@
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="16">
@@ -167,6 +191,10 @@
    </PIN>
    <PIN pinname="Depth" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="17">
    <BOUNDS type="Node" left="7772" top="10268" width="100" height="100">
@@ -176,6 +204,10 @@
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="18">
@@ -187,6 +219,10 @@
    </PIN>
    <PIN pinname="Depth" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="19">
    <BOUNDS type="Node" left="8292" top="11060" width="100" height="100">
@@ -196,6 +232,10 @@
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="20">
@@ -207,6 +247,10 @@
    </PIN>
    <PIN pinname="Depth" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="21">
    <BOUNDS type="Node" left="8876" top="11884" width="100" height="100">
@@ -216,6 +260,10 @@
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="22">
@@ -227,6 +275,10 @@
    </PIN>
    <PIN pinname="Depth" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="DynamicTexture (EX9.Texture Color)" nodename="DynamicTexture (EX9.Texture Color)" componentmode="Hidden" id="23">
    <BOUNDS type="Node" left="9564" top="12724" width="100" height="100">
@@ -236,6 +288,10 @@
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Depth" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture In 6">
@@ -641,5 +697,77 @@
    <LINK srcnodeid="186" srcpinname="Y Output Value" dstnodeid="191" dstpinname="Width" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="186" srcpinname="Y Output Value" dstnodeid="191" dstpinname="Height" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="192" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5696" top="6648" width="696" height="208">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5696" top="6648" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Height">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Height">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="12" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="12" dstpinname="Height">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Height">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Height">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Height">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Height">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Height">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Height">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Height">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Height">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Height">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="22" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="22" dstpinname="Height">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Height">
    </LINK>
    </PATCH>
