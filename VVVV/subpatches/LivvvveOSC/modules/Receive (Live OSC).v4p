@@ -1,0 +1,131 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
+   <PATCH nodename="C:\dev\vvvv\schmiede\LivvvveOSC\modules\Receive (Live OSC).v4p" filename="C:\dev\vvvv\schmiede\LivvvveOSC\modules\Receive (Live OSC).v4p" systemname="Receive (Live OSC)">
+   <BOUNDS height="11355" left="13335" top="3945" type="Window" width="9000">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="0" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="100" left="3516" top="420" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="8895" left="3516" top="420" type="Box" width="2235">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="34" visible="1" values="/live/play,/live/track/info,/live/clip/info,/live/clip/position,/live/name/return,/live/name/track,/live/name/clip,/live/arm,/live/mute,/live/solo,/live/volume,/live/pan,/live/send,/live/master/volume,/live/master/pan,/live/master/crossfader,/live/return/mute,/live/return/solo,|/live/return/volume |,/live/return/pan,/live/return/send,/live/overdub,/live/tempo,/live/scene,/live/track,/live/master/meter,/live/return/meter,/live/track/meter,/live/device/param,/live/return/device/param,/live/master/device/param,/live/device/selected,/live/return/device/selected,/live/master/device/selected">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="34">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="3" nodename="Substitute (String)" systemname="Substitute (String)">
+   <BOUNDS height="100" left="2868" top="9876" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN encoded="0" pinname="From" slicecount="1" values="/">
+   </PIN>
+   <PIN encoded="0" pinname="To" slicecount="1" values="\/">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="3" dstpinname="Input" srcnodeid="0" srcpinname="Output String">
+   </LINK>
+   <NODE componentmode="Hidden" id="4" nodename="Add (String Spectral)" systemname="Add (String Spectral)">
+   <BOUNDS height="100" left="2880" top="10488" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN encoded="0" pinname="Intersperse String" slicecount="1" values="| || |">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="4" dstpinname="Input" srcnodeid="3" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="Hidden" id="9" nodename="UDP (Network Server)" systemname="UDP (Network Server)">
+   <BOUNDS height="100" left="1572" top="7296" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Enable">
+   </PIN>
+   <PIN pinname="Queue Mode" slicecount="1" values="Concatenate">
+   </PIN>
+   <PIN pinname="Local Port">
+   </PIN>
+   <PIN pinname="Queue Count" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="8" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="1560" top="5592" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="480" left="1560" top="5592" type="Box" width="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Enable">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="9" dstpinname="Enable" srcnodeid="8" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="Hidden" id="7" nodename="S+H (String)" systemname="S+H (String)">
+   <BOUNDS height="100" left="1572" top="8232" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="6" nodename="GT (Value)" systemname="GT (Value)">
+   <BOUNDS height="100" left="1980" top="7800" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="6" dstpinname="Input 1" srcnodeid="9" srcpinname="Queue Count">
+   </LINK>
+   <LINK dstnodeid="7" dstpinname="Set" srcnodeid="6" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="7" dstpinname="Input" srcnodeid="9" srcpinname="Output">
+   </LINK>
+   <NODE systemname="RegExpr (String)" nodename="RegExpr (String)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="1884" top="11592" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="10" dstpinname="Input">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="11">
+   <BOUNDS type="Node" left="1884" top="13212" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1884" top="13212" width="792" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|LiveOSC Data|" encoded="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="2196" top="6564" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2196" top="6564" width="792" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="9001">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Local Port">
+   </LINK>
+   </PATCH>
