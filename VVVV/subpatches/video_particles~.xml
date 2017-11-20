@@ -223,7 +223,7 @@
    <NODE componentmode="Hidden" id="37" nodename="RandomSpread (Spreads Legacy)" systemname="RandomSpread (Spreads Legacy)">
    <BOUNDS height="0" left="945" top="5025" type="Node" width="0">
    </BOUNDS>
-   <PIN pinname="Spread Count" visible="1">
+   <PIN pinname="Spread Count" visible="1" slicecount="1" values="2">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -253,18 +253,6 @@
    </LINKPOINT>
    <LINKPOINT x="4725" y="6675">
    </LINKPOINT>
-   </LINK>
-   <NODE componentmode="Hidden" id="35" nodename="Multiply (Value)" systemname="Multiply (Value)">
-   <BOUNDS height="0" left="2085" top="4020" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="Input 2" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="37" dstpinname="Spread Count" srcnodeid="35" srcpinname="Output">
    </LINK>
    <NODE componentmode="InABox" debug="0" id="32" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="5655" top="3015" type="Node" width="0">
@@ -749,7 +737,7 @@
    <LINK srcnodeid="65" srcpinname="Y Output Value" dstnodeid="31" dstpinname="Set">
    </LINK>
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="66">
-   <BOUNDS type="Node" left="1816" top="2952" width="100" height="100">
+   <BOUNDS type="Node" left="1800" top="3240" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -757,11 +745,13 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Destination Maximum" slicecount="1" values="3">
+   <PIN pinname="Destination Maximum" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Mapping" slicecount="1" values="Clamp">
    </PIN>
    </NODE>
-   <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="66" dstpinname="Input">
-   </LINK>
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="67">
    <BOUNDS type="Node" left="976" top="3448" width="100" height="100">
    </BOUNDS>
@@ -798,24 +788,12 @@
    </LINK>
    <LINK srcnodeid="72" srcpinname="Change" dstnodeid="64" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="ADSR (Animation)" nodename="ADSR (Animation)" componentmode="Hidden" id="73">
-   <BOUNDS type="Node" left="1928" top="3424" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="66" srcpinname="Output" dstnodeid="73" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="73" srcpinname="Output" dstnodeid="35" dstpinname="Input 1">
-   </LINK>
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="74">
-   <BOUNDS type="Node" left="3000" top="4568" width="100" height="100">
+   <BOUNDS type="Node" left="2880" top="4544" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Destination Minimum" visible="1" slicecount="1" values="0.07">
+   <PIN pinname="Destination Minimum" visible="1" slicecount="1" values="0.01">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -829,7 +807,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3464" top="4104" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.0209999999999999">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.06">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -838,10 +816,60 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="74" srcpinname="Output" dstnodeid="51" dstpinname="Age Time Step">
-   <LINKPOINT x="4032" y="5720">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="75" srcpinname="Y Output Value" dstnodeid="74" dstpinname="Destination Maximum">
+   </LINK>
+   <NODE systemname="Damper (Animation)" filename="" nodename="Damper (Animation)" componentmode="Hidden" id="76">
+   <BOUNDS type="Node" left="2872" top="5072" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="FilterTime" slicecount="1" values="0.2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="74" srcpinname="Output" dstnodeid="76" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="76" srcpinname="Position Out" dstnodeid="51" dstpinname="Age Time Step">
+   </LINK>
+   <NODE id="73" systemname="ADSR (Animation)" nodename="ADSR (Animation)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Output" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Attack Time" slicecount="1" pintype="Input" visible="1" values="0.2">
+   </PIN>
+   <BOUNDS type="Node" left="1824" top="2888" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Decay Time" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Sustain Level" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Release Time" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="73" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="77">
+   <BOUNDS type="Node" left="1800" top="3712" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="FilterTime" slicecount="1" values="0.3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="66" srcpinname="Output" dstnodeid="77" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="73" srcpinname="Output" dstnodeid="66" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="66" srcpinname="Output" dstnodeid="37" dstpinname="Spread Count">
    </LINK>
    </PATCH>
