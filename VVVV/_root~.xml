@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="3472" scrolly="672">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="864" scrolly="256">
    <BOUNDS height="8224" left="5888" top="0" type="Window" width="9152">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="%VVVV%\lib\nodes\plugins\ColladaLoader.dll" id="23" nodename="ColladaFile (EX9.Geometry)" systemname="ColladaFile (EX9.Geometry)">
@@ -562,24 +562,14 @@
    <BOUNDS type="Window" left="5888" top="0" width="9152" height="8224">
    </BOUNDS>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="306">
-   <BOUNDS type="Node" left="8128" top="1824" width="280" height="216">
-   </BOUNDS>
-   <BOUNDS type="Box" left="8128" top="1824" width="280" height="216">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="va">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    <NODE systemname="audio_test" filename="subpatches\audio_test.v4p" nodename="subpatches\audio_test.v4p" componentmode="InAWindow" id="307">
    <BOUNDS type="Node" left="6416" top="3096" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="5888" top="0" width="9152" height="8224">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="FFT (DX9 VAudio)" filename="%VVVV%\packs\VVVV.Audio\nodes\modules\FFT (DX9 VAudio).v4p" nodename="FFT (DX9 VAudio)" componentmode="Hidden" id="308">
+   <BOUNDS type="Node" left="4856" top="944" width="100" height="100">
    </BOUNDS>
    </NODE>
    </PATCH>
