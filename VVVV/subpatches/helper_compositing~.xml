@@ -1,7 +1,7 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" systemname="helper_compositing" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" scrollx="0" scrolly="376">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" systemname="helper_compositing" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" scrollx="0" scrolly="0">
    <NODE systemname="Fill (EX9.RenderState)" nodename="Fill (EX9.RenderState)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="1428" top="3476" width="100" height="100">
+   <BOUNDS type="Node" left="884" top="4836" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Fill Mode" slicecount="1" values="Solid">
    </PIN>
@@ -9,7 +9,7 @@
    </PIN>
    </NODE>
    <NODE id="4" componentmode="Hidden" filename="%VVVV%\lib\nodes\effects\Constant.fx" nodename="Constant (EX9.Effect)" systemname="Constant (EX9.Effect)" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" height="0" left="3056" top="3962" width="0">
+   <BOUNDS type="Node" height="0" left="2440" top="5538" width="0">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -26,22 +26,12 @@
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE id="16" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Input Node|">
-   </PIN>
-   <BOUNDS type="Box" left="3596" top="628" width="750" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3596" top="628" width="750" height="240">
-   </BOUNDS>
-   <PIN pinname="Output Node" visible="1">
-   </PIN>
-   </NODE>
    <NODE id="17" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Texture">
    </PIN>
-   <BOUNDS type="Box" left="4944" top="828" width="750" height="240">
+   <BOUNDS type="Box" left="5536" top="3380" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4944" top="828" width="750" height="240">
+   <BOUNDS type="Node" left="5536" top="3380" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1">
    </PIN>
@@ -51,39 +41,19 @@
    <NODE id="18" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
-   <BOUNDS type="Box" left="3056" top="4462" width="750" height="240">
+   <BOUNDS type="Box" left="3560" top="7270" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3056" top="4462" width="750" height="240">
-   </BOUNDS>
-   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <NODE id="19" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Input Node 1|">
-   </PIN>
-   <BOUNDS type="Box" left="6300" top="972" width="750" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="6300" top="972" width="750" height="240">
-   </BOUNDS>
-   <PIN pinname="Output Node" visible="1">
-   </PIN>
-   </NODE>
-   <NODE id="20" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Layer 1|">
-   </PIN>
-   <BOUNDS type="Box" left="5480" top="4462" width="750" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5480" top="4462" width="750" height="240">
+   <BOUNDS type="Node" left="3560" top="7270" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="3096" top="4152" width="10560" height="5456">
+   <BOUNDS type="Window" left="4200" top="272" width="9152" height="8224">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE id="26" systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="6924" top="3140" width="100" height="100">
+   <BOUNDS type="Node" left="6236" top="4780" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1" pintype="Output">
    </PIN>
@@ -101,7 +71,7 @@
    </PIN>
    </NODE>
    <NODE id="10" systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden">
-   <BOUNDS type="Node" left="5988" top="3212" width="100" height="100">
+   <BOUNDS type="Node" left="5372" top="4788" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -111,17 +81,17 @@
    </PIN>
    </NODE>
    <NODE id="11" systemname="I (Spreads)" nodename="I (Spreads)" componentmode="Hidden">
-   <BOUNDS type="Node" left="6724" top="2116" width="100" height="100">
+   <BOUNDS type="Node" left="6756" top="3988" width="100" height="100">
    </BOUNDS>
    <PIN pinname="[ From .." slicecount="1" values="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname=".. To [" slicecount="1" values="13">
+   <PIN pinname=".. To [" slicecount="1" values="5">
    </PIN>
    </NODE>
    <NODE id="9" systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden">
-   <BOUNDS type="Node" left="5100" top="3204" width="100" height="100">
+   <BOUNDS type="Node" left="4484" top="4780" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -132,36 +102,214 @@
    </NODE>
    <LINK srcnodeid="11" srcpinname="Output" dstnodeid="9" dstpinname="Index">
    </LINK>
-   <LINK srcnodeid="16" srcpinname="Output Node" dstnodeid="9" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="11" srcpinname="Output" dstnodeid="26" dstpinname="Index">
    </LINK>
    <LINK srcnodeid="11" srcpinname="Output" dstnodeid="10" dstpinname="Index">
    </LINK>
-   <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="10" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="17" srcpinname="Output Node" dstnodeid="26" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="18" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Render State Out" dstnodeid="4" dstpinname="Render State" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="4" dstpinname="Transform">
-   </LINK>
-   <LINK srcnodeid="16" srcpinname="Output Node" dstnodeid="4" dstpinname="Mesh">
-   </LINK>
    <NODE id="34" componentmode="Hidden" filename="%VVVV%\lib\nodes\effects\Constant.fx" nodename="Constant (EX9.Effect)" systemname="Constant (EX9.Effect)" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" height="0" left="5480" top="3962" width="0">
+   <BOUNDS type="Node" height="0" left="4864" top="5538" width="0">
    </BOUNDS>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Render State Out" dstnodeid="34" dstpinname="Render State" hiddenwhenlocked="1">
-   </LINK>
    <LINK srcnodeid="26" srcpinname="Output Node" dstnodeid="34" dstpinname="Texture">
-   </LINK>
-   <LINK srcnodeid="34" srcpinname="Layer" dstnodeid="20" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="10" srcpinname="Output Node" dstnodeid="34" dstpinname="Transform">
    </LINK>
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="34" dstpinname="Mesh">
    </LINK>
+   <PACK Name="dx11" Version="1.0.2">
+   </PACK>
+   <NODE componentmode="Hidden" filename="%VVVV%\lib\nodes\plugins\ColladaLoader.dll" id="42" nodename="ColladaFile (EX9.Geometry)" systemname="ColladaFile (EX9.Geometry)">
+   <BOUNDS height="0" left="2456" top="1848" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="2456" top="1848" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="6480" top="3570" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="COLLADA Model" visible="1">
+   </PIN>
+   <PIN pinname="Filename" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Coordinate system of source" slicecount="1" values="RightHanded">
+   </PIN>
+   <PIN pinname="Reload" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\lib\nodes\plugins\ColladaLoader.dll" id="41" nodename="Mesh (EX9.Geometry Collada)" systemname="Mesh (EX9.Geometry Collada)">
+   <BOUNDS height="256" left="2464" top="2297" type="Node" width="1728">
+   </BOUNDS>
+   <BOUNDS height="0" left="2464" top="2297" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="7050" top="4245" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="MaterialName" visible="1">
+   </PIN>
+   <PIN pinname="MeshName" visible="1">
+   </PIN>
+   <PIN pinname="Skinning Transforms" visible="1">
+   </PIN>
+   <PIN pinname="Transforms" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="TextureFileName" visible="1">
+   </PIN>
+   <PIN pinname="MeshPath" visible="1">
+   </PIN>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="41" dstpinname="COLLADA Model" srcnodeid="42" srcpinname="COLLADA Model">
+   </LINK>
+   <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="40">
+   <BOUNDS type="Node" left="4630" top="2113" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Former Slice" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" id="39">
+   <BOUNDS type="Node" left="2870" top="3233" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Index" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" id="38">
+   <BOUNDS type="Node" left="3774" top="3225" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Index" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="5622" top="1201" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="36">
+   <BOUNDS type="Node" left="5102" top="1609" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="35">
+   <BOUNDS type="Node" left="4558" top="753" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4558" top="753" width="552" height="688">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="4" values="0,1,0,0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" values="0,1,0,0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="36" srcpinname="Output" dstnodeid="40" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="36" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Output" dstnodeid="36" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Mesh" dstnodeid="39" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Transforms" dstnodeid="38" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Former Slice" dstnodeid="39" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Former Slice" dstnodeid="38" dstpinname="Index">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="43">
+   <BOUNDS type="Box" left="2464" top="1328" width="696" height="208">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2464" top="1328" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|COLLADA Files (*.dae)||*.dae|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="43" srcpinname="Output String" dstnodeid="42" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Output Node" dstnodeid="4" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Output Node" dstnodeid="9" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Output Node" dstnodeid="4" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Output Node" dstnodeid="10" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Render State Out" dstnodeid="34" dstpinname="Render State" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="45">
+   <BOUNDS type="Node" left="3576" top="6840" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="45" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="Layer" dstnodeid="18" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Layer" dstnodeid="45" dstpinname="Layer 2">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="46">
+   <BOUNDS type="Node" left="4608" top="6128" width="2472" height="216">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4608" top="6128" width="2472" height="216">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|draw videos and schotten over lights|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" systemname="control_lights" filename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" scrollx="8360" scrolly="2288">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" systemname="control_lights" filename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" scrollx="5864" scrolly="3872">
    <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="6">
    <BOUNDS type="Node" left="1204" top="8868" width="100" height="100">
    </BOUNDS>
@@ -102,7 +102,7 @@
    <PIN pinname="Color Input" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="6376" top="528" width="10016" height="8744">
+   <BOUNDS type="Window" left="4200" top="272" width="9152" height="8224">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -431,7 +431,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8040" top="5568" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="2,7">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="2,8">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -473,9 +473,9 @@
    <LINK srcnodeid="191" srcpinname="Transform Out" dstnodeid="192" dstpinname="Transform">
    </LINK>
    <NODE systemname="DynamicTexture (DX11.Texture 2d Color)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="DynamicTexture (DX11.Texture 2d Color)" componentmode="Hidden" id="193">
-   <BOUNDS type="Node" left="10488" top="4816" width="100" height="100">
+   <BOUNDS type="Node" left="10392" top="5136" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="10488" top="4816" width="1600" height="1600">
+   <BOUNDS type="Box" left="10392" top="5136" width="1600" height="1600">
    </BOUNDS>
    <PIN pinname="Data" visible="1" slicecount="18" values="|0.05556,0.04314,0.00000,1.00000|,|0.16667,0.01874,0.00000,1.00000|,|0.27778,0.00284,0.00000,1.00000|,|0.38889,0.27789,0.00000,1.00000|,|0.50000,0.40729,0.00000,1.00000|,|0.61111,0.46476,0.00000,1.00000|,|0.72222,0.04671,0.00000,1.00000|,|0.83333,0.42582,0.00000,1.00000|,|0.94444,0.72402,0.00000,1.00000|,|1.00000,0.31747,0.05556,1.00000|,|1.00000,0.47111,0.16667,1.00000|,|1.00000,0.87319,0.27778,1.00000|,|1.00000,0.77957,0.38889,1.00000|,|1.00000,0.84160,0.50000,1.00000|,|1.00000,0.83706,0.61111,1.00000|,|1.00000,0.87338,0.72222,1.00000|,|1.00000,0.95927,0.83333,1.00000|,|1.00000,0.94477,0.94444,1.00000|">
    </PIN>
@@ -675,7 +675,7 @@
    <NODE systemname="HSL (Color Join)" nodename="HSL (Color Join)" componentmode="Hidden" id="222">
    <BOUNDS type="Node" left="10456" top="4096" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Lightness" slicecount="18" values="1,1,1,1,1,1,1,0,0,0,0,1,0,1,1,1,1,1" visible="1">
+   <PIN pinname="Lightness" slicecount="18" visible="1" values="1,1,1,1,1,1,1,0,0,0,0,1,0,1,1,1,1,1">
    </PIN>
    <PIN pinname="Hue" visible="1">
    </PIN>
@@ -707,9 +707,9 @@
    <LINK srcnodeid="224" srcpinname="Buffers" dstnodeid="183" dstpinname="Texture">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="225">
-   <BOUNDS type="Box" left="11248" top="4432" width="696" height="208">
+   <BOUNDS type="Box" left="10672" top="4792" width="384" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="11248" top="4432" width="0" height="0">
+   <BOUNDS type="Node" left="10672" top="4792" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="31">
    </PIN>
@@ -887,7 +887,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Switch" slicecount="1" visible="1" values="1">
+   <PIN pinname="Switch" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="68" srcpinname="Output" dstnodeid="239" dstpinname="Input 2">
@@ -1148,8 +1148,6 @@
    <PIN pinname="Input" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="222" srcpinname="Output" dstnodeid="193" dstpinname="Data">
-   </LINK>
    <LINK srcnodeid="286" srcpinname="Output" dstnodeid="222" dstpinname="Lightness">
    </LINK>
    <LINK srcnodeid="221" srcpinname="Y Output Value" dstnodeid="286" dstpinname="Spread Count">
@@ -1169,5 +1167,21 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="287" srcpinname="Y Output Value" dstnodeid="87" dstpinname="Period">
+   </LINK>
+   <NODE systemname="SetSlice (Color)" nodename="SetSlice (Color)" componentmode="Hidden" id="288">
+   <BOUNDS type="Node" left="11160" top="4584" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Spread" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="222" srcpinname="Output" dstnodeid="288" dstpinname="Spread">
+   </LINK>
+   <LINK srcnodeid="288" srcpinname="Output" dstnodeid="193" dstpinname="Data">
    </LINK>
    </PATCH>
