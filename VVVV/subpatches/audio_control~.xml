@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\audio_control.v4p" systemname="audio_control" filename="C:\GIT\Reizdarm\VVVV\subpatches\audio_control.v4p" scrollx="264" scrolly="0">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\audio_control.v4p" systemname="audio_control" filename="C:\GIT\Reizdarm\VVVV\subpatches\audio_control.v4p" scrollx="96" scrolly="1000">
    <NODE systemname="HSL (Color Split)" nodename="HSL (Color Split)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2292" top="1524" width="100" height="100">
    </BOUNDS>
@@ -82,7 +82,7 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Input 2">
    </LINK>
-   <BOUNDS type="Window" left="3648" top="120" width="11168" height="8224">
+   <BOUNDS type="Window" left="4408" top="0" width="11168" height="8224">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -195,7 +195,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1904" top="8072" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -251,23 +251,5 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="49" srcpinname="Input Value" dstnodeid="48" dstpinname="Switch">
-   </LINK>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="51">
-   <BOUNDS type="Node" left="4760" top="656" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4760" top="656" width="696" height="208">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|panning impulse|">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="52">
-   <BOUNDS type="Node" left="4768" top="1568" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="51" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Input 1">
    </LINK>
    </PATCH>

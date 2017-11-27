@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" systemname="helper_compositing" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" scrollx="4184" scrolly="2544">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" systemname="helper_compositing" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" scrollx="6768" scrolly="2200">
    <NODE systemname="Fill (EX9.RenderState)" nodename="Fill (EX9.RenderState)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="884" top="4836" width="100" height="100">
    </BOUNDS>
@@ -38,7 +38,7 @@
    </NODE>
    <LINK srcnodeid="17" srcpinname="Output Node" dstnodeid="4" dstpinname="Texture">
    </LINK>
-   <BOUNDS type="Window" left="3496" top="80" width="11168" height="8224">
+   <BOUNDS type="Window" left="4008" top="0" width="11168" height="8224">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -428,10 +428,10 @@
    </NODE>
    <LINK srcnodeid="54" srcpinname="Device" dstnodeid="55" dstpinname="Mouse">
    </LINK>
-   <NODE componentmode="InAWindow" hiddenwhenlocked="0" id="52" nodename="Renderer (EX9)" systemname="Renderer (EX9)" stayontop="1">
+   <NODE componentmode="InAWindow" hiddenwhenlocked="0" id="52" nodename="Renderer (EX9)" systemname="Renderer (EX9)" stayontop="0">
    <BOUNDS height="0" left="7452" top="11858" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="3176" left="0" top="0" type="Window" width="4280">
+   <BOUNDS height="4160" left="0" top="0" type="Window" width="6136">
    </BOUNDS>
    <BOUNDS height="1800" left="7452" top="11858" type="Box" width="2400">
    </BOUNDS>
@@ -677,13 +677,13 @@
    <LINK srcnodeid="84" srcpinname="Output" dstnodeid="83" dstpinname="Input 2">
    </LINK>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="87">
-   <BOUNDS type="Node" left="12320" top="5000" width="100" height="100">
+   <BOUNDS type="Node" left="12056" top="5024" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="DX11ToDX9 (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\modules\DX11ToDX9 (DX11.Texture 2d).v4p" nodename="DX11ToDX9 (DX11.Texture 2d)" componentmode="Hidden" id="88">
-   <BOUNDS type="Node" left="12280" top="5560" width="100" height="100">
+   <BOUNDS type="Node" left="12016" top="5584" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1">
    </PIN>
@@ -707,7 +707,7 @@
    <LINK srcnodeid="89" srcpinname="Layer" dstnodeid="45" dstpinname="Layer 4">
    </LINK>
    <NODE systemname="Billboard (Transform)" nodename="Billboard (Transform)" componentmode="Hidden" id="90">
-   <BOUNDS type="Node" left="14120" top="5400" width="100" height="100">
+   <BOUNDS type="Node" left="13608" top="5592" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -717,7 +717,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 2d Vector)" nodename="Transform (Transform 2d Vector)" componentmode="Hidden" id="91">
-   <BOUNDS type="Node" left="14152" top="5792" width="100" height="100">
+   <BOUNDS type="Node" left="13640" top="5984" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -729,9 +729,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="92">
-   <BOUNDS type="Box" left="15000" top="5240" width="696" height="416">
+   <BOUNDS type="Box" left="14488" top="5432" width="696" height="416">
    </BOUNDS>
-   <BOUNDS type="Node" left="15000" top="5240" width="0" height="0">
+   <BOUNDS type="Node" left="14488" top="5432" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="2" visible="1" values="-0.42,1.5">
    </PIN>
