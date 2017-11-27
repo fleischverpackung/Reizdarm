@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" systemname="control_lights" filename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" scrollx="5864" scrolly="3872">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" systemname="control_lights" filename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" scrollx="4736" scrolly="0">
    <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="6">
    <BOUNDS type="Node" left="1204" top="8868" width="100" height="100">
    </BOUNDS>
@@ -1120,22 +1120,6 @@
    </LINK>
    <LINK srcnodeid="203" srcpinname="Change" dstnodeid="205" dstpinname="Input">
    </LINK>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="279">
-   <BOUNDS type="Node" left="5496" top="672" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5496" top="672" width="480" height="480">
-   </BOUNDS>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Press">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="205" srcpinname="Output" dstnodeid="211" dstpinname="Input 1">
    </LINK>
    <NODE systemname="RandomSpread (Spreads)" nodename="RandomSpread (Spreads)" componentmode="Hidden" id="286">

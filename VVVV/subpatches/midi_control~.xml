@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\midi_control.v4p" locked="0" scrollx="440" scrolly="0" systemname="midi_control" filename="C:\GIT\Reizdarm\VVVV\subpatches\midi_control.v4p">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\midi_control.v4p" locked="0" scrollx="360" scrolly="1000" systemname="midi_control" filename="C:\GIT\Reizdarm\VVVV\subpatches\midi_control.v4p">
    <BOUNDS height="8224" left="3648" top="120" type="Window" width="11168">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -45,9 +45,9 @@
    <LINK srcnodeid="215" srcpinname="Y Output Value" dstnodeid="216" dstpinname="Send On Value Change">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="214" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="964" top="6330" width="480" height="480">
+   <BOUNDS type="Box" left="1660" top="6146" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="964" top="6330" width="0" height="0">
+   <BOUNDS type="Node" left="1660" top="6146" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -65,9 +65,9 @@
    <LINK srcnodeid="214" srcpinname="Y Output Value" dstnodeid="216" dstpinname="Do Send">
    </LINK>
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="228">
-   <BOUNDS type="Node" left="1552" top="5528" width="100" height="100">
+   <BOUNDS type="Node" left="2144" top="3744" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1552" top="5528" width="1600" height="1600">
+   <BOUNDS type="Box" left="2144" top="3744" width="1600" height="1600">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -77,9 +77,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="229">
-   <BOUNDS type="Node" left="1416" top="4848" width="100" height="100">
+   <BOUNDS type="Node" left="2008" top="3064" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1416" top="4848" width="795" height="480">
+   <BOUNDS type="Box" left="2008" top="3064" width="795" height="480">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
@@ -95,9 +95,9 @@
    <LINK srcnodeid="229" srcpinname="Y Output Value" dstnodeid="228" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="230" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2136" top="3256" width="795" height="480">
+   <BOUNDS type="Box" left="2728" top="1472" width="795" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="2136" top="3256" width="0" height="0">
+   <BOUNDS type="Node" left="2728" top="1472" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="2" visible="1" values="4,8">
    </PIN>
@@ -133,7 +133,7 @@
    </PIN>
    </NODE>
    <NODE systemname="I (Spreads)" nodename="I (Spreads)" componentmode="Hidden" id="232">
-   <BOUNDS type="Node" left="2544" top="5016" width="100" height="100">
+   <BOUNDS type="Node" left="3136" top="3232" width="100" height="100">
    </BOUNDS>
    <PIN pinname=".. To [" slicecount="1" visible="1" values="4">
    </PIN>
@@ -141,7 +141,7 @@
    </PIN>
    </NODE>
    <NODE systemname="I (Spreads)" nodename="I (Spreads)" componentmode="Hidden" id="233">
-   <BOUNDS type="Node" left="3072" top="5024" width="100" height="100">
+   <BOUNDS type="Node" left="3664" top="3240" width="100" height="100">
    </BOUNDS>
    <PIN pinname=".. To [" slicecount="1" visible="1" values="12">
    </PIN>
@@ -149,9 +149,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="234">
-   <BOUNDS type="Node" left="2720" top="5552" width="100" height="100">
+   <BOUNDS type="Node" left="3312" top="3768" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2720" top="5552" width="1600" height="1600">
+   <BOUNDS type="Box" left="3312" top="3768" width="1600" height="1600">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -165,9 +165,9 @@
    <LINK srcnodeid="233" srcpinname="Output" dstnodeid="234" dstpinname="Input 2">
    </LINK>
    <NODE systemname="Unzip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (Value)" componentmode="Hidden" id="238">
-   <BOUNDS type="Node" left="2816" top="4224" width="100" height="100">
+   <BOUNDS type="Node" left="3408" top="2440" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2816" top="4224" width="1600" height="1600">
+   <BOUNDS type="Box" left="3408" top="2440" width="1600" height="1600">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -182,17 +182,9 @@
    </LINK>
    <LINK srcnodeid="238" srcpinname="Output 2" dstnodeid="233" dstpinname=".. To [">
    </LINK>
-   <LINK srcnodeid="228" srcpinname="Output" dstnodeid="216" dstpinname="Channel" linkstyle="Bezier">
-   <LINKPOINT x="1608" y="6324">
-   </LINKPOINT>
-   <LINKPOINT x="2624" y="6324">
-   </LINKPOINT>
+   <LINK srcnodeid="228" srcpinname="Output" dstnodeid="216" dstpinname="Channel">
    </LINK>
-   <LINK srcnodeid="234" srcpinname="Output" dstnodeid="216" dstpinname="Controller" linkstyle="Bezier">
-   <LINKPOINT x="2744" y="6328">
-   </LINKPOINT>
-   <LINKPOINT x="2880" y="6328">
-   </LINKPOINT>
+   <LINK srcnodeid="234" srcpinname="Output" dstnodeid="216" dstpinname="Controller">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="245">
    <BOUNDS type="Box" left="4688" top="3168" width="696" height="208">
@@ -278,11 +270,7 @@
    </LINK>
    <LINK srcnodeid="231" srcpinname="Output" dstnodeid="248" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="248" srcpinname="Output" dstnodeid="216" dstpinname="Value" linkstyle="Bezier">
-   <LINKPOINT x="4472" y="6128">
-   </LINKPOINT>
-   <LINKPOINT x="3160" y="6128">
-   </LINKPOINT>
+   <LINK srcnodeid="248" srcpinname="Output" dstnodeid="216" dstpinname="Value">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="250">
    <BOUNDS type="Node" left="6696" top="3000" width="100" height="100">

@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="0" scrolly="3808">
-   <BOUNDS height="8224" left="4200" top="272" type="Window" width="9152">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="1560" scrolly="1664">
+   <BOUNDS height="8224" left="3648" top="120" type="Window" width="11168">
    </BOUNDS>
    <NODE componentmode="InABox" id="25" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="0" left="1530" top="7726" type="Node" width="0">
+   <BOUNDS height="0" left="1594" top="7190" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="240" left="1530" top="7726" type="Box" width="2490">
+   <BOUNDS height="552" left="1594" top="7190" type="Box" width="1312">
    </BOUNDS>
    <BOUNDS height="160" left="10200" top="8115" type="Window" width="215">
    </BOUNDS>
@@ -17,9 +17,9 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="video_particles" filename="subpatches\video_particles.v4p" nodename="subpatches\video_particles.v4p" componentmode="InAWindow" id="141">
-   <BOUNDS type="Node" left="4424" top="4984" width="100" height="100">
+   <BOUNDS type="Node" left="3576" top="5656" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="4200" top="272" width="9152" height="8224">
+   <BOUNDS type="Window" left="3648" top="120" width="11168" height="8224">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
@@ -29,11 +29,11 @@
    </PIN>
    </NODE>
    <NODE systemname="helper_colors" filename="subpatches\helper_colors.v4p" nodename="subpatches\helper_colors.v4p" componentmode="InAWindow" id="185">
-   <BOUNDS type="Node" left="4834" top="5722" width="100" height="100">
+   <BOUNDS type="Node" left="3386" top="7498" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="4200" top="272" width="9152" height="8224">
+   <BOUNDS type="Window" left="3648" top="120" width="11168" height="8224">
    </BOUNDS>
    <PIN pinname="colors" visible="1">
    </PIN>
@@ -45,17 +45,19 @@
    </PIN>
    </NODE>
    <NODE systemname="control_lights" filename="subpatches\control_lights.v4p" nodename="subpatches\control_lights.v4p" componentmode="InAWindow" id="211">
-   <BOUNDS type="Node" left="5288" top="3958" width="0" height="0">
+   <BOUNDS type="Node" left="3768" top="3294" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="2118" top="1284" width="6340" height="5348">
+   <BOUNDS type="Box" left="598" top="620" width="6340" height="5348">
    </BOUNDS>
-   <BOUNDS type="Window" left="4200" top="272" width="9152" height="8224">
+   <BOUNDS type="Window" left="3648" top="120" width="11168" height="8224">
    </BOUNDS>
    <PIN pinname="Alpha" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Position Out" visible="1">
    </PIN>
    <PIN pinname="isMoving" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="211" srcpinname="Output" dstnodeid="185" dstpinname="zottenColor">
@@ -67,7 +69,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="5780" width="10564" height="5462">
    </BOUNDS>
-   <BOUNDS type="Window" left="4200" top="272" width="9152" height="8224">
+   <BOUNDS type="Window" left="3648" top="120" width="11168" height="8224">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -93,7 +95,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="360" width="10045" height="8377">
    </BOUNDS>
-   <BOUNDS type="Window" left="4200" top="272" width="9152" height="8224">
+   <BOUNDS type="Window" left="3648" top="120" width="11168" height="8224">
    </BOUNDS>
    </NODE>
    <NODE systemname="Integrate (Differential)" nodename="Integrate (Differential)" componentmode="Hidden" id="300">
@@ -145,9 +147,9 @@
    <LINK srcnodeid="298" srcpinname="Y Output Value" dstnodeid="299" dstpinname="Height">
    </LINK>
    <NODE systemname="Cons (EX9.Texture)" filename="" nodename="Cons (EX9.Texture)" componentmode="Hidden" id="301">
-   <BOUNDS type="Node" left="6584" top="5072" width="100" height="100">
+   <BOUNDS type="Node" left="4808" top="6528" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6584" top="5072" width="1600" height="1600">
+   <BOUNDS type="Box" left="4808" top="6528" width="1600" height="1600">
    </BOUNDS>
    <PIN pinname="Texture In 1" visible="1">
    </PIN>
@@ -159,11 +161,9 @@
    <LINK srcnodeid="299" srcpinname="Output" dstnodeid="301" dstpinname="Texture In 1">
    </LINK>
    <LINK srcnodeid="141" srcpinname="Texture Out" dstnodeid="301" dstpinname="Texture In 2">
-   <LINKPOINT x="7000" y="4744">
-   </LINKPOINT>
    </LINK>
    <NODE systemname="Mix (EX9.Texture Mixer)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Mixer\Mix\Mix (EX9.Texture Mixer).v4p" nodename="Mix (EX9.Texture Mixer)" componentmode="Hidden" id="302">
-   <BOUNDS type="Node" left="6816" top="6016" width="100" height="100">
+   <BOUNDS type="Node" left="5792" top="6456" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -181,10 +181,14 @@
    <LINK srcnodeid="141" srcpinname="Texture Out" dstnodeid="185" dstpinname="Texture In 2">
    </LINK>
    <NODE systemname="midi_control" filename="subpatches\midi_control.v4p" nodename="subpatches\midi_control.v4p" componentmode="InAWindow" id="305">
-   <BOUNDS type="Node" left="1184" top="1064" width="100" height="100">
+   <BOUNDS type="Node" left="5376" top="5184" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="4200" top="272" width="9152" height="8224">
+   <BOUNDS type="Window" left="3648" top="120" width="11168" height="8224">
    </BOUNDS>
+   <PIN pinname="lights" visible="1">
+   </PIN>
+   <PIN pinname="Send On Value Change" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="25" srcpinname="Output String" dstnodeid="234" dstpinname="Filename">
    </LINK>
@@ -209,5 +213,39 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="310" srcpinname="Y Output Value" dstnodeid="234" dstpinname="Evaluate">
+   </LINK>
+   <NODE systemname="audio_control" filename="subpatches\audio_control.v4p" nodename="subpatches\audio_control.v4p" componentmode="InAWindow" id="316">
+   <BOUNDS type="Node" left="5475" top="3896" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3563" top="1730" width="3824" height="4332">
+   </BOUNDS>
+   <BOUNDS type="Window" left="3648" top="120" width="11168" height="8224">
+   </BOUNDS>
+   <PIN pinname="lights" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="211" srcpinname="Output 1" dstnodeid="316" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="316" srcpinname="lights" dstnodeid="305" dstpinname="lights">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="317">
+   <BOUNDS type="Box" left="6112" top="4544" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6112" top="4544" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Send On Value Change|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="317" srcpinname="Y Output Value" dstnodeid="305" dstpinname="Send On Value Change">
    </LINK>
    </PATCH>
