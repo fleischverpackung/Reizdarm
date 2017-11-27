@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="1560" scrolly="1664">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="0" scrolly="3144">
    <BOUNDS height="8224" left="3648" top="120" type="Window" width="11168">
    </BOUNDS>
    <NODE componentmode="InABox" id="25" nodename="IOBox (String)" systemname="IOBox (String)">
@@ -163,7 +163,7 @@
    <LINK srcnodeid="141" srcpinname="Texture Out" dstnodeid="301" dstpinname="Texture In 2">
    </LINK>
    <NODE systemname="Mix (EX9.Texture Mixer)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Mixer\Mix\Mix (EX9.Texture Mixer).v4p" nodename="Mix (EX9.Texture Mixer)" componentmode="Hidden" id="302">
-   <BOUNDS type="Node" left="5792" top="6456" width="100" height="100">
+   <BOUNDS type="Node" left="5720" top="6576" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -181,13 +181,21 @@
    <LINK srcnodeid="141" srcpinname="Texture Out" dstnodeid="185" dstpinname="Texture In 2">
    </LINK>
    <NODE systemname="midi_control" filename="subpatches\midi_control.v4p" nodename="subpatches\midi_control.v4p" componentmode="InAWindow" id="305">
-   <BOUNDS type="Node" left="5376" top="5184" width="100" height="100">
+   <BOUNDS type="Node" left="5680" top="4632" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="3648" top="120" width="11168" height="8224">
    </BOUNDS>
-   <PIN pinname="lights" visible="1">
+   <PIN pinname="lights" visible="1" slicecount="8" values="0,0,0,0,0,0,0,0">
    </PIN>
-   <PIN pinname="Send On Value Change" visible="1">
+   <PIN pinname="Send On Value Change" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="LearnMode" visible="1">
+   </PIN>
+   <PIN pinname="lights_A" visible="1">
+   </PIN>
+   <PIN pinname="lights_B" visible="1">
+   </PIN>
+   <PIN pinname="lights8x3" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="25" srcpinname="Output String" dstnodeid="234" dstpinname="Filename">
@@ -215,23 +223,27 @@
    <LINK srcnodeid="310" srcpinname="Y Output Value" dstnodeid="234" dstpinname="Evaluate">
    </LINK>
    <NODE systemname="audio_control" filename="subpatches\audio_control.v4p" nodename="subpatches\audio_control.v4p" componentmode="InAWindow" id="316">
-   <BOUNDS type="Node" left="5475" top="3896" width="0" height="0">
+   <BOUNDS type="Node" left="5707" top="3928" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3563" top="1730" width="3824" height="4332">
+   <BOUNDS type="Box" left="3795" top="1762" width="3824" height="4332">
    </BOUNDS>
    <BOUNDS type="Window" left="3648" top="120" width="11168" height="8224">
    </BOUNDS>
    <PIN pinname="lights" visible="1">
    </PIN>
+   <PIN pinname="lights_A" visible="1">
+   </PIN>
+   <PIN pinname="lights_B" visible="1">
+   </PIN>
+   <PIN pinname="lights 8x3" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="211" srcpinname="Output 1" dstnodeid="316" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="316" srcpinname="lights" dstnodeid="305" dstpinname="lights">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="317">
-   <BOUNDS type="Box" left="6112" top="4544" width="480" height="480">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="318">
+   <BOUNDS type="Box" left="4704" top="4024" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="6112" top="4544" width="0" height="0">
+   <BOUNDS type="Node" left="4704" top="4024" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -243,9 +255,25 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Send On Value Change|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="LearnMode">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="317" srcpinname="Y Output Value" dstnodeid="305" dstpinname="Send On Value Change">
+   <LINK srcnodeid="318" srcpinname="Y Output Value" dstnodeid="305" dstpinname="LearnMode">
    </LINK>
+   <LINK srcnodeid="316" srcpinname="lights_A" dstnodeid="305" dstpinname="lights_A">
+   </LINK>
+   <LINK srcnodeid="316" srcpinname="lights_B" dstnodeid="305" dstpinname="lights_B">
+   </LINK>
+   <LINK srcnodeid="316" srcpinname="lights 8x3" dstnodeid="305" dstpinname="lights8x3">
+   </LINK>
+   <NODE systemname="ctrl_keyboard" filename="subpatches\ctrl_keyboard.v4p" nodename="subpatches\ctrl_keyboard.v4p" componentmode="Hidden" id="329">
+   <BOUNDS type="Node" left="1211" top="2472" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="48" width="4684" height="5732">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-1" top="-1" width="4684" height="5732">
+   </BOUNDS>
+   </NODE>
    </PATCH>
