@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\audio_control.v4p" systemname="audio_control" filename="C:\GIT\Reizdarm\VVVV\subpatches\audio_control.v4p" scrollx="72" scrolly="1728">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\audio_control.v4p" systemname="audio_control" filename="C:\GIT\Reizdarm\VVVV\subpatches\audio_control.v4p" scrollx="264" scrolly="0">
    <NODE systemname="HSL (Color Split)" nodename="HSL (Color Split)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2292" top="1524" width="100" height="100">
    </BOUNDS>
@@ -67,7 +67,7 @@
    </PIN>
    </NODE>
    <NODE id="5" systemname="IOBox (Color)" componentmode="InABox" nodename="IOBox (Color)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|lights 8x|">
    </PIN>
    <BOUNDS type="Box" left="2292" top="524" width="750" height="240">
    </BOUNDS>
@@ -251,5 +251,23 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="49" srcpinname="Input Value" dstnodeid="48" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="51">
+   <BOUNDS type="Node" left="4760" top="656" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4760" top="656" width="696" height="208">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|panning impulse|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="52">
+   <BOUNDS type="Node" left="4768" top="1568" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="51" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Input 1">
    </LINK>
    </PATCH>
