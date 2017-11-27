@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" systemname="helper_compositing" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" scrollx="6768" scrolly="2200">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" systemname="helper_compositing" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" scrollx="3648" scrolly="2688">
    <NODE systemname="Fill (EX9.RenderState)" nodename="Fill (EX9.RenderState)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="884" top="4836" width="100" height="100">
    </BOUNDS>
@@ -38,7 +38,7 @@
    </NODE>
    <LINK srcnodeid="17" srcpinname="Output Node" dstnodeid="4" dstpinname="Texture">
    </LINK>
-   <BOUNDS type="Window" left="3496" top="80" width="11168" height="8224">
+   <BOUNDS type="Window" left="4328" top="728" width="11168" height="8224">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -273,7 +273,7 @@
    <LINK srcnodeid="0" srcpinname="Render State Out" dstnodeid="34" dstpinname="Render State" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="45">
-   <BOUNDS type="Node" left="3704" top="7432" width="100" height="100">
+   <BOUNDS type="Node" left="3704" top="7872" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1">
    </PIN>
@@ -285,7 +285,7 @@
    </PIN>
    <PIN pinname="Layer 3" visible="1">
    </PIN>
-   <PIN pinname="Layer 4" visible="1">
+   <PIN pinname="Layer 4" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="45" dstpinname="Layer 1">
@@ -293,9 +293,9 @@
    <LINK srcnodeid="34" srcpinname="Layer" dstnodeid="45" dstpinname="Layer 2">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="46">
-   <BOUNDS type="Node" left="4608" top="6128" width="2472" height="216">
+   <BOUNDS type="Node" left="4440" top="5984" width="2472" height="216">
    </BOUNDS>
-   <BOUNDS type="Box" left="4608" top="6128" width="2472" height="216">
+   <BOUNDS type="Box" left="4440" top="5984" width="2472" height="216">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|draw videos and schotten over lights|">
    </PIN>
@@ -403,7 +403,7 @@
    <LINK srcnodeid="57" srcpinname="Output" dstnodeid="56" dstpinname="Input">
    </LINK>
    <NODE systemname="Cursor (DX9 Legacy 2)" filename="%VVVV%\lib\nodes\modules\EX9\Cursor (DX9).v4p" nodename="Cursor (DX9)" componentmode="Hidden" id="55">
-   <BOUNDS type="Node" left="4992" top="9014" width="100" height="100">
+   <BOUNDS type="Node" left="4928" top="9910" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -413,7 +413,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="54">
-   <BOUNDS type="Node" left="5201" top="7552" width="100" height="100">
+   <BOUNDS type="Node" left="5137" top="8448" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Middle Button" visible="1">
    </PIN>
@@ -428,10 +428,10 @@
    </NODE>
    <LINK srcnodeid="54" srcpinname="Device" dstnodeid="55" dstpinname="Mouse">
    </LINK>
-   <NODE componentmode="InAWindow" hiddenwhenlocked="0" id="52" nodename="Renderer (EX9)" systemname="Renderer (EX9)" stayontop="1">
+   <NODE componentmode="InAWindow" hiddenwhenlocked="0" id="52" nodename="Renderer (EX9)" systemname="Renderer (EX9)" stayontop="0">
    <BOUNDS height="0" left="7452" top="11858" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="4160" left="0" top="0" type="Window" width="6136">
+   <BOUNDS height="7272" left="-3816" top="0" type="Window" width="10608">
    </BOUNDS>
    <BOUNDS height="1800" left="7452" top="11858" type="Box" width="2400">
    </BOUNDS>
@@ -446,30 +446,6 @@
    </NODE>
    <LINK srcnodeid="60" srcpinname="Color Output" dstnodeid="52" dstpinname="Background Color">
    </LINK>
-   <NODE id="51" systemname="Camera (Transform Orbit Legacy)" filename="%VVVV%\addonpack\lib\nodes\modules\Transform\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="8480" top="10862" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Window" left="1256" top="7064" width="15472" height="8752">
-   </BOUNDS>
-   <BOUNDS type="Box" left="576" top="568" width="4800" height="3600">
-   </BOUNDS>
-   <PIN pinname="FilterTime" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="51" srcpinname="Projection" dstnodeid="52" dstpinname="Projection">
-   </LINK>
-   <LINK srcnodeid="51" srcpinname="View" dstnodeid="52" dstpinname="View">
-   </LINK>
-   <LINK srcnodeid="56" srcpinname="Output" dstnodeid="51" dstpinname="Initial Pitch">
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="51" dstpinname="Initial Yaw">
-   </LINK>
-   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="51" dstpinname="Target Initial Position">
-   </LINK>
-   <LINK srcnodeid="64" srcpinname="Transform Out" dstnodeid="51" dstpinname="Distortion">
-   </LINK>
-   <LINK srcnodeid="65" srcpinname="Y Output Value" dstnodeid="51" dstpinname="Initial Distance">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="50">
    <BOUNDS type="Box" left="10384" top="10078" width="696" height="208">
    </BOUNDS>
@@ -482,10 +458,8 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    </NODE>
-   <LINK srcnodeid="50" srcpinname="Y Output Value" dstnodeid="51" dstpinname="FilterTime">
-   </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="49">
-   <BOUNDS type="Node" left="5196" top="8578" width="100" height="100">
+   <BOUNDS type="Node" left="5132" top="9474" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -495,7 +469,7 @@
    <LINK srcnodeid="54" srcpinname="PositionXY" dstnodeid="49" dstpinname="Input Value">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="48">
-   <BOUNDS type="Node" left="6297" top="7966" width="100" height="100">
+   <BOUNDS type="Node" left="6233" top="8862" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="mouse_R">
    </PIN>
@@ -505,7 +479,7 @@
    <LINK srcnodeid="54" srcpinname="Right Button" dstnodeid="48" dstpinname="Input Value">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="47">
-   <BOUNDS type="Node" left="5838" top="8224" width="100" height="100">
+   <BOUNDS type="Node" left="5774" top="9120" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="mouse_L">
    </PIN>
@@ -515,7 +489,7 @@
    <LINK srcnodeid="54" srcpinname="Left Button" dstnodeid="47" dstpinname="Input Value">
    </LINK>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="66">
-   <BOUNDS type="Node" left="4464" top="9718" width="100" height="100">
+   <BOUNDS type="Node" left="4536" top="10758" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer 2" visible="1">
    </PIN>
@@ -523,7 +497,7 @@
    <LINK srcnodeid="66" srcpinname="Layer" dstnodeid="52" dstpinname="Layers">
    </LINK>
    <LINK srcnodeid="55" srcpinname="Layer" dstnodeid="66" dstpinname="Layer 3">
-   <LINKPOINT x="4904" y="9766">
+   <LINKPOINT x="4908" y="10734">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="45" srcpinname="Layer" dstnodeid="66" dstpinname="Layer 1">
@@ -699,12 +673,10 @@
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="Transform" visible="1">
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="88" srcpinname="Texture Out" dstnodeid="89" dstpinname="Texture">
-   </LINK>
-   <LINK srcnodeid="89" srcpinname="Layer" dstnodeid="45" dstpinname="Layer 4">
    </LINK>
    <NODE systemname="Billboard (Transform)" nodename="Billboard (Transform)" componentmode="Hidden" id="90">
    <BOUNDS type="Node" left="13608" top="5592" width="100" height="100">
@@ -713,11 +685,11 @@
    </PIN>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Object Space" slicecount="1" values="Projection">
+   <PIN pinname="Object Space" slicecount="1" values="Pixel">
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 2d Vector)" nodename="Transform (Transform 2d Vector)" componentmode="Hidden" id="91">
-   <BOUNDS type="Node" left="13640" top="5984" width="100" height="100">
+   <BOUNDS type="Node" left="13800" top="5904" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -725,7 +697,7 @@
    </PIN>
    <PIN pinname="ScaleXY" slicecount="2" values="0.43,0.43">
    </PIN>
-   <PIN pinname="Transform In" visible="1">
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="92">
@@ -746,12 +718,38 @@
    </NODE>
    <LINK srcnodeid="92" srcpinname="Y Output Value" dstnodeid="91" dstpinname="TranslateXY">
    </LINK>
-   <LINK srcnodeid="90" srcpinname="Transform Out" dstnodeid="91" dstpinname="Transform In">
-   </LINK>
-   <LINK srcnodeid="91" srcpinname="Transform Out" dstnodeid="89" dstpinname="Transform">
-   </LINK>
    <LINK srcnodeid="69" srcpinname="Transform Out" dstnodeid="67" dstpinname="Transform">
    </LINK>
    <LINK srcnodeid="70" srcpinname="Transform Out" dstnodeid="69" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Transform Out" dstnodeid="89" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="90" srcpinname="Transform Out" dstnodeid="91" dstpinname="Transform In">
+   </LINK>
+   <NODE id="97" systemname="Camera (Transform Orbit Legacy)" filename="%VVVV%\addonpack\lib\nodes\modules\Transform\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="8480" top="10862" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1256" top="7064" width="15472" height="8752">
+   </BOUNDS>
+   <BOUNDS type="Box" left="576" top="568" width="4800" height="3600">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="97" srcpinname="Projection" dstnodeid="52" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="97" srcpinname="View" dstnodeid="52" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="56" srcpinname="Output" dstnodeid="97" dstpinname="Initial Pitch">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="97" dstpinname="Initial Yaw">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="97" dstpinname="Target Initial Position">
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="Transform Out" dstnodeid="97" dstpinname="Distortion">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Y Output Value" dstnodeid="97" dstpinname="Initial Distance">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="Y Output Value" dstnodeid="97" dstpinname="FilterTime">
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Layer" dstnodeid="45" dstpinname="Layer 4">
    </LINK>
    </PATCH>
