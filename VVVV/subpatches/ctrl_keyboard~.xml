@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\ctrl_keyboard.v4p" systemname="ctrl_keyboard" filename="C:\GIT\Reizdarm\VVVV\subpatches\ctrl_keyboard.v4p" scrollx="392" scrolly="616">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\ctrl_keyboard.v4p" systemname="ctrl_keyboard" filename="C:\GIT\Reizdarm\VVVV\subpatches\ctrl_keyboard.v4p" scrollx="352" scrolly="704">
    <NODE systemname="Keyboard (Devices Desktop)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (Devices Desktop)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1564" top="796" width="100" height="100">
    </BOUNDS>

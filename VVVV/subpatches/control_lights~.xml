@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" systemname="control_lights" filename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" scrollx="1488" scrolly="8928">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" systemname="control_lights" filename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" scrollx="592" scrolly="8176">
    <NODE id="13" systemname="IOBox (Color)" componentmode="InABox" nodename="IOBox (Color)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|lights x8|">
    </PIN>
@@ -10,7 +10,7 @@
    <PIN pinname="Color Input" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="8744" top="0" width="6768" height="8752">
+   <BOUNDS type="Window" left="4224" top="872" width="10304" height="8520">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -60,16 +60,6 @@
    <PIN pinname="Change" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Reverse (Color)" nodename="Reverse (Color)" componentmode="Hidden" id="97">
-   <BOUNDS type="Node" left="5296" top="12416" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="14" values="|0.00000,0.00000,0.00000,1.00000|,|0.43001,0.00000,0.00000,1.00000|,|0.11649,0.00000,0.00000,1.00000|,|0.82258,0.00000,0.00000,1.00000|,|0.00000,0.00000,0.00000,1.00000|,|0.44057,0.00000,0.00000,1.00000|,|0.23273,0.00000,0.00000,1.00000|,|0.00000,0.00000,0.00000,1.00000|,|0.00000,0.00000,0.00000,1.00000|,|0.00000,0.00000,0.00000,1.00000|,|0.00000,0.00000,0.00000,1.00000|,|0.00000,0.00000,0.00000,1.00000|,|0.00000,0.00000,0.00000,1.00000|,|0.07446,0.00000,0.00000,1.00000|">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="97" srcpinname="Output" dstnodeid="13" dstpinname="Color Input">
-   </LINK>
    <NODE systemname="Map (Value)" filename="" nodename="Map (Value)" componentmode="Hidden" id="100">
    <BOUNDS type="Node" left="14208" top="6688" width="100" height="100">
    </BOUNDS>
@@ -267,7 +257,7 @@
    </PIN>
    <PIN pinname="ResolutionXY" visible="1">
    </PIN>
-   <PIN pinname="SizeXY" slicecount="2" values="0.97,0.97">
+   <PIN pinname="SizeXY" slicecount="2" values="0.97,0.97" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="184" srcpinname="XY" dstnodeid="183" dstpinname="XY">
@@ -383,7 +373,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0.08" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0.08">
    </PIN>
    </NODE>
    <LINK srcnodeid="211" srcpinname="Output" dstnodeid="182" dstpinname="Position In">
@@ -499,7 +489,7 @@
    </PIN>
    </NODE>
    <NODE systemname="InputMorph (Color)" nodename="InputMorph (Color)" componentmode="Hidden" id="239">
-   <BOUNDS type="Node" left="5288" top="11920" width="100" height="100">
+   <BOUNDS type="Node" left="5288" top="12104" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -511,8 +501,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="68" srcpinname="Output" dstnodeid="239" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="239" srcpinname="Output" dstnodeid="97" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="246">
    <BOUNDS type="Box" left="2968" top="1712" width="480" height="480">
@@ -711,7 +699,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13632" top="2536" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.17">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.83">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
@@ -969,5 +957,25 @@
    <LINK srcnodeid="372" srcpinname="Y Output Value" dstnodeid="370" dstpinname="Switch">
    <LINKPOINT x="204" y="6520">
    </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="373">
+   <BOUNDS type="Box" left="1888" top="9128" width="696" height="416">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1888" top="9128" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.97,-0.97">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="373" srcpinname="Y Output Value" dstnodeid="184" dstpinname="SizeXY">
+   </LINK>
+   <LINK srcnodeid="239" srcpinname="Output" dstnodeid="13" dstpinname="Color Input">
    </LINK>
    </PATCH>
