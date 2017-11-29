@@ -1,27 +1,15 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
    <PATCH nodename="C:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="0" scrolly="0">
-   <BOUNDS height="8296" left="6224" top="168" type="Window" width="8944">
+   <BOUNDS height="8296" left="5080" top="0" type="Window" width="8944">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <NODE systemname="video_particles" filename="subpatches\video_particles.v4p" nodename="subpatches\video_particles.v4p" componentmode="InAWindow" id="141">
-   <BOUNDS type="Node" left="544" top="4048" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Window" left="6224" top="168" width="8944" height="8296">
-   </BOUNDS>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   <PIN pinname="Emit Count" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Particles Count" slicecount="1" values="10000">
-   </PIN>
-   </NODE>
    <NODE systemname="helper_colors" filename="subpatches\helper_colors.v4p" nodename="subpatches\helper_colors.v4p" componentmode="InAWindow" id="185">
    <BOUNDS type="Node" left="1538" top="5026" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="6224" top="168" width="8944" height="8296">
+   <BOUNDS type="Window" left="5080" top="0" width="8944" height="8296">
    </BOUNDS>
    <PIN pinname="colors" visible="1">
    </PIN>
@@ -37,7 +25,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1000" top="728" width="6340" height="5348">
    </BOUNDS>
-   <BOUNDS type="Window" left="6224" top="168" width="8944" height="8296">
+   <BOUNDS type="Window" left="5080" top="0" width="8944" height="8296">
    </BOUNDS>
    <PIN pinname="Alpha" slicecount="1" values="1">
    </PIN>
@@ -126,12 +114,10 @@
    </LINK>
    <LINK srcnodeid="298" srcpinname="Y Output Value" dstnodeid="299" dstpinname="Height">
    </LINK>
-   <LINK srcnodeid="141" srcpinname="Texture Out" dstnodeid="185" dstpinname="Texture In 2">
-   </LINK>
    <NODE systemname="midi_control" filename="subpatches\midi_control.v4p" nodename="subpatches\midi_control.v4p" componentmode="InAWindow" id="305">
    <BOUNDS type="Node" left="3440" top="4760" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="6224" top="168" width="8944" height="8296">
+   <BOUNDS type="Window" left="5080" top="0" width="8944" height="8296">
    </BOUNDS>
    <PIN pinname="lights" visible="1" slicecount="8" values="0,0,0,0,0,0,0,0">
    </PIN>
@@ -175,7 +161,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1651" top="1970" width="3824" height="4332">
    </BOUNDS>
-   <BOUNDS type="Window" left="6224" top="168" width="8944" height="8296">
+   <BOUNDS type="Window" left="5080" top="0" width="8944" height="8296">
    </BOUNDS>
    <PIN pinname="lights" visible="1">
    </PIN>
@@ -311,5 +297,41 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="336" srcpinname="Y Output Value" dstnodeid="330" dstpinname="threshold">
+   </LINK>
+   <NODE systemname="particles_one" filename="subpatches\particles_one.v4p" nodename="subpatches\particles_one.v4p" componentmode="InAWindow" id="337">
+   <BOUNDS type="Node" left="680" top="4160" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5080" top="0" width="8944" height="8296">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="337" srcpinname="Texture Out" dstnodeid="185" dstpinname="Texture In 2">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="338">
+   <BOUNDS type="Node" left="5768" top="464" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5768" top="464" width="795" height="480">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" values="1920,1080">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="339">
+   <BOUNDS type="Node" left="5752" top="1128" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="res_beamer1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="338" srcpinname="Y Output Value" dstnodeid="339" dstpinname="Input Value">
    </LINK>
    </PATCH>

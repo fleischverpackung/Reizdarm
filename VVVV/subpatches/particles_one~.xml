@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\particles_one.v4p" scrollx="0" scrolly="1072" systemname="particles_one" filename="C:\GIT\Reizdarm\VVVV\subpatches\particles_one.v4p">
-   <BOUNDS height="8544" left="2904" top="752" type="Window" width="9568">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\particles_one.v4p" scrollx="0" scrolly="3896" systemname="particles_one" filename="C:\GIT\Reizdarm\VVVV\subpatches\particles_one.v4p">
+   <BOUNDS height="8296" left="2376" top="0" type="Window" width="8944">
    </BOUNDS>
    <NODE componentmode="Hidden" hiddenwhenlocked="1" id="23" nodename="DisplayPolygon.v4p" systemname="DisplayPolygon" filename="%VVVV%\packs\box2d\nodes\plugins\DisplayPolygon.v4p">
    <BOUNDS height="100" left="690" top="4440" type="Node" width="100">
@@ -17,7 +17,7 @@
    </BOUNDS>
    <BOUNDS height="1800" left="690" top="8850" type="Box" width="2400">
    </BOUNDS>
-   <BOUNDS height="3712" left="10488" top="184" type="Window" width="4728">
+   <BOUNDS height="3528" left="11048" top="184" type="Window" width="4168">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -32,6 +32,8 @@
    <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
    </PIN>
    <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="EX9 Out" visible="1">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="21" nodename=":PLUGINS:\Box2dNodes.dll|VVVV.Nodes.Box2dWorldNode" systemname="World (Box2d)" filename="%VVVV%\packs\box2d\nodes\plugins\Box2dNodes.dll">
@@ -214,7 +216,7 @@
    </LINK>
    <LINK dstnodeid="17" dstpinname="Layer 1" srcnodeid="23" srcpinname="Layer">
    </LINK>
-   <NODE componentmode="InAWindow" id="13" nodename="CreateBoxes.v4p" systemname="CreateBoxes" filename="%VVVV%\packs\box2d\nodes\plugins\CreateBoxes.v4p">
+   <NODE componentmode="Hidden" id="13" nodename="CreateBoxes.v4p" systemname="CreateBoxes" filename="%VVVV%\packs\box2d\nodes\plugins\CreateBoxes.v4p">
    <BOUNDS height="100" left="5675" top="3929" type="Node" width="100">
    </BOUNDS>
    <PIN pinname="World" visible="1">
@@ -336,22 +338,6 @@
    </NODE>
    <LINK dstnodeid="21" dstpinname="Time Step" srcnodeid="0" srcpinname="Output">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="28" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5624" top="2824" width="696" height="416">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5624" top="2824" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.2">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="2">
-   </PIN>
-   </NODE>
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="29">
    <BOUNDS type="Node" left="5752" top="1712" width="100" height="100">
    </BOUNDS>
@@ -825,7 +811,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4704" top="7696" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="15">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -835,8 +821,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="72" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="9" srcpinname="Layer" dstnodeid="17" dstpinname="Layer 2">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="74">
    <BOUNDS type="Node" left="2592" top="3792" width="100" height="100">
@@ -859,5 +843,41 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="74" srcpinname="Y Output Value" dstnodeid="68" dstpinname="Reverse">
+   </LINK>
+   <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="75">
+   <BOUNDS type="Node" left="8216" top="8168" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Is Integer" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Scale" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="65" srcpinname="Output" dstnodeid="75" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="SetSlice (Spreads)" nodename="SetSlice (Spreads)" componentmode="Hidden" id="76">
+   <BOUNDS type="Node" left="8136" top="9096" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="77">
+   <BOUNDS type="Node" left="2064" top="9440" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Source" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="EX9 Out" dstnodeid="77" dstpinname="Source">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="78">
+   <BOUNDS type="Box" left="2072" top="10096" width="696" height="208">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2072" top="10096" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="77" srcpinname="Texture Out" dstnodeid="78" dstpinname="Input Node">
    </LINK>
    </PATCH>
