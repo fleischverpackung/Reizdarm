@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
    <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\particles_one.v4p" scrollx="0" scrolly="3896" systemname="particles_one" filename="C:\GIT\Reizdarm\VVVV\subpatches\particles_one.v4p">
-   <BOUNDS height="8296" left="2376" top="0" type="Window" width="8944">
+   <BOUNDS height="8296" left="5080" top="0" type="Window" width="8944">
    </BOUNDS>
    <NODE componentmode="Hidden" hiddenwhenlocked="1" id="23" nodename="DisplayPolygon.v4p" systemname="DisplayPolygon" filename="%VVVV%\packs\box2d\nodes\plugins\DisplayPolygon.v4p">
    <BOUNDS height="100" left="690" top="4440" type="Node" width="100">
@@ -12,7 +12,7 @@
    <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
-   <NODE componentmode="InAWindow" id="22" nodename="RENDERER (EX9)" stayontop="1" systemname="Renderer (EX9)">
+   <NODE componentmode="Hidden" id="22" nodename="RENDERER (EX9)" stayontop="1" systemname="Renderer (EX9)">
    <BOUNDS height="0" left="690" top="8850" type="Node" width="0">
    </BOUNDS>
    <BOUNDS height="1800" left="690" top="8850" type="Box" width="2400">
@@ -34,6 +34,12 @@
    <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    <PIN pinname="EX9 Out" visible="1">
+   </PIN>
+   <PIN pinname="Backbuffer Width" visible="1">
+   </PIN>
+   <PIN pinname="Backbuffer Height" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="21" nodename=":PLUGINS:\Box2dNodes.dll|VVVV.Nodes.Box2dWorldNode" systemname="World (Box2d)" filename="%VVVV%\packs\box2d\nodes\plugins\Box2dNodes.dll">
@@ -879,5 +885,51 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="77" srcpinname="Texture Out" dstnodeid="78" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="R (Value)" filename="" nodename="R (Value)" componentmode="Hidden" id="79">
+   <BOUNDS type="Node" left="1352" top="7992" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="res_beamer1">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Unzip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (Value)" componentmode="Hidden" id="80">
+   <BOUNDS type="Node" left="1328" top="8312" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1328" top="8312" width="1600" height="1600">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="79" srcpinname="Input Value" dstnodeid="80" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="80" srcpinname="Output 1" dstnodeid="22" dstpinname="Backbuffer Width">
+   </LINK>
+   <LINK srcnodeid="80" srcpinname="Output 2" dstnodeid="22" dstpinname="Backbuffer Height">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="81">
+   <BOUNDS type="Box" left="2824" top="8064" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2824" top="8064" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="81" srcpinname="Y Output Value" dstnodeid="22" dstpinname="Enabled">
    </LINK>
    </PATCH>
