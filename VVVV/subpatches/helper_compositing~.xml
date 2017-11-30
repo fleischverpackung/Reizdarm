@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" systemname="helper_compositing" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" scrollx="5520" scrolly="9352">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" systemname="helper_compositing" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" scrollx="4728" scrolly="9688">
    <NODE systemname="Fill (EX9.RenderState)" nodename="Fill (EX9.RenderState)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1588" top="4812" width="100" height="100">
    </BOUNDS>
@@ -18,7 +18,7 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="5840" top="144" width="8944" height="8296">
+   <BOUNDS type="Window" left="6200" top="120" width="8944" height="8296">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -771,7 +771,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7200" top="14784" width="2088" height="1568">
    </BOUNDS>
-   <BOUNDS type="Window" left="864" top="1064" width="5416" height="4432">
+   <BOUNDS type="Window" left="848" top="104" width="6472" height="5280">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -782,6 +782,8 @@
    <PIN pinname="Actual Backbuffer Height" visible="1">
    </PIN>
    <PIN pinname="Aspect Ratio" visible="1">
+   </PIN>
+   <PIN pinname="EX9 Out" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="66" srcpinname="Layer" dstnodeid="110" dstpinname="Layers">
