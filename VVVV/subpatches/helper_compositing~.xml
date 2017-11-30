@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" systemname="helper_compositing" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" scrollx="4728" scrolly="9688">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" systemname="helper_compositing" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" scrollx="880" scrolly="1856">
    <NODE systemname="Fill (EX9.RenderState)" nodename="Fill (EX9.RenderState)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1588" top="4812" width="100" height="100">
    </BOUNDS>
@@ -18,7 +18,7 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="6200" top="120" width="8944" height="8296">
+   <BOUNDS type="Window" left="6632" top="1360" width="8944" height="8296">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -84,6 +84,8 @@
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Alpha" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="26" srcpinname="Output Node" dstnodeid="34" dstpinname="Texture">
@@ -771,7 +773,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7200" top="14784" width="2088" height="1568">
    </BOUNDS>
-   <BOUNDS type="Window" left="848" top="104" width="6472" height="5280">
+   <BOUNDS type="Window" left="1384" top="648" width="6472" height="5280">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
