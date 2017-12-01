@@ -99,7 +99,7 @@
    </PIN>
    <BOUNDS type="Box" left="5317" top="9274">
    </BOUNDS>
-   <PIN pinname="Gamma" slicecount="1" values="0">
+   <PIN pinname="Gamma" slicecount="1" values="0.47">
    </PIN>
    <PIN pinname="Technique" slicecount="1" values="Linear">
    </PIN>
