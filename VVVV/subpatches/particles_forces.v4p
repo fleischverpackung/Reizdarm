@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\particles_forces.v4p" systemname="particles_forces" filename="C:\GIT\Reizdarm\VVVV\subpatches\particles_forces.v4p" scrollx="5200" scrolly="3056">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\particles_forces.v4p" systemname="particles_forces" filename="C:\GIT\Reizdarm\VVVV\subpatches\particles_forces.v4p" scrollx="3960" scrolly="2480">
    <NODE componentmode="Hidden" id="0" nodename=":PLUGINS:\Box2dNodes.dll|VVVV.Nodes.Box2dApplyForceNode" systemname="ApplyForce (Box2d)" filename="%VVVV%\packs\box2d\nodes\plugins\Box2dNodes.dll">
    <BOUNDS height="0" left="7076" top="9911" type="Node" width="0">
    </BOUNDS>
@@ -150,7 +150,7 @@
    </LINK>
    <LINK srcnodeid="23" srcpinname="Output Node" dstnodeid="0" dstpinname="Bodies" hiddenwhenlocked="1">
    </LINK>
-   <BOUNDS type="Window" left="4856" top="120" width="8944" height="8296">
+   <BOUNDS type="Window" left="6416" top="80" width="8944" height="8296">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.2">
    </PACK>
@@ -291,7 +291,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10696" top="4960" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.2,0.5">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.2,0.1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
@@ -507,7 +507,7 @@
    </PIN>
    <PIN pinname="Reverse" visible="1">
    </PIN>
-   <PIN pinname="Period" slicecount="1" values="10" visible="1">
+   <PIN pinname="Period" slicecount="1" visible="1" values="10">
    </PIN>
    <PIN pinname="Pause" visible="1">
    </PIN>
@@ -761,7 +761,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="2" values="0.5,1">
+   <PIN pinname="Y Input Value" slicecount="2" values="1,15">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>

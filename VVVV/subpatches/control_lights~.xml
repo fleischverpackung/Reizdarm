@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" systemname="control_lights" filename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" scrollx="632" scrolly="2808">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" systemname="control_lights" filename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" scrollx="376" scrolly="2056">
    <NODE id="13" systemname="IOBox (Color)" componentmode="InABox" nodename="IOBox (Color)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|lights x8|">
    </PIN>
@@ -17,7 +17,7 @@
    <PACK Name="dx11" Version="1.0.2">
    </PACK>
    <NODE systemname="Pipet (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\modules\Pipet\Pipet (DX11.Texture 2d).v4p" nodename="Pipet (DX11.Texture 2d)" componentmode="Hidden" id="183">
-   <BOUNDS type="Node" left="4688" top="5648" width="100" height="100">
+   <BOUNDS type="Node" left="4680" top="5616" width="100" height="100">
    </BOUNDS>
    <PIN pinname="XY" visible="1">
    </PIN>
@@ -61,9 +61,9 @@
    <LINK srcnodeid="186" srcpinname="Y Output Value" dstnodeid="184" dstpinname="ResolutionXY">
    </LINK>
    <NODE systemname="Renderer (DX11 TempTarget)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11 TempTarget)" componentmode="Hidden" id="224">
-   <BOUNDS type="Node" left="3528" top="4056" width="100" height="100">
+   <BOUNDS type="Node" left="3408" top="4120" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3528" top="4056" width="1600" height="1600">
+   <BOUNDS type="Box" left="3408" top="4120" width="1600" height="1600">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -98,16 +98,20 @@
    </NODE>
    <LINK srcnodeid="294" srcpinname="Layer Out" dstnodeid="224" dstpinname="Layer">
    </LINK>
-   <NODE systemname="texture_panningImpulse" filename="texture_panningImpulse.v4p" nodename="texture_panningImpulse.v4p" componentmode="Hidden" id="334">
+   <NODE systemname="texture_panningImpulse" filename="texture_panningImpulse.v4p" nodename="texture_panningImpulse.v4p" componentmode="InAWindow" id="334">
    <BOUNDS type="Node" left="4372" top="2603" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="1262" top="0" width="6220" height="10412">
    </BOUNDS>
-   <BOUNDS type="Window" left="6360" top="3912" width="6216" height="8752">
+   <BOUNDS type="Window" left="4680" top="3024" width="6216" height="8752">
    </BOUNDS>
    <PIN pinname="trigger" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="panning_impulse" visible="1">
+   </PIN>
+   <PIN pinname="lightImpulse" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="334" srcpinname="Layer" dstnodeid="294" dstpinname="Layer 2">
@@ -249,7 +253,7 @@
    <LINK srcnodeid="294" srcpinname="Layer Out" dstnodeid="384" dstpinname="Input Node" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="387">
-   <BOUNDS type="Node" left="6504" top="5280" width="100" height="100">
+   <BOUNDS type="Node" left="6584" top="5328" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="ctrl_pipette">
    </PIN>
@@ -326,32 +330,28 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="183" srcpinname="Color" dstnodeid="397" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="389" srcpinname="Y Output Value" dstnodeid="397" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="397" srcpinname="Output" dstnodeid="239" dstpinname="Input 1">
-   </LINK>
-   <NODE systemname="HSL (Color Split)" nodename="HSL (Color Split)" componentmode="Hidden" id="398">
-   <BOUNDS type="Node" left="4840" top="6088" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Lightness" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="183" srcpinname="Color" dstnodeid="398" dstpinname="Input">
-   </LINK>
-   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="399">
-   <BOUNDS type="Node" left="5256" top="6808" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="398" srcpinname="Lightness" dstnodeid="399" dstpinname="Input 1">
    </LINK>
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="400">
    <BOUNDS type="Node" left="6264" top="6800" width="100" height="100">
    </BOUNDS>
    </NODE>
+   <NODE systemname="Switch (Color Input)" nodename="Switch (Color Input)" componentmode="Hidden" id="403">
+   <BOUNDS type="Node" left="4968" top="6568" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="183" srcpinname="Color" dstnodeid="403" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="334" srcpinname="Output" dstnodeid="403" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="403" srcpinname="Output" dstnodeid="397" dstpinname="Input 1">
+   </LINK>
    </PATCH>

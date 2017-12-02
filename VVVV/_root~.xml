@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="0" scrolly="1856">
-   <BOUNDS height="8296" left="4856" top="120" type="Window" width="8944">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="0" scrolly="0">
+   <BOUNDS height="8296" left="6416" top="80" type="Window" width="8944">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -9,7 +9,7 @@
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="4856" top="120" width="8944" height="8296">
+   <BOUNDS type="Window" left="6416" top="80" width="8944" height="8296">
    </BOUNDS>
    <PIN pinname="colors" visible="1">
    </PIN>
@@ -25,7 +25,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4248" top="2624" width="6340" height="5348">
    </BOUNDS>
-   <BOUNDS type="Window" left="4856" top="120" width="8944" height="8296">
+   <BOUNDS type="Window" left="6416" top="80" width="8944" height="8296">
    </BOUNDS>
    <PIN pinname="Alpha" slicecount="1" values="1">
    </PIN>
@@ -55,7 +55,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3680" top="5476" width="10564" height="5462">
    </BOUNDS>
-   <BOUNDS type="Window" left="4856" top="120" width="8944" height="8296">
+   <BOUNDS type="Window" left="6416" top="80" width="8944" height="8296">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -79,7 +79,7 @@
    <NODE systemname="midi_control" filename="subpatches\midi_control.v4p" nodename="subpatches\midi_control.v4p" componentmode="InAWindow" id="305">
    <BOUNDS type="Node" left="7760" top="6808" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="4856" top="120" width="8944" height="8296">
+   <BOUNDS type="Window" left="6416" top="80" width="8944" height="8296">
    </BOUNDS>
    <PIN pinname="lights" visible="1" slicecount="8" values="0,0,0,0,0,0,0,0">
    </PIN>
@@ -123,7 +123,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5971" top="4018" width="3824" height="4332">
    </BOUNDS>
-   <BOUNDS type="Window" left="4856" top="120" width="8944" height="8296">
+   <BOUNDS type="Window" left="6416" top="80" width="8944" height="8296">
    </BOUNDS>
    <PIN pinname="lights" visible="1">
    </PIN>
@@ -155,7 +155,7 @@
    <NODE systemname="kinect_distance" filename="subpatches\kinect_distance.v4p" nodename="subpatches\kinect_distance.v4p" componentmode="InAWindow" id="330">
    <BOUNDS type="Node" left="1664" top="2064" width="1928" height="256">
    </BOUNDS>
-   <BOUNDS type="Window" left="4856" top="120" width="8944" height="8296">
+   <BOUNDS type="Window" left="6416" top="80" width="8944" height="8296">
    </BOUNDS>
    <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
@@ -193,7 +193,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2112" top="2624" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -205,7 +205,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Preview">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="332" srcpinname="Y Output Value" dstnodeid="330" dstpinname="HelperEnabled" hiddenwhenlocked="1">
@@ -351,7 +351,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3856" top="1432" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.63">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.44">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -391,7 +391,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="512" top="856" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.31,0.75,3.07">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.4,-0.36,1.96">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -413,7 +413,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="512" top="1792" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.38,0.4">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.9,0.4">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -443,7 +443,7 @@
    </BOUNDS>
    <PIN pinname="Bodies" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="4856" top="120" width="8944" height="8296">
+   <BOUNDS type="Window" left="6416" top="80" width="8944" height="8296">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
