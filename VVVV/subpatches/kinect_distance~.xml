@@ -53,7 +53,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3434" top="11093" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="9008" top="0" width="6536" height="4904">
+   <BOUNDS type="Window" left="7592" top="0" width="7768" height="8168">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -1031,7 +1031,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.17">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.07">
    </PIN>
    </NODE>
    <LINK srcnodeid="135" srcpinname="Y Output Value" dstnodeid="131" dstpinname="Scale XYZ">
