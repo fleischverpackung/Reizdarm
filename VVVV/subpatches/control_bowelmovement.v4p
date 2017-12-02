@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\control_bowelmovement.v4p" systemname="control_bowelmovement" filename="C:\GIT\Reizdarm\VVVV\subpatches\control_bowelmovement.v4p" scrollx="160" scrolly="2096">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\control_bowelmovement.v4p" systemname="control_bowelmovement" filename="C:\GIT\Reizdarm\VVVV\subpatches\control_bowelmovement.v4p" scrollx="336" scrolly="3232">
    <NODE systemname="Integrate (Differential)" filename="" nodename="Integrate (Differential)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3308" top="4348" width="100" height="100">
    </BOUNDS>
@@ -190,18 +190,6 @@
    <PIN pinname="Velocity" visible="1">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="19" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1900" top="5748" width="696" height="208">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1900" top="5748" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="GT (Value)" nodename="GT (Value)" componentmode="Hidden" id="20">
    <BOUNDS type="Node" left="1916" top="6500" width="100" height="100">
    </BOUNDS>
@@ -280,10 +268,6 @@
    </LINK>
    <LINK srcnodeid="0" srcpinname="Position Out" dstnodeid="18" dstpinname="Position">
    </LINK>
-   <LINK srcnodeid="18" srcpinname="Velocity" dstnodeid="19" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="22" srcpinname="Down Edge" dstnodeid="24" dstpinname="Input Value">
@@ -317,9 +301,9 @@
    <NODE id="27" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Position Out|">
    </PIN>
-   <BOUNDS type="Box" left="4076" top="6596" width="750" height="240">
+   <BOUNDS type="Box" left="4068" top="7588" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4076" top="6596" width="750" height="240">
+   <BOUNDS type="Node" left="4068" top="7588" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="8" srcpinname="Position Out" dstnodeid="27" dstpinname="Y Input Value">
@@ -336,7 +320,7 @@
    </LINK>
    <LINK srcnodeid="4" srcpinname="Output" dstnodeid="15" dstpinname="Input 1">
    </LINK>
-   <BOUNDS type="Window" left="6336" top="280" width="6632" height="8752">
+   <BOUNDS type="Window" left="7344" top="1472" width="6632" height="8752">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -349,5 +333,29 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Output" dstnodeid="28" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="29">
+   <BOUNDS type="Node" left="4360" top="6888" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="bowel_velocity">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Velocity" dstnodeid="20" dstpinname="Input 1">
+   </LINK>
+   <PACK Name="dx11" Version="1.0.2">
+   </PACK>
+   <NODE systemname="FrameDifference (Animation)" nodename="FrameDifference (Animation)" componentmode="Hidden" id="30">
+   <BOUNDS type="Node" left="4344" top="6536" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="65.8213991100258">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Position Out" dstnodeid="30" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="30" srcpinname="Output" dstnodeid="29" dstpinname="Input Value">
    </LINK>
    </PATCH>
