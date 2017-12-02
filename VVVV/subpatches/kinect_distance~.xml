@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\kinect_distance.v4p" systemname="Count (DX11.Particles.Analysis) help" filename="C:\Users\TP-A11\Desktop\Count (DX11.Particles.Analysis) help.v4p" scrollx="392" scrolly="5384">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\kinect_distance.v4p" systemname="Count (DX11.Particles.Analysis) help" filename="C:\Users\TP-A11\Desktop\Count (DX11.Particles.Analysis) help.v4p" scrollx="3680" scrolly="0">
    <BOUNDS type="Window" left="4776" top="2224" width="7504" height="5856">
    </BOUNDS>
    <PACK Name="vvvv-Message" Version="2.9.10">
@@ -53,7 +53,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3434" top="11093" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="7592" top="0" width="7768" height="8168">
+   <BOUNDS type="Window" left="1416" top="136" width="7768" height="8168">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -461,9 +461,9 @@
    <LINK srcnodeid="66" srcpinname="Output" dstnodeid="63" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="69">
-   <BOUNDS type="Box" left="8843" top="1945" width="795" height="720">
+   <BOUNDS type="Box" left="9019" top="2513" width="795" height="720">
    </BOUNDS>
-   <BOUNDS type="Node" left="8843" top="1945" width="0" height="0">
+   <BOUNDS type="Node" left="9019" top="2513" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.84,0.88,0.23">
    </PIN>
@@ -807,13 +807,13 @@
    <LINK srcnodeid="112" srcpinname="Velocity" dstnodeid="113" dstpinname="Input Value">
    </LINK>
    <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="117">
-   <BOUNDS type="Node" left="9024" top="1528" width="100" height="100">
+   <BOUNDS type="Node" left="9200" top="2096" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Z" visible="1">
    </PIN>
-   <PIN pinname="X" slicecount="1" values="0.51">
+   <PIN pinname="X" slicecount="1" values="0.51" visible="1">
    </PIN>
-   <PIN pinname="Y" slicecount="1" values="0.61">
+   <PIN pinname="Y" slicecount="1" values="0.61" visible="1">
    </PIN>
    <PIN pinname="XYZ" visible="1">
    </PIN>
@@ -1321,5 +1321,39 @@
    <LINK srcnodeid="169" srcpinname="Output" dstnodeid="172" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="172" srcpinname="Output" dstnodeid="136" dstpinname="Color Input">
+   </LINK>
+   <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="174">
+   <BOUNDS type="Node" left="9120" top="1656" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="174" srcpinname="X" dstnodeid="117" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="174" srcpinname="Y" dstnodeid="117" dstpinname="Y">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="175">
+   <BOUNDS type="Box" left="8968" top="1080" width="696" height="416">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8968" top="1080" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="sizeXY">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="175" srcpinname="Y Output Value" dstnodeid="174" dstpinname="XY">
    </LINK>
    </PATCH>

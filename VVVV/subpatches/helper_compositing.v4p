@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" systemname="helper_compositing" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" scrollx="13392" scrolly="1032">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" systemname="helper_compositing" filename="C:\GIT\Reizdarm\VVVV\subpatches\helper_compositing.v4p" scrollx="16192" scrolly="1584">
    <NODE systemname="Fill (EX9.RenderState)" nodename="Fill (EX9.RenderState)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1588" top="4812" width="100" height="100">
    </BOUNDS>
@@ -18,7 +18,7 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="7240" top="1024" width="8944" height="8296">
+   <BOUNDS type="Window" left="10336" top="2904" width="8944" height="8296">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -1131,11 +1131,11 @@
    <LINK srcnodeid="168" srcpinname="XY" dstnodeid="155" dstpinname="TranslateXY">
    </LINK>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="172">
-   <BOUNDS type="Box" left="18648" top="3568" width="1464" height="608">
+   <BOUNDS type="Box" left="18656" top="3440" width="1464" height="608">
    </BOUNDS>
-   <BOUNDS type="Node" left="18648" top="3568" width="0" height="0">
+   <BOUNDS type="Node" left="18656" top="3440" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="3" visible="1" values="|Integer (MinInt .. MaxInt)|,|Integer (0 .. MaxInt)|,">
+   <PIN pinname="Input Enum" slicecount="3" visible="1" values="|Integer (MinInt .. MaxInt)|,|Integer (0 .. MaxInt)|,|Real (MinFloat .. MaxFloat)|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="|Real (MinFloat .. MaxFloat)|">
    </PIN>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\kinect_distance.v4p" systemname="Count (DX11.Particles.Analysis) help" filename="C:\Users\TP-A11\Desktop\Count (DX11.Particles.Analysis) help.v4p" scrollx="3680" scrolly="0">
-   <BOUNDS type="Window" left="4776" top="2224" width="7504" height="5856">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\kinect_distance.v4p" systemname="Count (DX11.Particles.Analysis) help" filename="C:\Users\TP-A11\Desktop\Count (DX11.Particles.Analysis) help.v4p" scrollx="0" scrolly="4216">
+   <BOUNDS type="Window" left="5112" top="2016" width="7504" height="5856">
    </BOUNDS>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
@@ -53,7 +53,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3434" top="11093" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="1416" top="136" width="7768" height="8168">
+   <BOUNDS type="Window" left="1408" top="3792" width="5392" height="3992">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -1232,20 +1232,6 @@
    </NODE>
    <LINK srcnodeid="141" srcpinname="Output" dstnodeid="155" dstpinname="Input Value">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="162">
-   <BOUNDS type="Box" left="936" top="6728" width="696" height="208">
-   </BOUNDS>
-   <BOUNDS type="Node" left="936" top="6728" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="141" srcpinname="Output" dstnodeid="162" dstpinname="Y Input Value">
-   </LINK>
    <NODE systemname="TimerFlop (Animation)" nodename="TimerFlop (Animation)" componentmode="Hidden" id="168" filename="%VVVV%\addonpack\lib\nodes\plugins\TimerFlop.dll">
    <BOUNDS type="Node" left="10448" top="11400" width="100" height="100">
    </BOUNDS>
@@ -1355,5 +1341,25 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="175" srcpinname="Y Output Value" dstnodeid="174" dstpinname="XY">
+   </LINK>
+   <NODE systemname="Add (Value Spectral)" nodename="Add (Value Spectral)" componentmode="Hidden" id="176">
+   <BOUNDS type="Node" left="1544" top="6704" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="141" srcpinname="Output" dstnodeid="176" dstpinname="Input">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="177">
+   <BOUNDS type="Node" left="1424" top="7176" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="kinect_area">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="176" srcpinname="Output" dstnodeid="177" dstpinname="Input Value">
    </LINK>
    </PATCH>
