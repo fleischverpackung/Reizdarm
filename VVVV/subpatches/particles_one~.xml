@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\particles_one.v4p" scrollx="3248" scrolly="2544" systemname="particles_one" filename="C:\GIT\Reizdarm\VVVV\subpatches\particles_one.v4p">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\particles_one.v4p" scrollx="3216" scrolly="1912" systemname="particles_one" filename="C:\GIT\Reizdarm\VVVV\subpatches\particles_one.v4p">
    <BOUNDS height="8296" left="6416" top="456" type="Window" width="8944">
    </BOUNDS>
    <NODE componentmode="Hidden" hiddenwhenlocked="1" id="23" nodename="DisplayPolygon.v4p" systemname="DisplayPolygon" filename="%VVVV%\packs\box2d\nodes\plugins\DisplayPolygon.v4p">
@@ -49,9 +49,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="20" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="6110" top="4587" type="Node" width="0">
+   <BOUNDS height="0" left="6222" top="4515" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="480" left="6110" top="4587" type="Box" width="480">
+   <BOUNDS height="480" left="6222" top="4515" type="Box" width="480">
    </BOUNDS>
    <BOUNDS height="160" left="5265" top="4245" type="Window" width="215">
    </BOUNDS>
@@ -85,11 +85,11 @@
    <LINK dstnodeid="22" dstpinname="Layers" srcnodeid="17" srcpinname="Layer">
    </LINK>
    <NODE componentmode="Hidden" hiddenwhenlocked="1" id="16" nodename="CreateWalls.v4p" systemname="CreateWalls" filename="%VVVV%\packs\box2d\nodes\plugins\CreateWalls.v4p">
-   <BOUNDS height="100" left="9226" top="7836" type="Node" width="100">
+   <BOUNDS height="100" left="5154" top="6428" type="Node" width="100">
    </BOUNDS>
    <PIN pinname="Create" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS left="9226" top="7836" type="Box">
+   <BOUNDS left="5154" top="6428" type="Box">
    </BOUNDS>
    <PIN pinname="World" visible="1" slicecount="1" values="||">
    </PIN>
@@ -581,9 +581,9 @@
    </PIN>
    <PIN pinname="Bodies" visible="1">
    </PIN>
-   <PIN pinname="Lower BoundXY" visible="1" slicecount="1" values="-150">
+   <PIN pinname="Lower BoundXY" visible="1" slicecount="2" values="-100,-100">
    </PIN>
-   <PIN pinname="Upper BoundXY" slicecount="2" values="100.32,100.32">
+   <PIN pinname="Upper BoundXY" slicecount="2" values="100,100">
    </PIN>
    <PIN pinname="Has Reset" visible="1">
    </PIN>
@@ -648,24 +648,6 @@
    </NODE>
    <LINK srcnodeid="358" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Enabled">
    </LINK>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="362">
-   <BOUNDS type="Node" left="3880" top="4880" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3880" top="4880" width="795" height="480">
-   </BOUNDS>
-   <PIN pinname="Rows" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="2" values="-120,-120">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="|0, 0|">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="362" srcpinname="Y Output Value" dstnodeid="103" dstpinname="Lower BoundXY">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="363">
    <BOUNDS type="Node" left="5904" top="4056" width="100" height="100">
    </BOUNDS>
@@ -679,22 +661,6 @@
    <LINK srcnodeid="363" srcpinname="Y Output Value" dstnodeid="103" dstpinname="Position Iterations">
    </LINK>
    <LINK srcnodeid="363" srcpinname="Y Output Value" dstnodeid="103" dstpinname="Velocity Iterations">
-   </LINK>
-   <LINK srcnodeid="103" srcpinname="Has Reset" dstnodeid="16" dstpinname="Create">
-   </LINK>
-   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="377">
-   <BOUNDS type="Node" left="9112" top="7456" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="103" srcpinname="World" dstnodeid="377" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="377" srcpinname="Output" dstnodeid="16" dstpinname="World">
    </LINK>
    <NODE systemname="particles_spawner" filename="particles_spawner.v4p" nodename="particles_spawner.v4p" componentmode="Hidden" id="379">
    <BOUNDS type="Node" left="5016" top="7960" width="100" height="100">
@@ -719,5 +685,61 @@
    <LINK srcnodeid="103" srcpinname="Bodies" dstnodeid="379" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="103" srcpinname="World" dstnodeid="379" dstpinname="World">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="387">
+   <BOUNDS type="Node" left="9592" top="5128" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="kinect_area">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="388">
+   <BOUNDS type="Node" left="9240" top="5672" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="387" srcpinname="Input Value" dstnodeid="388" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="390">
+   <BOUNDS type="Node" left="9944" top="6080" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="391">
+   <BOUNDS type="Node" left="9944" top="5680" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9944" top="5680" width="1600" height="1600">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="392">
+   <BOUNDS type="Node" left="9240" top="6992" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="103" srcpinname="World" dstnodeid="392" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="388" srcpinname="Output" dstnodeid="392" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="387" srcpinname="Input Value" dstnodeid="391" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="391" srcpinname="Output 1" dstnodeid="390" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="103" srcpinname="World" dstnodeid="16" dstpinname="World" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="103" srcpinname="Has Reset" dstnodeid="16" dstpinname="Create" hiddenwhenlocked="1">
    </LINK>
    </PATCH>
