@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" systemname="control_lights" filename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" scrollx="376" scrolly="2056">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" systemname="control_lights" filename="C:\GIT\Reizdarm\VVVV\subpatches\control_lights.v4p" scrollx="1824" scrolly="2048">
    <NODE id="13" systemname="IOBox (Color)" componentmode="InABox" nodename="IOBox (Color)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|lights x8|">
    </PIN>
@@ -10,14 +10,14 @@
    <PIN pinname="Color Input" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="4856" top="120" width="8944" height="8296">
+   <BOUNDS type="Window" left="7144" top="192" width="8944" height="8296">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <PACK Name="dx11" Version="1.0.2">
    </PACK>
    <NODE systemname="Pipet (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\modules\Pipet\Pipet (DX11.Texture 2d).v4p" nodename="Pipet (DX11.Texture 2d)" componentmode="Hidden" id="183">
-   <BOUNDS type="Node" left="4680" top="5616" width="100" height="100">
+   <BOUNDS type="Node" left="4720" top="5456" width="100" height="100">
    </BOUNDS>
    <PIN pinname="XY" visible="1">
    </PIN>
@@ -103,7 +103,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1262" top="0" width="6220" height="10412">
    </BOUNDS>
-   <BOUNDS type="Window" left="4680" top="3024" width="6216" height="8752">
+   <BOUNDS type="Window" left="7144" top="192" width="8944" height="8296">
    </BOUNDS>
    <PIN pinname="trigger" visible="1" slicecount="1" values="0">
    </PIN>
@@ -133,7 +133,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.91">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Minimum" slicecount="1" values="0">
    </PIN>
@@ -334,24 +334,44 @@
    </LINK>
    <LINK srcnodeid="397" srcpinname="Output" dstnodeid="239" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="400">
-   <BOUNDS type="Node" left="6264" top="6800" width="100" height="100">
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="404">
+   <BOUNDS type="Node" left="4688" top="5896" width="100" height="100">
    </BOUNDS>
-   </NODE>
-   <NODE systemname="Switch (Color Input)" nodename="Switch (Color Input)" componentmode="Hidden" id="403">
-   <BOUNDS type="Node" left="4968" top="6568" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Receive String" slicecount="1" values="impulse_running">
    </PIN>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="InputMorph (Color)" nodename="InputMorph (Color)" componentmode="Hidden" id="405">
+   <BOUNDS type="Node" left="5512" top="6912" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="|0.02780,0.02780,0.02780,1.00000|">
+   </PIN>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="183" srcpinname="Color" dstnodeid="403" dstpinname="Input 1">
+   <LINK srcnodeid="183" srcpinname="Color" dstnodeid="405" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="334" srcpinname="Output" dstnodeid="403" dstpinname="Input 2">
+   <LINK srcnodeid="334" srcpinname="Output" dstnodeid="405" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="403" srcpinname="Output" dstnodeid="397" dstpinname="Input 1">
+   <LINK srcnodeid="405" srcpinname="Output" dstnodeid="397" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="407">
+   <BOUNDS type="Node" left="4720" top="6232" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Time" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="404" srcpinname="Input Value" dstnodeid="407" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="407" srcpinname="Output" dstnodeid="405" dstpinname="Switch">
    </LINK>
    </PATCH>
