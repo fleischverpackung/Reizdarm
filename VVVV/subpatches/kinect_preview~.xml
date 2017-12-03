@@ -385,6 +385,8 @@
    </PIN>
    <PIN pinname="Scale XYZ" visible="1">
    </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="33" srcpinname="XYZ" dstnodeid="32" dstpinname="Translate XYZ">
    </LINK>
@@ -445,5 +447,17 @@
    <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Scale XYZ">
    </LINK>
    <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="22" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="40">
+   <BOUNDS type="Box" left="576" top="3184" width="696" height="208">
+   </BOUNDS>
+   <BOUNDS type="Node" left="576" top="3184" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform In|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="Output Node" dstnodeid="32" dstpinname="Transform In">
    </LINK>
    </PATCH>

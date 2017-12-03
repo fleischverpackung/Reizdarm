@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\particles_render.v4p" systemname="particles_render" filename="C:\GIT\Reizdarm\VVVV\subpatches\particles_render.v4p" scrollx="56" scrolly="5976">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\particles_render.v4p" systemname="particles_render" filename="C:\GIT\Reizdarm\VVVV\subpatches\particles_render.v4p" scrollx="672" scrolly="4536">
    <NODE componentmode="Hidden" hiddenwhenlocked="1" id="0" nodename="DisplayPolygon.v4p" systemname="DisplayPolygon" filename="%VVVV%\packs\box2d\nodes\plugins\DisplayPolygon.v4p">
    <BOUNDS height="100" left="2179" top="6388" type="Node" width="100">
    </BOUNDS>
@@ -21,7 +21,7 @@
    </BOUNDS>
    <BOUNDS height="1800" left="3491" top="9398" type="Box" width="2400">
    </BOUNDS>
-   <BOUNDS height="3528" left="0" top="4640" type="Window" width="4168">
+   <BOUNDS height="3528" left="0" top="4640" type="Window" width="4424">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -43,7 +43,7 @@
    </PIN>
    <PIN pinname="Backbuffer Height" visible="1">
    </PIN>
-   <PIN pinname="Enabled" visible="1">
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="2" nodename="Group (EX9)" systemname="Group (EX9)">
@@ -61,7 +61,7 @@
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="3" nodename="Scale (Transform Vector)" systemname="Scale (Transform Vector)">
-   <BOUNDS height="0" left="4806" top="9118" type="Node" width="0">
+   <BOUNDS height="0" left="4918" top="9022" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -114,24 +114,6 @@
    <PIN pinname="Output 1" visible="1">
    </PIN>
    <PIN pinname="Output 2" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="18" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5577" top="9060" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5577" top="9060" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="19" systemname="IOBox (Value Advanced)">
@@ -190,8 +172,6 @@
    </LINK>
    <LINK srcnodeid="17" srcpinname="Output 2" dstnodeid="1" dstpinname="Backbuffer Height">
    </LINK>
-   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Enabled" hiddenwhenlocked="1">
-   </LINK>
    <LINK dstnodeid="1" dstpinname="Projection" srcnodeid="3" srcpinname="Transform Out">
    </LINK>
    <LINK dstnodeid="4" dstpinname="Transform" hiddenwhenlocked="1" srcnodeid="5" srcpinname="Transform Out">
@@ -200,7 +180,7 @@
    </LINK>
    <LINK srcnodeid="16" srcpinname="Input Value" dstnodeid="17" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="4856" top="120" width="8944" height="8296">
+   <BOUNDS type="Window" left="5680" top="5320" width="8944" height="8296">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.2">
    </PACK>
@@ -247,5 +227,55 @@
    <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="5" dstpinname="TranslateXY">
    </LINK>
    <LINK srcnodeid="37" srcpinname="Texture Out" dstnodeid="23" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Transform (Transform 2d Vector)" nodename="Transform (Transform 2d Vector)" componentmode="Hidden" id="53">
+   <BOUNDS type="Node" left="6912" top="6544" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="ScaleXY" visible="1">
+   </PIN>
+   <PIN pinname="TranslateXY" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="54">
+   <BOUNDS type="Node" left="7448" top="5848" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7448" top="5848" width="696" height="208">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="3.63">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="53" dstpinname="ScaleXY">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="55">
+   <BOUNDS type="Box" left="6680" top="5632" width="696" height="416">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6680" top="5632" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="2.71,-2.75">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="55" srcpinname="Y Output Value" dstnodeid="53" dstpinname="TranslateXY">
+   </LINK>
+   <NODE systemname="PerfMeter (Debug)" filename="%VVVV%\lib\nodes\modules\Debug\PerfMeter (Debug).v4p" nodename="PerfMeter (Debug)" componentmode="Hidden" id="56">
+   <BOUNDS type="Node" left="5360" top="7152" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="6072" top="6896" width="11760" height="8680">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="56" srcpinname="Layer" dstnodeid="2" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Transform Out" dstnodeid="56" dstpinname="Transform">
    </LINK>
    </PATCH>

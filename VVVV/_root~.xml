@@ -1,31 +1,15 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="1320" scrolly="2472">
-   <BOUNDS height="8296" left="7144" top="192" type="Window" width="8944">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="0" scrolly="2488">
+   <BOUNDS height="8296" left="4896" top="152" type="Window" width="10128">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <NODE systemname="helper_colors" filename="subpatches\helper_colors.v4p" nodename="subpatches\helper_colors.v4p" componentmode="InAWindow" id="185">
-   <BOUNDS type="Node" left="5218" top="6938" width="1328" height="256">
-   </BOUNDS>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="7144" top="192" width="8944" height="8296">
-   </BOUNDS>
-   <PIN pinname="colors" visible="1">
-   </PIN>
-   <PIN pinname="zottenColor" visible="1" slicecount="1" values="|0.53712,0.67749,0.01895,1.00000|">
-   </PIN>
-   <PIN pinname="lightcolor" visible="1" slicecount="1" values="|0.98703,0.93928,0.02735,1.00000|">
-   </PIN>
-   <PIN pinname="Texture In 2" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
    <NODE systemname="control_lights" filename="subpatches\control_lights.v4p" nodename="subpatches\control_lights.v4p" componentmode="InAWindow" id="211">
-   <BOUNDS type="Node" left="6112" top="5526" width="0" height="0">
+   <BOUNDS type="Node" left="4968" top="6398" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4520" top="3032" width="6340" height="5348">
+   <BOUNDS type="Box" left="3376" top="3904" width="6340" height="5348">
    </BOUNDS>
-   <BOUNDS type="Window" left="7144" top="192" width="8944" height="8296">
+   <BOUNDS type="Window" left="4896" top="152" width="10128" height="8296">
    </BOUNDS>
    <PIN pinname="Alpha" slicecount="1" values="1">
    </PIN>
@@ -45,17 +29,15 @@
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
+   <PIN pinname="lights x8" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="211" srcpinname="Output" dstnodeid="185" dstpinname="zottenColor">
-   </LINK>
-   <LINK srcnodeid="211" srcpinname="lights x8" dstnodeid="185" dstpinname="lightcolor">
-   </LINK>
-   <NODE systemname="helper_compositing" filename="subpatches\helper_compositing.v4p" nodename="subpatches\helper_compositing.v4p" componentmode="InAWindow" id="234">
-   <BOUNDS type="Node" left="4745" top="8207" width="0" height="0">
+   <NODE systemname="helper_compositing" filename="subpatches\helper_compositing.v4p" nodename="subpatches\helper_compositing.v4p" componentmode="InAWindow" id="234" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="4401" top="7919" width="2200" height="256">
    </BOUNDS>
-   <BOUNDS type="Box" left="3680" top="5476" width="10564" height="5462">
+   <BOUNDS type="Box" left="3336" top="5188" width="10564" height="5462">
    </BOUNDS>
-   <BOUNDS type="Window" left="7144" top="192" width="8944" height="8296">
+   <BOUNDS type="Window" left="4896" top="152" width="10128" height="8296">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -73,13 +55,17 @@
    </PIN>
    <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Textures" visible="1">
+   </PIN>
+   <PIN pinname="lightcolor" visible="1">
+   </PIN>
    </NODE>
    <PACK Name="dx11" Version="1.0.2">
    </PACK>
    <NODE systemname="midi_control" filename="subpatches\midi_control.v4p" nodename="subpatches\midi_control.v4p" componentmode="InAWindow" id="305">
-   <BOUNDS type="Node" left="7472" top="6928" width="100" height="100">
+   <BOUNDS type="Node" left="2504" top="7496" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="7144" top="192" width="8944" height="8296">
+   <BOUNDS type="Window" left="4896" top="152" width="10128" height="8296">
    </BOUNDS>
    <PIN pinname="lights" visible="1" slicecount="8" values="0,0,0,0,0,0,0,0">
    </PIN>
@@ -97,9 +83,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="310">
-   <BOUNDS type="Box" left="6344" top="7544" width="480" height="480">
+   <BOUNDS type="Box" left="6512" top="7288" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="6344" top="7544" width="0" height="0">
+   <BOUNDS type="Node" left="6512" top="7288" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -116,14 +102,14 @@
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="310" srcpinname="Y Output Value" dstnodeid="234" dstpinname="Evaluate">
+   <LINK srcnodeid="310" srcpinname="Y Output Value" dstnodeid="234" dstpinname="Evaluate" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="audio_control" filename="subpatches\audio_control.v4p" nodename="subpatches\audio_control.v4p" componentmode="InAWindow" id="316">
-   <BOUNDS type="Node" left="7931" top="6376" width="0" height="0">
+   <BOUNDS type="Node" left="2963" top="6944" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6019" top="4210" width="3824" height="4332">
+   <BOUNDS type="Box" left="1051" top="4778" width="3824" height="4332">
    </BOUNDS>
-   <BOUNDS type="Window" left="7144" top="192" width="8944" height="8296">
+   <BOUNDS type="Window" left="4896" top="152" width="10128" height="8296">
    </BOUNDS>
    <PIN pinname="lights" visible="1">
    </PIN>
@@ -155,7 +141,7 @@
    <NODE systemname="kinect_distance" filename="subpatches\kinect_distance.v4p" nodename="subpatches\kinect_distance.v4p" componentmode="InAWindow" id="330">
    <BOUNDS type="Node" left="1664" top="2064" width="1928" height="256">
    </BOUNDS>
-   <BOUNDS type="Window" left="7144" top="192" width="8944" height="8296">
+   <BOUNDS type="Window" left="4896" top="152" width="10128" height="8296">
    </BOUNDS>
    <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
@@ -215,7 +201,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3896" top="384" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="10">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -267,6 +253,8 @@
    </PIN>
    <PIN pinname="Maximum Background FPS" slicecount="1" visible="1" values="60">
    </PIN>
+   <PIN pinname="Time Mode" slicecount="1" values="Filtered">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="341">
    <BOUNDS type="Box" left="3536" top="2608" width="480" height="480">
@@ -297,7 +285,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="512" top="344" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.03">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -310,16 +298,14 @@
    </LINK>
    <LINK srcnodeid="211" srcpinname="Transform Out" dstnodeid="234" dstpinname="Transform">
    </LINK>
-   <LINK srcnodeid="185" srcpinname="Texture Out" dstnodeid="234" dstpinname="Texture">
-   </LINK>
-   <LINK srcnodeid="211" srcpinname="Layer Out" dstnodeid="234" dstpinname="Layer 1">
+   <LINK srcnodeid="211" srcpinname="Layer Out" dstnodeid="234" dstpinname="Layer 1" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="350">
    <BOUNDS type="Box" left="3864" top="928" width="696" height="208">
    </BOUNDS>
    <BOUNDS type="Node" left="3864" top="928" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="10">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="6">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -337,7 +323,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3856" top="1432" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.98">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.61">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -377,7 +363,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="512" top="856" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.47,-0.22,1.85">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="1.56,0.25,5.39">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -399,7 +385,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="512" top="1792" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.72,0.43">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.52,0.59">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -417,7 +403,7 @@
    <NODE systemname="particles_spawner" filename="particles_spawner.v4p" nodename="particles_spawner.v4p" componentmode="InAWindow" id="361">
    <BOUNDS type="Node" left="803" top="5888" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="7144" top="192" width="8944" height="8296">
+   <BOUNDS type="Window" left="4896" top="152" width="10128" height="8296">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -429,19 +415,19 @@
    </BOUNDS>
    <PIN pinname="Bodies" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="7144" top="192" width="8944" height="8296">
+   <BOUNDS type="Window" left="4896" top="152" width="10128" height="8296">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
    <PIN pinname="attractors" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="particles_render" filename="particles_render.v4p" nodename="particles_render.v4p" componentmode="InAWindow" id="358">
+   <NODE systemname="particles_render" filename="particles_render.v4p" nodename="particles_render.v4p" componentmode="Hidden" id="358">
    <BOUNDS type="Node" left="4344" top="5879" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="3544" top="608" width="5137" height="10808">
    </BOUNDS>
-   <BOUNDS type="Window" left="4856" top="120" width="8944" height="8296">
+   <BOUNDS type="Window" left="5680" top="5320" width="8944" height="8296">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
@@ -454,8 +440,6 @@
    <PIN pinname="AttractorHelpers" slicecount="1" visible="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="358" srcpinname="Texture Out" dstnodeid="185" dstpinname="Texture In 2">
-   </LINK>
    <NODE id="365" componentmode="Hidden" nodename="Divide (Value)" systemname="Divide (Value)" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" height="0" left="1869" top="4260" width="0">
    </BOUNDS>
@@ -665,9 +649,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="369">
-   <BOUNDS type="Box" left="4648" top="4992" width="480" height="480">
+   <BOUNDS type="Box" left="5368" top="5168" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="4648" top="4992" width="0" height="0">
+   <BOUNDS type="Node" left="5368" top="5168" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -681,7 +665,13 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="AttractorHelpers">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="369" srcpinname="Y Output Value" dstnodeid="358" dstpinname="AttractorHelpers">
+   </LINK>
+   <LINK srcnodeid="358" srcpinname="Texture Out" dstnodeid="234" dstpinname="Textures" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="211" srcpinname="lights x8" dstnodeid="234" dstpinname="lightcolor" hiddenwhenlocked="1">
    </LINK>
    </PATCH>

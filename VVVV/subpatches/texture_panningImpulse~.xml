@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\texture_panningImpulse.v4p" scrollx="968" scrolly="1232" systemname="texture_panningImpulse" filename="C:\GIT\Reizdarm\VVVV\subpatches\texture_panningImpulse.v4p">
+   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\texture_panningImpulse.v4p" scrollx="288" scrolly="552" systemname="texture_panningImpulse" filename="C:\GIT\Reizdarm\VVVV\subpatches\texture_panningImpulse.v4p">
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="0" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="4668" top="8252" width="440" height="408">
    </BOUNDS>
@@ -163,9 +163,9 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="15" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="5540" top="4092" width="100" height="100">
+   <BOUNDS type="Node" left="5564" top="3996" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5540" top="4092" width="1600" height="1600">
+   <BOUNDS type="Box" left="5564" top="3996" width="1600" height="1600">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -278,7 +278,7 @@
    <LINKPOINT x="6099" y="2551">
    </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="7144" top="192" width="8944" height="8296">
+   <BOUNDS type="Window" left="5888" top="192" width="10200" height="8296">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -361,7 +361,7 @@
    <LINK srcnodeid="36" srcpinname="Output" dstnodeid="35" dstpinname="Color Input">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="38">
-   <BOUNDS type="Node" left="6696" top="7768" width="100" height="100">
+   <BOUNDS type="Node" left="1512" top="4840" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="impulse_running">
    </PIN>
@@ -444,14 +444,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="45">
-   <BOUNDS type="Node" left="6648" top="7336" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="2.81314831925556">
-   </PIN>
-   <PIN pinname="OnChange" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="45" srcpinname="OnChange" dstnodeid="38" dstpinname="Input Value">
+   <LINK srcnodeid="39" srcpinname="OnChange" dstnodeid="38" dstpinname="Input Value">
    </LINK>
    </PATCH>
