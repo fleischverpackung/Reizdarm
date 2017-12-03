@@ -1,7 +1,7 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
    <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\texture_random.v4p" systemname="texture_random" filename="C:\GIT\Reizdarm\VVVV\subpatches\texture_random.v4p" scrollx="0" scrolly="0">
    <NODE systemname="HSV (Color Join)" nodename="HSV (Color Join)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="2608" top="4344" width="100" height="100">
+   <BOUNDS type="Node" left="2624" top="4824" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Value" visible="1" slicecount="40" values="0.0198459209667508,0.307094726826896,0,0.156189972327577,0,0,0.649384769006762,0.260160439098774,0.0105404044797251,0,0,0.0832560128593713,0.257284046164613,0.782729768467666,0.685863118289974,0,0.274203358494826,0.00982999928854112,0.195340546373274,0.186449848216412,0,0.150553403482241,0,0,0.281379902628457,0,0,0.184716193910617,0.110968281802782,0,0.279940427452383,0.154746676485423,0.437543685537478,0,0.0745875931954506,0.33152090106193,0.483847538944622,0.914108974767804,0.281556683059688,0.619057392125526">
    </PIN>
@@ -159,9 +159,9 @@
    <NODE id="12" systemname="IOBox (Color)" componentmode="InABox" nodename="IOBox (Color)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Output">
    </PIN>
-   <BOUNDS type="Box" left="2616" top="4776" width="750" height="240">
+   <BOUNDS type="Box" left="2632" top="5256" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2616" top="4776" width="750" height="240">
+   <BOUNDS type="Node" left="2632" top="5256" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="1" srcpinname="Output" dstnodeid="12" dstpinname="Color Input">
