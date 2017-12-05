@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\kinect_preview.v4p" systemname="kinect_preview" filename="C:\GIT\Reizdarm\VVVV\subpatches\kinect_preview.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\kinect_preview.v4p" systemname="kinect_preview" filename="C:\GIT\Reizdarm\VVVV\subpatches\kinect_preview.v4p" scrollx="0" scrolly="0">
    <NODE systemname="AspectRatio (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="AspectRatio (DX11.Layer)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3081" top="8709" width="100" height="100">
    </BOUNDS>
@@ -43,7 +43,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2774" top="9257" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="-272" top="2672" width="6104" height="4808">
+   <BOUNDS type="Window" left="160" top="900" width="11000" height="8510">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>

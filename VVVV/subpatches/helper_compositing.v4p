@@ -20,7 +20,7 @@
    <PIN pinname="Input Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="5280" top="2160" width="10120" height="8290">
+   <BOUNDS type="Window" left="5990" top="2220" width="10120" height="8290">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -1003,7 +1003,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7216" top="15528" width="2088" height="1568">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="6390" height="4360">
+   <BOUNDS type="Window" left="0" top="0" width="8070" height="7130">
    </BOUNDS>
    <PIN pinname="Actual BackBuffer SizeXY" visible="1">
    </PIN>

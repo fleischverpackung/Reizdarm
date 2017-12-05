@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\midi_control.v4p" locked="0" scrollx="4670" scrolly="6570" systemname="midi_control" filename="C:\GIT\Reizdarm\VVVV\subpatches\midi_control.v4p">
-   <BOUNDS height="8290" left="4150" top="640" type="Window" width="12590">
+   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\midi_control.v4p" locked="0" scrollx="3950" scrolly="2230" systemname="midi_control" filename="C:\GIT\Reizdarm\VVVV\subpatches\midi_control.v4p">
+   <BOUNDS height="8290" left="3890" top="1260" type="Window" width="12590">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -625,7 +625,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="315">
-   <BOUNDS type="Node" left="15700" top="5810" width="100" height="100">
+   <BOUNDS type="Node" left="15700" top="6240" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="bowel_stop">
    </PIN>
@@ -633,7 +633,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="316">
-   <BOUNDS type="Node" left="14910" top="5140" width="100" height="100">
+   <BOUNDS type="Node" left="14990" top="4940" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="kinect_area">
    </PIN>
@@ -685,7 +685,7 @@
    <LINK srcnodeid="320" srcpinname="Input Value" dstnodeid="313" dstpinname="Input 4">
    </LINK>
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="333">
-   <BOUNDS type="Node" left="14940" top="5730" width="100" height="100">
+   <BOUNDS type="Node" left="14950" top="5510" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -698,28 +698,14 @@
    </NODE>
    <LINK srcnodeid="316" srcpinname="Input Value" dstnodeid="333" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="349">
-   <BOUNDS type="Node" left="11850" top="3310" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Is Integer" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Scale" slicecount="1" values="5">
-   </PIN>
-   <PIN pinname="Enabled" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="348">
    <BOUNDS type="Node" left="11860" top="3790" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="2">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="349" srcpinname="Output" dstnodeid="348" dstpinname="Input 1">
-   </LINK>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="346">
    <BOUNDS type="Node" left="11880" top="4190" width="100" height="100">
    </BOUNDS>
@@ -787,25 +773,21 @@
    <LINK srcnodeid="346" srcpinname="Up Edge" dstnodeid="339" dstpinname="Input">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="350">
-   <BOUNDS type="Node" left="10100" top="3740" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="bowel_stop">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="351">
-   <BOUNDS type="Node" left="11860" top="2830" width="100" height="100">
+   <BOUNDS type="Node" left="8910" top="2530" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="bowel_accelerate">
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="351" srcpinname="Input Value" dstnodeid="349" dstpinname="Enabled">
-   </LINK>
-   <LINK srcnodeid="350" srcpinname="Input Value" dstnodeid="345" dstpinname="Enabled">
-   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="351">
+   <BOUNDS type="Node" left="12170" top="1490" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="bowel_stop">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
    <NODE systemname="Vector (4d Join)" nodename="Vector (4d Join)" componentmode="Hidden" id="352">
    <BOUNDS type="Node" left="10810" top="5810" width="100" height="100">
    </BOUNDS>
@@ -828,12 +810,10 @@
    </LINK>
    <LINK srcnodeid="339" srcpinname="Output 2" dstnodeid="352" dstpinname="W">
    </LINK>
-   <LINK srcnodeid="352" srcpinname="XYZW" dstnodeid="231" dstpinname="Input 6">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="353">
-   <BOUNDS type="Node" left="11070" top="2270" width="1170" height="230">
+   <BOUNDS type="Node" left="11760" top="880" width="1170" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="11070" top="2270" width="1170" height="230">
+   <BOUNDS type="Box" left="11760" top="880" width="1170" height="230">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|magen + darm|">
    </PIN>
@@ -845,7 +825,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="319">
-   <BOUNDS type="Node" left="15320" top="7010" width="100" height="100">
+   <BOUNDS type="Node" left="15320" top="6690" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -853,25 +833,15 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="2">
+   <PIN pinname="Input Count" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Input 3" visible="1">
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="319" srcpinname="Output" dstnodeid="313" dstpinname="Input 3">
    </LINK>
-   <LINK srcnodeid="315" srcpinname="Input Value" dstnodeid="319" dstpinname="Input 3">
-   </LINK>
    <LINK srcnodeid="315" srcpinname="Input Value" dstnodeid="319" dstpinname="Input 2">
    </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="354">
-   <BOUNDS type="Node" left="13670" top="4720" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="kinect_area">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="356">
    <BOUNDS type="Node" left="17470" top="4630" width="100" height="100">
    </BOUNDS>
@@ -1054,8 +1024,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <LINK srcnodeid="333" srcpinname="Inverse Output" dstnodeid="319" dstpinname="Input 1">
-   </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="379">
    <BOUNDS type="Node" left="14720" top="7080" width="100" height="100">
    </BOUNDS>
@@ -1167,5 +1135,173 @@
    <LINK srcnodeid="389" srcpinname="Down Edge" dstnodeid="397" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="397" srcpinname="Output" dstnodeid="313" dstpinname="Input 6">
+   </LINK>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="398">
+   <BOUNDS type="Node" left="15750" top="5510" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Inverse Output" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="316" srcpinname="Input Value" dstnodeid="398" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="333" srcpinname="Inverse Output" dstnodeid="319" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="398" srcpinname="Inverse Output" dstnodeid="319" dstpinname="Input 3">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="402">
+   <BOUNDS type="Node" left="10330" top="1230" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="kinect_area">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="401">
+   <BOUNDS type="Node" left="10330" top="1670" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Inverse Output" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="402" srcpinname="Input Value" dstnodeid="401" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="403">
+   <BOUNDS type="Node" left="10310" top="2060" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="401" srcpinname="Output" dstnodeid="403" dstpinname="Input">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="404">
+   <BOUNDS type="Node" left="10110" top="3570" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="403" srcpinname="Up Edge" dstnodeid="404" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="404" srcpinname="Output" dstnodeid="345" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="409">
+   <BOUNDS type="Node" left="10630" top="3950" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="350" srcpinname="Input Value" dstnodeid="404" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="404" srcpinname="Output" dstnodeid="409" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="409" srcpinname="Up Edge" dstnodeid="343" dstpinname="Input">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="410">
+   <BOUNDS type="Node" left="12490" top="1880" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="impulse_Stop">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="410" srcpinname="Input Value" dstnodeid="404" dstpinname="Input 3">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="413">
+   <BOUNDS type="Node" left="12140" top="2420" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="351" srcpinname="Input Value" dstnodeid="413" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="410" srcpinname="Input Value" dstnodeid="413" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="415">
+   <BOUNDS type="Node" left="12020" top="5870" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="kinect_area">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="414">
+   <BOUNDS type="Node" left="12020" top="6310" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Inverse Output" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="415" srcpinname="Input Value" dstnodeid="414" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="416">
+   <BOUNDS type="Node" left="11030" top="6480" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="414" srcpinname="Inverse Output" dstnodeid="416" dstpinname="Input 2">
+   </LINK>
+   <NODE id="349" systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Enabled" visible="1" slicecount="1" pintype="Input" values="0">
+   </PIN>
+   <BOUNDS type="Node" left="11850" top="3310" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Is Integer" slicecount="1" pintype="Input" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Scale" slicecount="1" pintype="Input" visible="1" values="5">
+   </PIN>
+   <PIN pinname="Output" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Prevent from doubles" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="349" srcpinname="Output" dstnodeid="348" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="413" srcpinname="Output" dstnodeid="349" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="352" srcpinname="XYZW" dstnodeid="416" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="416" srcpinname="Output" dstnodeid="231" dstpinname="Input 6">
    </LINK>
    </PATCH>

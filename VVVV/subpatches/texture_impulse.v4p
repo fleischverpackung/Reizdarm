@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\texture_impulse.v4p" scrollx="0" scrolly="1880" systemname="texture_impulse" filename="C:\GIT\Reizdarm\VVVV\subpatches\texture_impulse.v4p">
+   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\texture_impulse.v4p" scrollx="900" scrolly="0" systemname="texture_impulse" filename="C:\GIT\Reizdarm\VVVV\subpatches\texture_impulse.v4p">
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="0" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="4668" top="8252" width="440" height="408">
    </BOUNDS>
@@ -215,9 +215,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="20" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3068" top="2692" width="696" height="208">
+   <BOUNDS type="Box" left="3008" top="2782" width="696" height="208">
    </BOUNDS>
-   <BOUNDS type="Node" left="3068" top="2692" width="0" height="0">
+   <BOUNDS type="Node" left="3008" top="2782" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -282,7 +282,7 @@
    <LINKPOINT x="6099" y="2551">
    </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="6520" top="1880" width="10200" height="8296">
+   <BOUNDS type="Window" left="5860" top="6350" width="10200" height="8290">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -306,14 +306,6 @@
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="29">
-   <BOUNDS type="Node" left="4576" top="1008" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="ctrl_triggerImpulse">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="28">
    <BOUNDS type="Node" left="4592" top="1416" width="100" height="100">
    </BOUNDS>
@@ -322,8 +314,6 @@
    <PIN pinname="OnChange" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="29" srcpinname="Input Value" dstnodeid="28" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="28" srcpinname="OnChange" dstnodeid="8" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="30">
@@ -505,5 +495,49 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="55" srcpinname="Y Output Value" dstnodeid="43" dstpinname="Decay Time">
+   </LINK>
+   <NODE systemname="control_randomTimeInterval" filename="control_randomTimeInterval.v4p" nodename="control_randomTimeInterval.v4p" componentmode="Hidden" id="56">
+   <BOUNDS type="Node" left="4550" top="960" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2294" top="0" width="4512" height="5610">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7440" top="3530" width="6680" height="5640">
+   </BOUNDS>
+   <PIN pinname="timeMin" visible="1">
+   </PIN>
+   <PIN pinname="timeMax" slicecount="1" visible="1" values="20">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="57">
+   <BOUNDS type="Box" left="5730" top="250" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5730" top="250" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="30">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="56" dstpinname="timeMin">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="58">
+   <BOUNDS type="Box" left="6840" top="450" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6840" top="450" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="60">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="58" srcpinname="Y Output Value" dstnodeid="56" dstpinname="timeMax">
+   </LINK>
+   <LINK srcnodeid="56" srcpinname="Output" dstnodeid="28" dstpinname="Input">
    </LINK>
    </PATCH>

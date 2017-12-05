@@ -43,7 +43,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2774" top="9257" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="160" top="900" width="11000" height="8510">
+   <BOUNDS type="Window" left="350" top="4170" width="9020" height="6860">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>

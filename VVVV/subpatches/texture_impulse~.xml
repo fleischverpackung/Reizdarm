@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\texture_impulse.v4p" scrollx="20" scrolly="3140" systemname="texture_impulse" filename="C:\GIT\Reizdarm\VVVV\subpatches\texture_impulse.v4p">
+   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\texture_impulse.v4p" scrollx="0" scrolly="1880" systemname="texture_impulse" filename="C:\GIT\Reizdarm\VVVV\subpatches\texture_impulse.v4p">
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="0" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="4668" top="8252" width="440" height="408">
    </BOUNDS>
@@ -172,6 +172,8 @@
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Initialize" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="16" hiddenwhenlocked="1">
@@ -427,7 +429,7 @@
    </PIN>
    <PIN pinname="Release Time" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Decay Time" slicecount="1" values="2" visible="1">
+   <PIN pinname="Decay Time" slicecount="1" visible="1" values="2">
    </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Remainder" dstnodeid="43" dstpinname="Input">

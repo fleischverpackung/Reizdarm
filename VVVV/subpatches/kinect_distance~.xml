@@ -1344,18 +1344,6 @@
    </LINK>
    <LINK srcnodeid="273" srcpinname="Output" dstnodeid="144" dstpinname="Input Value">
    </LINK>
-   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="275">
-   <BOUNDS type="Node" left="9520" top="16260" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Go To Position" visible="1">
-   </PIN>
-   <PIN pinname="Position Out" visible="1">
-   </PIN>
-   <PIN pinname="FilterTime" slicecount="1" values="0.5">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="127" srcpinname="Output" dstnodeid="275" dstpinname="Go To Position">
-   </LINK>
-   <LINK srcnodeid="275" srcpinname="Position Out" dstnodeid="80" dstpinname="Input Value">
+   <LINK srcnodeid="127" srcpinname="Output" dstnodeid="80" dstpinname="Input Value">
    </LINK>
    </PATCH>

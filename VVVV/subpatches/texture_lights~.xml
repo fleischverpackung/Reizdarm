@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\texture_lights.v4p" systemname="texture_lights" filename="C:\GIT\Reizdarm\VVVV\subpatches\texture_lights.v4p" scrollx="0" scrolly="1904">
+   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\texture_lights.v4p" systemname="texture_lights" filename="C:\GIT\Reizdarm\VVVV\subpatches\texture_lights.v4p" scrollx="0" scrolly="1600">
    <NODE systemname="Sampler (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Sampler (DX11)" componentmode="Hidden" id="0" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="4404" top="7924" width="100" height="100">
    </BOUNDS>
@@ -123,7 +123,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="12">
-   <BOUNDS type="Node" left="3652" top="3764" width="100" height="100">
+   <BOUNDS type="Node" left="2272" top="3074" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Destination Maximum" slicecount="1" values="0.05">
    </PIN>
@@ -210,18 +210,16 @@
    </LINK>
    <LINK srcnodeid="9" srcpinname="Output" dstnodeid="18" dstpinname="Spread">
    </LINK>
-   <BOUNDS type="Window" left="3872" top="112" width="10128" height="8296">
+   <BOUNDS type="Window" left="5940" top="320" width="12590" height="8290">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="7" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="21">
-   <BOUNDS type="Box" left="3656" top="3312" width="696" height="208">
+   <BOUNDS type="Box" left="2276" top="2622" width="696" height="208">
    </BOUNDS>
-   <BOUNDS type="Node" left="3656" top="3312" width="0" height="0">
+   <BOUNDS type="Node" left="2276" top="2622" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.64">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.73">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -237,13 +235,39 @@
    <LINK srcnodeid="3" srcpinname="XY" dstnodeid="1" dstpinname="TranslateXY">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="22">
-   <BOUNDS type="Node" left="3648" top="2856" width="100" height="100">
+   <BOUNDS type="Node" left="2238" top="2216" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="kinect_activity">
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="22" srcpinname="Input Value" dstnodeid="21" dstpinname="Y Input Value">
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="24">
+   <BOUNDS type="Node" left="4040" top="2740" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="bowel_velocity">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="4032" top="3174" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Destination Maximum" slicecount="1" values="0.05">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0.64">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="-0.28">
+   </PIN>
+   <PIN pinname="Mapping" slicecount="1" values="Clamp">
+   </PIN>
+   <PIN pinname="Source Maximum" slicecount="1" values="0.001">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Input Value" dstnodeid="25" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="7" dstpinname="Input">
    </LINK>
    </PATCH>

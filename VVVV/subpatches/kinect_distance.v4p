@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\kinect_distance.v4p" systemname="Count (DX11.Particles.Analysis) help" filename="C:\Users\TP-A11\Desktop\Count (DX11.Particles.Analysis) help.v4p" scrollx="3840" scrolly="11860">
-   <BOUNDS type="Window" left="6510" top="130" width="12590" height="8290">
+   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\kinect_distance.v4p" systemname="Count (DX11.Particles.Analysis) help" filename="C:\Users\TP-A11\Desktop\Count (DX11.Particles.Analysis) help.v4p" scrollx="0" scrolly="5320">
+   <BOUNDS type="Window" left="8630" top="510" width="12590" height="8290">
    </BOUNDS>
    <PACK Name="vvvv-Message" Version="2.9.10">
    </PACK>
@@ -1033,17 +1033,19 @@
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="228">
    <BOUNDS type="Node" left="4344" top="7200" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4344" top="7200" width="448" height="928">
+   <BOUNDS type="Box" left="4344" top="7200" width="580" height="970">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="4" values="2,0.5,0.3,0.3">
+   <PIN pinname="Y Input Value" slicecount="4" values="2,1,0.3,0.3">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="|0, 0, 0, 1|">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
    </NODE>
    <LINK srcnodeid="228" srcpinname="Y Output Value" dstnodeid="226" dstpinname="Decay Time">
