@@ -43,7 +43,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="ScaleXY">
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="FullscreenQuad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\modules\FullscreenQuad (DX11.Layer).v4p" nodename="FullscreenQuad (DX11.Layer)" componentmode="Hidden" id="5">
@@ -210,7 +210,7 @@
    </LINK>
    <LINK srcnodeid="9" srcpinname="Output" dstnodeid="18" dstpinname="Spread">
    </LINK>
-   <BOUNDS type="Window" left="5232" top="192" width="10128" height="8296">
+   <BOUNDS type="Window" left="3872" top="112" width="10128" height="8296">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>

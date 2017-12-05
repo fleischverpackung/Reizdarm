@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\GIT\Reizdarm\VVVV\subpatches\texture_impulse.v4p" scrollx="952" scrolly="3456" systemname="texture_impulse" filename="C:\GIT\Reizdarm\VVVV\subpatches\texture_impulse.v4p">
+   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\texture_impulse.v4p" scrollx="0" scrolly="1880" systemname="texture_impulse" filename="C:\GIT\Reizdarm\VVVV\subpatches\texture_impulse.v4p">
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="0" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="4668" top="8252" width="440" height="408">
    </BOUNDS>
@@ -173,6 +173,8 @@
    </PIN>
    <PIN pinname="Output 1" visible="1">
    </PIN>
+   <PIN pinname="Initialize" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="16" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="5564" top="4452" width="100" height="100">
@@ -297,7 +299,7 @@
    <LINK srcnodeid="24" srcpinname="Sampler" dstnodeid="1" dstpinname="Sampler State" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="25">
-   <BOUNDS type="Node" left="1640" top="4280" width="100" height="100">
+   <BOUNDS type="Node" left="1670" top="4330" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="impulse_position">
    </PIN>
@@ -383,7 +385,7 @@
    <LINK srcnodeid="19" srcpinname="Output" dstnodeid="25" dstpinname="Input Value">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="40">
-   <BOUNDS type="Node" left="1200" top="5696" width="100" height="100">
+   <BOUNDS type="Node" left="1190" top="5806" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -396,6 +398,8 @@
    <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   <PIN pinname="Down Edge" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="39" srcpinname="OnChange" dstnodeid="41" dstpinname="Input">
@@ -425,29 +429,81 @@
    </PIN>
    <PIN pinname="Release Time" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Decay Time" slicecount="1" values="2">
+   <PIN pinname="Decay Time" slicecount="1" visible="1" values="2">
    </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Remainder" dstnodeid="43" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="43" srcpinname="Output" dstnodeid="13" dstpinname="Lightness">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="44" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="5392" top="6776" width="2128" height="216">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5392" top="6776" width="2128" height="216">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|SET IMPULSE CHARACTERISTICS|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="39" srcpinname="OnChange" dstnodeid="38" dstpinname="Input Value">
    </LINK>
    <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="23" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="45">
+   <BOUNDS type="Node" left="7960" top="9100" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="impulse_Stop">
+   </PIN>
+   </NODE>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="48">
+   <BOUNDS type="Node" left="8090" top="8640" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="48" srcpinname="Up Edge" dstnodeid="45" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="CAR (Spreads)" nodename="CAR (Spreads)" componentmode="Hidden" id="52">
+   <BOUNDS type="Node" left="8170" top="7620" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="First Slice" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Reverse (Spreads)" nodename="Reverse (Spreads)" componentmode="Hidden" id="53">
+   <BOUNDS type="Node" left="8130" top="7230" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="43" srcpinname="Output" dstnodeid="53" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="52" dstpinname="Input">
+   </LINK>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="54">
+   <BOUNDS type="Node" left="8130" top="8160" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="52" srcpinname="First Slice" dstnodeid="54" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="54" srcpinname="Output" dstnodeid="48" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="55">
+   <BOUNDS type="Box" left="5330" top="6200" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5330" top="6200" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="4">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="s">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="impulseDuration">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="55" srcpinname="Y Output Value" dstnodeid="43" dstpinname="Decay Time">
    </LINK>
    </PATCH>
