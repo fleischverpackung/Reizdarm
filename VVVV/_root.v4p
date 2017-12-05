@@ -1,15 +1,15 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="400" scrolly="3600">
+   <PATCH nodename="D:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="510" scrolly="600">
    <BOUNDS height="8290" left="6510" top="130" type="Window" width="12590">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <NODE systemname="helper_compositing" filename="subpatches\helper_compositing.v4p" nodename="subpatches\helper_compositing.v4p" componentmode="InAWindow" id="234" hiddenwhenlocked="1">
+   <NODE systemname="helper_compositing" filename="subpatches\helper_compositing.v4p" nodename="subpatches\helper_compositing.v4p" componentmode="Hidden" id="234" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="4465" top="7311" width="2200" height="256">
    </BOUNDS>
    <BOUNDS type="Box" left="3400" top="4580" width="10564" height="5462">
    </BOUNDS>
-   <BOUNDS type="Window" left="5120" top="80" width="10128" height="8296">
+   <BOUNDS type="Window" left="5990" top="2220" width="10120" height="8290">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -35,7 +35,7 @@
    <PACK Name="dx11" Version="1.0.2">
    </PACK>
    <NODE systemname="midi_control" filename="subpatches\midi_control.v4p" nodename="subpatches\midi_control.v4p" componentmode="InAWindow" id="305">
-   <BOUNDS type="Node" left="7544" top="7600" width="100" height="100">
+   <BOUNDS type="Node" left="7684" top="7630" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="6510" top="130" width="12590" height="8290">
    </BOUNDS>
@@ -76,12 +76,12 @@
    </NODE>
    <LINK srcnodeid="310" srcpinname="Y Output Value" dstnodeid="234" dstpinname="Evaluate" hiddenwhenlocked="1">
    </LINK>
-   <NODE systemname="audio_control" filename="subpatches\audio_control.v4p" nodename="subpatches\audio_control.v4p" componentmode="Hidden" id="316">
+   <NODE systemname="audio_control" filename="subpatches\audio_control.v4p" nodename="subpatches\audio_control.v4p" componentmode="InAWindow" id="316">
    <BOUNDS type="Node" left="8003" top="7048" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="6091" top="4882" width="3824" height="4332">
    </BOUNDS>
-   <BOUNDS type="Window" left="5960" top="7230" width="12590" height="8290">
+   <BOUNDS type="Window" left="6240" top="3600" width="12590" height="8290">
    </BOUNDS>
    <PIN pinname="lights" visible="1">
    </PIN>
@@ -261,7 +261,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3864" top="928" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="20">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="30">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

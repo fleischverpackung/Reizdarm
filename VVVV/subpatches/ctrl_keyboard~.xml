@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\ctrl_keyboard.v4p" systemname="ctrl_keyboard" filename="C:\GIT\Reizdarm\VVVV\subpatches\ctrl_keyboard.v4p" scrollx="180" scrolly="1030">
+   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\ctrl_keyboard.v4p" systemname="ctrl_keyboard" filename="C:\GIT\Reizdarm\VVVV\subpatches\ctrl_keyboard.v4p" scrollx="0" scrolly="690">
    <NODE systemname="Keyboard (Devices Desktop)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (Devices Desktop)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1564" top="796" width="100" height="100">
    </BOUNDS>
@@ -17,7 +17,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Key Match" slicecount="1" values="|space, l, r, i, f, y, x, c, v, b|">
+   <PIN pinname="Key Match" slicecount="1" values="|space, l, r, i, f, y, x, c, v, b, k|">
    </PIN>
    <PIN pinname="Space" visible="1">
    </PIN>
@@ -54,6 +54,8 @@
    <PIN pinname="B" visible="1">
    </PIN>
    <PIN pinname="C" visible="1">
+   </PIN>
+   <PIN pinname="K" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="2">
@@ -93,7 +95,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="4">
+   <PIN pinname="Input Count" slicecount="1" values="5">
    </PIN>
    <PIN pinname="Input 3" visible="1" slicecount="1" values="0">
    </PIN>
@@ -121,7 +123,7 @@
    </PIN>
    <PIN pinname="Output 2" visible="1">
    </PIN>
-   <PIN pinname="Output Count" slicecount="1" values="4">
+   <PIN pinname="Output Count" slicecount="1" values="5">
    </PIN>
    <PIN pinname="Output 3" visible="1">
    </PIN>
@@ -202,8 +204,6 @@
    <PIN pinname="Send String" slicecount="1" values="ctrl_zones">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Y" dstnodeid="6" dstpinname="Input 5">
-   </LINK>
    <NODE id="3" systemname="S (Value)" nodename="S (Value)" componentmode="Hidden">
    <PIN pinname="Input Value" visible="1" slicecount="2" values="0,0">
    </PIN>
@@ -276,6 +276,28 @@
    </NODE>
    <LINK srcnodeid="18" srcpinname="Output" dstnodeid="19" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="19" srcpinname="Up Edge" dstnodeid="13" dstpinname="Input Value">
+   <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="2814" top="3660" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Up Edge" dstnodeid="20" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Output" dstnodeid="13" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="K" dstnodeid="6" dstpinname="Input 5">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="2530" top="4290" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="ctrl_kinectLive">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output 5" dstnodeid="21" dstpinname="Input Value">
    </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\audio_control.v4p" systemname="audio_control" filename="C:\GIT\Reizdarm\VVVV\subpatches\audio_control.v4p" scrollx="0" scrolly="1010">
+   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\audio_control.v4p" systemname="audio_control" filename="C:\GIT\Reizdarm\VVVV\subpatches\audio_control.v4p" scrollx="800" scrolly="1350">
    <NODE systemname="HSL (Color Split)" nodename="HSL (Color Split)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3212" top="828" width="100" height="100">
    </BOUNDS>
@@ -82,7 +82,7 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Input 2">
    </LINK>
-   <BOUNDS type="Window" left="5940" top="320" width="12590" height="8290">
+   <BOUNDS type="Window" left="6240" top="3600" width="12590" height="8290">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -265,7 +265,7 @@
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="impulse_position">
+   <PIN pinname="Receive String" slicecount="1" values="kinect_distance">
    </PIN>
    </NODE>
    <PACK Name="dx11" Version="1.0.2">

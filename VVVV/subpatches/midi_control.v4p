@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\midi_control.v4p" locked="0" scrollx="2880" scrolly="7730" systemname="midi_control" filename="C:\GIT\Reizdarm\VVVV\subpatches\midi_control.v4p">
+   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\midi_control.v4p" locked="0" scrollx="3580" scrolly="2840" systemname="midi_control" filename="C:\GIT\Reizdarm\VVVV\subpatches\midi_control.v4p">
    <BOUNDS height="8290" left="6510" top="130" type="Window" width="12590">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -118,22 +118,6 @@
    <LINKPOINT x="4044" y="11184">
    </LINKPOINT>
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="245">
-   <BOUNDS type="Box" left="5540" top="7756" width="696" height="208">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5540" top="7756" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="0.74,0.47,0.641092119089563,0.443727349694228">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="fader">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="245" srcpinname="Y Output Value" dstnodeid="231" dstpinname="Input 1">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="247">
    <BOUNDS type="Node" left="8998" top="9262" width="100" height="100">
    </BOUNDS>
@@ -194,6 +178,8 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="fader">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" values="0.53,0,0,0">
    </PIN>
    </NODE>
    <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="251" hiddenwhenlocked="1">
@@ -459,7 +445,7 @@
    <LINK srcnodeid="287" srcpinname="Output" dstnodeid="228" dstpinname="Input">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="298">
-   <BOUNDS type="Node" left="5806" top="5138" width="100" height="100">
+   <BOUNDS type="Node" left="6826" top="4598" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="impulse_Start">
    </PIN>
@@ -467,7 +453,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="300">
-   <BOUNDS type="Node" left="8146" top="6076" width="100" height="100">
+   <BOUNDS type="Node" left="7646" top="5846" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="impulse_position">
    </PIN>
@@ -509,7 +495,7 @@
    <LINK srcnodeid="303" srcpinname="Input Value" dstnodeid="231" dstpinname="Input 8">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="307">
-   <BOUNDS type="Node" left="7380" top="5130" width="100" height="100">
+   <BOUNDS type="Node" left="7200" top="4980" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="impulse_Stop">
    </PIN>
@@ -517,7 +503,7 @@
    </PIN>
    </NODE>
    <NODE systemname="FlipFlop (Animation)" nodename="FlipFlop (Animation)" componentmode="Hidden" id="308">
-   <BOUNDS type="Node" left="6540" top="5610" width="100" height="100">
+   <BOUNDS type="Node" left="6760" top="5560" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Set" visible="1">
    </PIN>
@@ -561,7 +547,7 @@
    <LINK srcnodeid="308" srcpinname="Output" dstnodeid="301" dstpinname="X">
    </LINK>
    <LINK srcnodeid="298" srcpinname="Input Value" dstnodeid="301" dstpinname="Y">
-   <LINKPOINT x="7380" y="5695">
+   <LINKPOINT x="7890" y="5425">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="301" srcpinname="Output" dstnodeid="231" dstpinname="Input 5">
@@ -990,4 +976,102 @@
    </NODE>
    <LINK srcnodeid="363" srcpinname="Inverse Output" dstnodeid="364" dstpinname="Input Value" hiddenwhenlocked="1">
    </LINK>
+   <NODE systemname="Vector (4d Join)" nodename="Vector (4d Join)" componentmode="Hidden" id="365">
+   <BOUNDS type="Node" left="4660" top="7660" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZW" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1" slicecount="1" values="0.47">
+   </PIN>
+   <PIN pinname="Y" visible="1" slicecount="1" values="-0.1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="365" srcpinname="XYZW" dstnodeid="231" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="366">
+   <BOUNDS type="Node" left="4470" top="5470" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="kinect_distance">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="367">
+   <BOUNDS type="Node" left="5540" top="6830" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="-0.0116984494638928">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Mapping" slicecount="1" values="Clamp">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="366" srcpinname="Input Value" dstnodeid="367" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="372">
+   <BOUNDS type="Node" left="4490" top="6370" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="-0.0116984494638928">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="0.25">
+   </PIN>
+   <PIN pinname="Destination Maximum" slicecount="1" values="0.6">
+   </PIN>
+   <PIN pinname="Source Minimum" slicecount="1" values="-0.003">
+   </PIN>
+   <PIN pinname="Source Maximum" slicecount="1" values="0.003">
+   </PIN>
+   <PIN pinname="Mapping" slicecount="1" values="Clamp">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="373">
+   <BOUNDS type="Box" left="8410" top="13690" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8410" top="13690" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values="0,,">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="250" srcpinname="Y Output Value" dstnodeid="373" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="372" srcpinname="Output" dstnodeid="365" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="367" srcpinname="Output" dstnodeid="365" dstpinname="Y">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="374">
+   <BOUNDS type="Node" left="4490" top="5960" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="bowel_velocity">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="374" srcpinname="Input Value" dstnodeid="372" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="376">
+   <BOUNDS type="Node" left="7010" top="3940" width="690" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7010" top="3940" width="690" height="230">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="Impulse">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
