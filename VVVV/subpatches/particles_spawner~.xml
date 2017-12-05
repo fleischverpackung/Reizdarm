@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\particles_spawner.v4p" scrollx="120" scrolly="2620" systemname="particles_spawner" filename="C:\GIT\Reizdarm\VVVV\subpatches\particles_spawner.v4p">
+   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\particles_spawner.v4p" scrollx="2010" scrolly="0" systemname="particles_spawner" filename="C:\GIT\Reizdarm\VVVV\subpatches\particles_spawner.v4p">
    <NODE componentmode="InABox" id="0" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="3861" top="7997" type="Node" width="0">
    </BOUNDS>
@@ -161,9 +161,9 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="10">
-   <BOUNDS type="Node" left="4162" top="2984" width="100" height="100">
+   <BOUNDS type="Node" left="4152" top="2234" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="kinect_toggle">
+   <PIN pinname="Receive String" slicecount="1" values="kinect_area">
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -414,7 +414,7 @@
    </LINK>
    <LINK srcnodeid="25" srcpinname="Output" dstnodeid="22" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="6370" top="190" width="12590" height="8290">
+   <BOUNDS type="Window" left="6510" top="130" width="12590" height="8290">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.2">
    </PACK>
@@ -503,8 +503,6 @@
    <LINK srcnodeid="48" srcpinname="Former Slice" dstnodeid="52" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="30" srcpinname="Output Node" dstnodeid="6" dstpinname="Input Node" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="10" srcpinname="Input Value" dstnodeid="12" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="5" srcpinname="Output" dstnodeid="1" dstpinname="Size XY">
    </LINK>
@@ -645,7 +643,7 @@
    </PIN>
    </NODE>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="88">
-   <BOUNDS type="Node" left="4540" top="4760" width="100" height="100">
+   <BOUNDS type="Node" left="4750" top="4820" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="particles_kill">
    </PIN>
@@ -655,7 +653,7 @@
    <LINK srcnodeid="14" srcpinname="Output" dstnodeid="88" dstpinname="Input Value">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="90">
-   <BOUNDS type="Node" left="3740" top="5190" width="100" height="100">
+   <BOUNDS type="Node" left="3580" top="5220" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="particles_spawn">
    </PIN>
@@ -663,5 +661,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="13" srcpinname="Output" dstnodeid="90" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Input Value" dstnodeid="12" dstpinname="Input">
    </LINK>
    </PATCH>

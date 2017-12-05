@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\particles_forces.v4p" systemname="particles_forces" filename="C:\GIT\Reizdarm\VVVV\subpatches\particles_forces.v4p" scrollx="4760" scrolly="3050">
+   <PATCH nodename="D:\GIT\Reizdarm\VVVV\subpatches\particles_forces.v4p" systemname="particles_forces" filename="C:\GIT\Reizdarm\VVVV\subpatches\particles_forces.v4p" scrollx="5450" scrolly="2660">
    <NODE componentmode="Hidden" id="0" nodename=":PLUGINS:\Box2dNodes.dll|VVVV.Nodes.Box2dApplyForceNode" systemname="ApplyForce (Box2d)" filename="%VVVV%\packs\box2d\nodes\plugins\Box2dNodes.dll">
    <BOUNDS height="0" left="7076" top="9911" type="Node" width="0">
    </BOUNDS>
@@ -24,14 +24,6 @@
    <PIN pinname="Input 1" visible="1" slicecount="16" values="6.35,0,3.88825358729285E-016,6.35,-6.35,7.77650717458569E-016,-1.16647607618785E-015,-6.35,8.45239123495126,-7.93732369324315,7.93732369324315,8.45239123495126,-8.45239123495126,7.93732369324315,-7.93732369324315,-8.45239123495126">
    </PIN>
    <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="12979" top="4434" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="bowel_accelerate">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="10" nodename=":PLUGINS:\Box2dNodes.dll|VVVV.Nodes.Box2dApplyForceNode" systemname="ApplyForce (Box2d)" filename="%VVVV%\packs\box2d\nodes\plugins\Box2dNodes.dll">
@@ -817,7 +809,7 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="114">
-   <BOUNDS type="Node" left="9940" top="4200" width="100" height="100">
+   <BOUNDS type="Node" left="9940" top="4030" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="impulse_Start">
    </PIN>
@@ -864,10 +856,18 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="4" srcpinname="Input Value" dstnodeid="6" dstpinname="Input 2">
-   </LINK>
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="49" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="114" srcpinname="Input Value" dstnodeid="6" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="119">
+   <BOUNDS type="Node" left="12880" top="4290" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="bowel_stop">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="119" srcpinname="Input Value" dstnodeid="6" dstpinname="Input 2">
    </LINK>
    </PATCH>

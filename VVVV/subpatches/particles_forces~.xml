@@ -29,7 +29,7 @@
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="4">
    <BOUNDS type="Node" left="12979" top="4434" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="bowel_accelertage">
+   <PIN pinname="Receive String" slicecount="1" values="bowel_accelerate">
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -140,7 +140,7 @@
    </LINK>
    <LINK srcnodeid="23" srcpinname="Output Node" dstnodeid="0" dstpinname="Bodies" hiddenwhenlocked="1">
    </LINK>
-   <BOUNDS type="Window" left="5940" top="320" width="12590" height="8290">
+   <BOUNDS type="Window" left="6510" top="130" width="12590" height="8290">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.2">
    </PACK>

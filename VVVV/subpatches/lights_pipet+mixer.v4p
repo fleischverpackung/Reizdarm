@@ -173,7 +173,7 @@
    </PIN>
    <PIN pinname="Attack Time" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Decay Time" slicecount="1" visible="1" values="2">
+   <PIN pinname="Decay Time" slicecount="1" visible="1" values="1.5">
    </PIN>
    <PIN pinname="Release Time" slicecount="1" values="0.5">
    </PIN>
@@ -312,7 +312,7 @@
    </LINK>
    <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="2" dstpinname="ResolutionXY">
    </LINK>
-   <BOUNDS type="Window" left="6610" top="220" width="12590" height="8290">
+   <BOUNDS type="Window" left="5940" top="320" width="12590" height="8290">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.2">
    </PACK>
@@ -377,5 +377,21 @@
    <LINK srcnodeid="28" srcpinname="Input Value" dstnodeid="26" dstpinname="Reset">
    </LINK>
    <LINK srcnodeid="26" srcpinname="Output" dstnodeid="19" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="29">
+   <BOUNDS type="Box" left="4260" top="6560" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4260" top="6560" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.5">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="s">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="blackoutDuration">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Decay Time">
    </LINK>
    </PATCH>
