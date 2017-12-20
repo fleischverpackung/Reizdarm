@@ -1,0 +1,145 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="D:\GIT\Reizdarm\VVVV\3rdParty\OpenDMX (Devices Enttec) help.v4p" scrollx="0" scrolly="0" systemname="OpenDMX(Enttec,DMX) help~" filename="C:\Users\Lukas\Desktop\plugins\OpenDMX(Enttec,DMX) help~.v4p">
+   <BOUNDS type="Window" left="6610" top="380" width="12590" height="8290">
+   </BOUNDS>
+   <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="3685" top="2115" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" slicecount="1" values="512">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" visible="1" values="0.0288797023240477">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="4060" top="2715" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="7" dstpinname="Input">
+   </LINK>
+   <NODE systemname="OR (Boolean Spectral)" nodename="OR (Boolean Spectral)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="4060" top="3090" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="OnChange" dstnodeid="8" dstpinname="Input">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="10">
+   <BOUNDS type="Node" left="3685" top="4065" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3685" top="4065" width="1575" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="11">
+   <BOUNDS type="Node" left="4480" top="4470" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4480" top="4470" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="isConnected">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="13" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5890" top="1980" width="2175" height="480">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5890" top="1980" width="4530" height="2370">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Send DMX values to Enttec USB openDMX dongles&cr;&lf;and FT2xx USB RS485 adapters&cr;&lf;&cr;&lf;SliceIndex = DMX Channel (if you only have one input slice, it will write 0s to all other channels)&cr;&lf;ValueRange 0...1&cr;&lf;&cr;&lf;When sending is active, the node tries to reconnect with the device until it finds one. Not sure if this is wanted, but seems reasonable for accidental unplugging...&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="3700" top="1605" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Pause" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="16">
+   <BOUNDS type="Node" left="3850" top="855" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3850" top="855" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Pause">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Pause">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Output" dstnodeid="6" dstpinname="Input">
+   </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="18" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5890" top="1410" width="1800" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5890" top="1410" width="3270" height="375">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|OpenDMX (Devices Enttec)|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   </NODE>
+   <NODE systemname="OpenDMX (Devices Enttec)" filename="Devices_EnttecOpenDMX.dll" nodename="OpenDMX (Devices Enttec)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="3700" top="3495" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="IsConnected" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Send" visible="1">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Output" dstnodeid="10" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="IsConnected" dstnodeid="11" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="19" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="19" dstpinname="Send">
+   </LINK>
+   <PACK Name="dx11" Version="1.0.2">
+   </PACK>
+   </PATCH>

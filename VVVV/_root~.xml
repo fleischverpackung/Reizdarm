@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="3700" scrolly="630">
-   <BOUNDS height="8290" left="8630" top="510" type="Window" width="12590">
+   <PATCH nodename="D:\GIT\Reizdarm\VVVV\_root.v4p" filename="C:\GIT\Reizdarm\VVVV\_root.v4p" systemname="_root" scrollx="1250" scrolly="650">
+   <BOUNDS height="8290" left="5970" top="360" type="Window" width="12590">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -37,7 +37,7 @@
    <NODE systemname="midi_control" filename="subpatches\midi_control.v4p" nodename="subpatches\midi_control.v4p" componentmode="InAWindow" id="305">
    <BOUNDS type="Node" left="7684" top="7630" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="8630" top="510" width="12590" height="8290">
+   <BOUNDS type="Window" left="5970" top="360" width="12590" height="8290">
    </BOUNDS>
    <PIN pinname="lights" visible="1" slicecount="8" values="0,0,0,0,0,0,0,0">
    </PIN>
@@ -81,7 +81,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6091" top="4882" width="3824" height="4332">
    </BOUNDS>
-   <BOUNDS type="Window" left="8630" top="510" width="12590" height="8290">
+   <BOUNDS type="Window" left="5970" top="360" width="12590" height="8290">
    </BOUNDS>
    <PIN pinname="lights" visible="1">
    </PIN>
@@ -111,7 +111,7 @@
    <NODE systemname="kinect_distance" filename="subpatches\kinect_distance.v4p" nodename="subpatches\kinect_distance.v4p" componentmode="InAWindow" id="330" stayontop="1">
    <BOUNDS type="Node" left="1664" top="2064" width="1928" height="256">
    </BOUNDS>
-   <BOUNDS type="Window" left="8630" top="510" width="12590" height="8290">
+   <BOUNDS type="Window" left="5970" top="360" width="12590" height="8290">
    </BOUNDS>
    <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
@@ -359,7 +359,7 @@
    <NODE systemname="particles_spawner" filename="particles_spawner.v4p" nodename="particles_spawner.v4p" componentmode="InAWindow" id="361">
    <BOUNDS type="Node" left="1403" top="5832" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="8630" top="510" width="12590" height="8290">
+   <BOUNDS type="Window" left="5970" top="360" width="12590" height="8290">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -371,7 +371,7 @@
    </BOUNDS>
    <PIN pinname="Bodies" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="8630" top="510" width="12590" height="8290">
+   <BOUNDS type="Window" left="5970" top="360" width="12590" height="8290">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -612,12 +612,12 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="texture_lights" filename="texture_lights.v4p" nodename="texture_lights.v4p" componentmode="Hidden" id="377">
+   <NODE systemname="texture_lights" filename="texture_lights.v4p" nodename="texture_lights.v4p" componentmode="InAWindow" id="377" stayontop="1">
    <BOUNDS type="Node" left="6040" top="4895" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="3424" top="2280" width="5968" height="8748">
    </BOUNDS>
-   <BOUNDS type="Window" left="6080" top="720" width="12590" height="8290">
+   <BOUNDS type="Window" left="5970" top="360" width="12590" height="8290">
    </BOUNDS>
    </NODE>
    <NODE systemname="control_bowelmovement" filename="control_bowelmovement.v4p" nodename="control_bowelmovement.v4p" componentmode="InAWindow" id="375" stayontop="0">
@@ -625,7 +625,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4216" top="2608" width="6632" height="9628">
    </BOUNDS>
-   <BOUNDS type="Window" left="8630" top="510" width="12590" height="8290">
+   <BOUNDS type="Window" left="5970" top="360" width="12590" height="8290">
    </BOUNDS>
    <PIN pinname="bowel_speed" visible="1" slicecount="1" values="0.34">
    </PIN>
